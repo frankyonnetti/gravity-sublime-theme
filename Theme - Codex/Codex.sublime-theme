@@ -23,7 +23,7 @@
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 3]
+        "content_margin": [3, 0, 3, 0]
     },
     {
         "class": "tabset_control",
@@ -526,18 +526,6 @@
         "content_margin": [20, 5],
         "blur": true
     },
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["dark"],
-        "layer0.texture": "Theme - Codex/assets/overlay_dark_thumb_vertical.png"
-    },
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["horizontal", "dark"],
-        "layer0.texture": "Theme - Codex/assets/overlay_dark_thumb_horizontal.png"
-    },
 
     //
     // ! Panel Overlay Control
@@ -552,9 +540,9 @@
     },
     {
         "class": "overlay_control",
-        "layer0.tint": [28, 28, 28],
+        "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0,
-        "content_margin": [4, 4]
+        "content_margin": [2, 2]
     },
     {
         "class": "popup_control",
@@ -732,15 +720,15 @@
     {
         "class": "quick_panel",
         "row_padding": [10, 10],
-        "layer0.tint": [25, 25, 25],
+        "layer0.tint": [34, 34, 34],
         "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [32, 32, 32],
+        "layer0.tint": [34, 34, 34],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
-        "layer1.tint": [125, 125, 125],
+        "layer1.tint": [30, 30, 30],
         "layer1.inner_margin": [2, 2, 2, 2],
         "layer1.draw_center": false,
         "layer1.opacity": 1.0
@@ -748,8 +736,8 @@
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [87, 87, 87],
-        //"layer1.opacity": 0.0
+        "layer0.tint": [75, 116, 145],
+        "layer1.opacity": 0.0
     },
     {
         "class": "quick_panel_label",
@@ -775,14 +763,14 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [31, 31, 31],
+        "layer0.tint": [36, 36, 36],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [75, 116, 145]
+        "layer0.tint": [75, 116, 145] // blue
     },
 
     //
@@ -947,13 +935,18 @@
     },
     {
         "class": "icon_file_type",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.8
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 0.9
+    },
+    {
+        "class": "icon_file_type",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.opacity": 0.9
     },
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Codex/icons/folder.png",
-        "layer0.opacity": 0.5,
+        "layer0.opacity": 0.6,
         "content_margin": [8, 8]
     },
     {
