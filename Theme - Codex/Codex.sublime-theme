@@ -270,25 +270,23 @@
     },
     {
         "class": "sidebar_heading",
-        "parents":
-        [
-            { "class": "tree_row", "attributes": ["selected"] }
-        ],
-        "shadow_color": [160, 174, 192]
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
+        //"shadow_color": [160, 174, 192]
     },
     {
         "class": "sidebar_label",
         "color": [136, 136, 136],
         "font.bold": false,
-        "font.italic": false,
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, -1]
+        "font.italic": false
+        //"shadow_color": [0, 0, 0],
+        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255]
-        // , "shadow_color": [60, 60, 60], "shadow_offset": [0, 1]
+        //"shadow_color": [60, 60, 60],
+        //"shadow_offset": [0, 1]
     },
     {
         "class": "sidebar_label",
@@ -296,10 +294,10 @@
         "settings": ["bold_folder_labels"],
         "color": [198, 198, 198]
     },
-
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [207, 207, 207],
         "settings": ["bold_folder_labels"],
         "font.bold": true
     },
@@ -596,7 +594,7 @@
     {
         "class": "table_row",
         "attributes": ["selected"],
-        "layer0.opacity": 0.5
+        "layer0.opacity": 1.0
     },
     {
         "class": "tree_row",
@@ -606,7 +604,8 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [51, 51, 51, 255],
+        //"layer0.tint": [74, 101, 117, 255], // flat blue
+        "layer0.tint": [75, 116, 145],
         "layer0.opacity": 1.0
     },
 
@@ -946,13 +945,13 @@
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Codex/icons/folder.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 1.0,
     },
     {
         "class": "icon_folder",
