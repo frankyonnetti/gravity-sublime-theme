@@ -615,35 +615,35 @@
 
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Codex/assets/grey_x.png",
-        "layer0.opacity": 0.5,
+        "layer0.texture": "Theme - Codex/assets/close_x.png",
+        "layer0.opacity": 0.3,
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Codex/assets/dirty_indicator.png"
+        "layer0.texture": "Theme - Codex/assets/dirty_close_indicator.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - Codex/assets/close_x_hover.png",
+        "layer0.opacity": 0.3
     },
 
     {
         "class": "panel_close_button",
-        "layer0.texture": "Theme - Codex/assets/dark_x.png",
-        "layer0.opacity": 0.6,
-        "layer1.texture": "Theme - Codex/assets/dark_x_light_shadow.png",
-        "layer1.opacity": 0.0,
+        "layer0.texture": "Theme - Codex/assets/close_x.png",
+        "layer0.opacity": 0.3,
         "content_margin": [8, 8]
     },
     {
         "class": "panel_close_button",
+        "layer0.texture": "Theme - Codex/assets/close_x_hover.png",
         "attributes": ["hover"],
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 1.0,
+        "layer0.opacity": 0.3
     },
 
     //
