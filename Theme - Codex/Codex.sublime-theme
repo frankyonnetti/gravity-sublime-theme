@@ -17,7 +17,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        "tab_height": 35,
+        "tab_height": 37,
         "mouse_wheel_switch": false
     },
     {
@@ -81,19 +81,19 @@
     {
         "class": "tab_label",
         "fade": false,
-        "fg": [78, 78, 78],
+        "fg": [98, 98, 98],
         "font.bold" : false,
         "font.size" : 12
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [255, 255, 255]
+        "fg": [198, 198, 198]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [233, 233, 233]
+        "fg": [207, 207, 207]
     },
 
     // Tab close button
@@ -327,7 +327,6 @@
         "class": "button_control",
         "content_margin": [16, 8],
         "min_size": [70, 0],
-
         "layer0.texture": "Theme - Codex/assets/full_button.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
@@ -538,9 +537,9 @@
     },
     {
         "class": "overlay_control",
-        "layer0.tint": [30, 30, 30],
+        "layer0.tint": [26, 26, 26],
         "layer0.opacity": 1.0,
-        "content_margin": [2, 2]
+        "content_margin": [1, 5, 1, 1]
     },
     {
         "class": "popup_control",
