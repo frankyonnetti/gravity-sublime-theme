@@ -17,7 +17,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        "tab_height": 37,
+        "tab_height": 36,
         "mouse_wheel_switch": false
     },
     {
@@ -275,7 +275,7 @@
     },
     {
         "class": "sidebar_label",
-        "color": [136, 136, 136],
+        "color": [195, 195, 195],
         "font.bold": false,
         "font.italic": false
         //"shadow_color": [0, 0, 0],
@@ -292,14 +292,26 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "settings": ["bold_folder_labels"],
-        "color": [198, 198, 198]
+        "color": [240, 240, 240]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [207, 207, 207],
+        "color": [136, 136, 136],
         "settings": ["bold_folder_labels"],
         "font.bold": true
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
+        "settings": ["bold_folder_labels"],
+        "color": [221, 221, 221]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        "settings": ["bold_folder_labels"],
+        "color": [175, 175, 175]
     },
 
     {
@@ -928,7 +940,7 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.opacity": 0.5,
+        "layer0.opacity": 0.6,
         "content_margin": [8, 8]
     },
     {
@@ -944,13 +956,18 @@
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Codex/icons/folder.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.5,
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.opacity": 0.7,
     },
     {
         "class": "icon_folder",
