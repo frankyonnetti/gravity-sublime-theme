@@ -245,11 +245,11 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [80, 80, 80],
+        "layer0.tint": [34, 34, 34],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
-        "content_margin": [0, 0, 0, 0]
+        "content_margin": [0, 0, 1, 0]
     },
     {
         "class": "sidebar_tree",
