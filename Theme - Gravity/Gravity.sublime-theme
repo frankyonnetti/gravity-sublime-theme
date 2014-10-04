@@ -196,14 +196,18 @@
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold_left.png",
         "layer0.opacity": 0.3,
+        //"layer0.texture": "Theme - Gravity/assets/arrow_left.png",
+        //"layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/assets/arrow_fold_left.png",
+        //"layer1.texture": "Theme - Gravity/assets/arrow_left_over.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
+        //"layer1.opacity": 1.0
         "layer1.opacity": 0.8
     },
 
@@ -212,6 +216,8 @@
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold_right.png",
         "layer0.opacity": 0.3,
+        //"layer0.texture": "Theme - Gravity/assets/arrow_right.png",
+        //"layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/assets/arrow_fold_right.png",
         "layer1.opacity": 0.0,
@@ -220,6 +226,7 @@
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
+        //"layer1.opacity": 1.0
         "layer1.opacity": 0.8
     },
 
@@ -245,7 +252,7 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [34, 34, 34],
+        "layer0.tint": [45, 45, 45],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
@@ -373,10 +380,7 @@
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Gravity/assets/middle_button.png",
-        "layer0.inner_margin": [10, 10],
         "layer0.opacity": 1.0,
-        "layer2.texture": "Theme - Gravity/assets/button_highlight.png",
-        "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
         "content_margin": [8, 8, 8, 9]
     },
     {
@@ -398,49 +402,13 @@
         "layer0.opacity": 1.0,
         "layer0.draw_center": true
     },
-    {
-        "class": "icon_button_control",
-        "attributes": ["hover"],
-        "layer2.opacity": 1.0
-    },
-    /*
-    {
-        "class": "icon_button_control",
-        "attributes": ["hover", "selected"],
-        "layer2.opacity": 0.0
-    },
-    */
-    {
-        "class": "icon_button_control",
-        "attributes": ["selected"],
-        "layer0.texture": "Theme - Gravity/assets/middle_button_selected.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "selected"],
-        "layer0.texture": "Theme - Gravity/assets/left_button_selected.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "selected"],
-        "layer0.texture": "Theme - Gravity/assets/right_button_selected.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "left", "selected"],
-        "layer0.texture": "Theme - Gravity/assets/mini_button_selected.png",
-        "layer0.opacity": 1.0
-    },
 
     {
         "class": "dropdown_button_control",
         "content_margin": [8, 8],
         "layer0.texture": "Theme - Gravity/assets/down_arrow_inv.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4],
+        "layer0.inner_margin": [4, 4,],
         "layer1.texture": "Theme - Gravity/assets/down_arrow_inv_hover.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [4, 4],
@@ -479,7 +447,7 @@
     {
         "class": "puck_control",
         "layer0.texture": "Theme - Gravity/assets/normal_thumb_vertical.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.2,
         "layer0.inner_margin": [0, 10],
         "content_margin": [8, 12],
         "blur": false
@@ -488,7 +456,7 @@
         "class": "puck_control",
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Gravity/assets/normal_thumb_horizontal.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.2,
         "layer0.inner_margin": [10, 0],
         "content_margin": [12, 8],
         "blur": false
@@ -537,22 +505,9 @@
     },
 
     //
-    // ! Panel Overlay Control
+    // ! Popup Control
     // ----------------------------------------------------------
 
-    {
-        "class": "panel_control",
-        "layer0.texture": "Theme - Gravity/assets/status_bar.png",
-        "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [0, 1],
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "overlay_control",
-        "layer0.tint": [80, 80, 80],
-        "layer0.opacity": 1.0,
-        "content_margin": [2, 3, 2, 2]
-    },
     {
         "class": "popup_control",
         "layer0.tint": [64, 64, 64],
@@ -703,6 +658,13 @@
     // ----------------------------------------------------------
 
     {
+        "class": "panel_control",
+        "layer0.texture": "Theme - Gravity/assets/panel_control_bg.png",
+        "layer0.inner_margin": [2, 12, 2, 2],
+        "content_margin": [0, 1],
+        "layer0.opacity": 1.0
+    },
+    {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/assets/status_bar.png",
         "layer0.opacity": 1.0,
@@ -728,6 +690,12 @@
     // ----------------------------------------------------------
 
     {
+        "class": "overlay_control",
+        "layer0.tint": [45, 45, 45],
+        "layer0.opacity": 1.0,
+        "content_margin": [3, 3, 3, 3]
+    },
+    {
         "class": "quick_panel",
         "row_padding": [10, 10],
         "layer0.tint": [34, 34, 34],
@@ -739,7 +707,7 @@
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
         "layer1.tint": [30, 30, 30],
-        "layer1.inner_margin": [2, 2, 2, 2],
+        "layer1.inner_margin": [0, 0, 0, 1],
         "layer1.draw_center": false,
         "layer1.opacity": 1.0
     },
@@ -751,8 +719,8 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [200, 200, 200, 255],
-        "match_fg": [225, 225, 225, 255],
+        "fg": [207, 207, 207, 255],
+        "match_fg": [59, 166, 219, 255],
         "selected_fg": [200, 200, 200, 255],
         "selected_match_fg": [255, 255, 255, 255]
     },
@@ -844,7 +812,7 @@
         // ! Grid
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [80, 80, 80]
+        "border_color": [45, 45, 45]
     },
 
     {
@@ -879,11 +847,25 @@
         "content_margin": [8, 8]
     },
     {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_regex_selected.png",
+        "layer0.opacity": 0.8
+    },
+
+    {
         "class": "icon_case",
         "layer0.texture": "Theme - Gravity/icons/find_case.png",
         "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_case_selected.png",
+        "layer0.opacity": 0.8
+    },
+
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Gravity/icons/find_highlight.png",
@@ -891,11 +873,25 @@
         "content_margin": [8, 8]
     },
     {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_highlight_selected.png",
+        "layer0.opacity": 0.8
+    },
+
+    {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Gravity/icons/find_inselection.png",
         "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_inselection_selected.png",
+        "layer0.opacity": 0.8
+    },
+
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Gravity/icons/find_reverse.png",
@@ -903,11 +899,25 @@
         "content_margin": [8, 8]
     },
     {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_reverse_selected.png",
+        "layer0.opacity": 0.8
+    },
+
+    {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Gravity/icons/find_wholeword.png",
         "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_wholeword_selected.png",
+        "layer0.opacity": 0.8
+    },
+
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Gravity/icons/find_wrap.png",
@@ -915,11 +925,25 @@
         "content_margin": [8, 8]
     },
     {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/find_wrap_selected.png",
+        "layer0.opacity": 0.8
+    },
+
+    {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Gravity/icons/replace_preserve_case.png",
         "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/replace_preserve_case_selected.png",
+        "layer0.opacity": 0.8
+    },
+
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Gravity/icons/context.png",
@@ -927,10 +951,23 @@
         "content_margin": [8, 8]
     },
     {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/context_selected.png",
+        "layer0.opacity": 0.8
+    },
+
+    {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Gravity/icons/use_buffer.png",
         "layer0.opacity": 0.5,
         "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/icons/use_buffer_selected.png",
+        "layer0.opacity": 0.8
     },
 
     //
