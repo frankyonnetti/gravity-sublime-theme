@@ -1,4 +1,4 @@
-# Theme - Codex
+# Theme - Gravity
 
 ### My first [Sublime Text 3](http://www.sublimetext.com/3) UI theme is currently under development. 
 
