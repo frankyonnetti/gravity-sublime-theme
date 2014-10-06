@@ -43,10 +43,10 @@ Currently the only way to override the default *code folding icon* with the one 
 
 ## Syntax Color Scheme
 
-The Syntax Color Scheme in the screenshot is a port of Monokai-Sublime scheme.
+The syntax color scheme in each screenshot is a port of the Monokai-Sublime scheme created for Gravity.
 
-* [Download](https://s3.amazonaws.com/yonnetti-sublime/gravity/Monokai-Gravity.zip)  the `Monokai Gravity (SL).tmTheme` color theme and place it in the **"Packages"** directory.
-* Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
+Once you have Gravity installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
+
 
 ## Usage license
 
