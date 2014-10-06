@@ -2,7 +2,7 @@
 
 ### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme. 
 
-Created this UI theme using a port of the Default theme that comes with ST3. It was a great experence and I hope coders enjoy it as much as I did creating it. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
+Created this UI theme using a port of the Default theme that comes with ST3. It was a great experence and I hope coders enjoy it as much as I have creating it. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
 
 
 ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity-screenshot1.png)
@@ -16,7 +16,7 @@ The Gravity theme only works with Sublime Text 3, latest build. It hasn't been t
 ## Install using GIT
 
 * Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
-* Load up that directory in Termainal app; for example: `cd /Users/Library/Application Support/Sublime Text 3/Packages`
+* Load up that directory in Terminal app; for example: `cd /Users/Library/Application Support/Sublime Text 3/Packages`
 * Next, run this GIT command: `git clone git@github.com:frankyonnetti/gravity-sublime-theme.git"`
 
 
@@ -35,11 +35,10 @@ The Gravity theme only works with Sublime Text 3, latest build. It hasn't been t
 
 ## Replacing the default "fold" icon
 
-Currently the only way to override the default *code folding icon* with the one for Gravity you have to place the `Theme - Default` directory in the **"Packages"** directory.
+Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/fold.png)
 
 * Download the [directory with icon](https://s3.amazonaws.com/yonnetti-sublime/gravity/Theme-Default.zip) separately and place it in the **"Packages"** directory.
 * You can get there by using the menu item `Preferences > Browse Packages...`
-* The Gravity fold icon [ ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/fold.png) ]
 
 
 ## Syntax Color Scheme
