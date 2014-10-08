@@ -23,7 +23,7 @@
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 4]
+        "content_margin": [5, 0, 3, 4]
     },
     {
         "class": "tabset_control",
@@ -213,13 +213,13 @@
 
     {
         "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 8, 6],
-        "layer0.texture": "Theme - Gravity/assets/arrow_fold_right.png",
+        "content_margin": [9, 7, 13, 6],
+        "layer0.texture": "Theme - Gravity/assets/arrow_fold2_right.png",
         "layer0.opacity": 0.3,
         //"layer0.texture": "Theme - Gravity/assets/arrow_right.png",
         //"layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/assets/arrow_fold_right.png",
+        "layer1.texture": "Theme - Gravity/assets/arrow_fold2_right.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
     },
@@ -252,7 +252,7 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [45, 45, 45],
+        "layer0.tint": [43, 43, 43],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
