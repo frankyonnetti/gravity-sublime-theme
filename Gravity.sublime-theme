@@ -13,7 +13,7 @@
         "layer0.texture": "Theme - Gravity/assets/tabset_background.png",
         "layer0.inner_margin": [10, 0],
         "layer0.opacity": 1.0,
-        "content_margin": [0, 0, 0, 0],
+        "content_margin": [0, 0, 0, 4],
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
@@ -23,7 +23,7 @@
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 0]
+        "content_margin": [3, 0, 3, 4]
     },
     {
         "class": "tabset_control",
@@ -81,7 +81,7 @@
     {
         "class": "tab_label",
         "fade": false,
-        "fg": [98, 98, 98],
+        "fg": [121, 121, 121],
         "font.bold" : false,
         "font.size" : 12
     },
@@ -105,7 +105,7 @@
         // Tab close default settings
 
         "layer0.texture": "Theme - Gravity/assets/tab_close.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.25,
         "layer0.inner_margin": [0, 0],
 
         // Tab close hover settings
@@ -128,7 +128,7 @@
         "class": "tab_close_button",
         "attributes": ["hover"],
         "layer0.opacity": 0,
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.4
     },
 
     // Tab dirty button
@@ -783,10 +783,13 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Gravity/assets/arrow_fold_right.png",
-        "layer0.opacity": 0.4,
+        "layer0.texture": "Theme - Gravity/assets/arrow_right.png",
+        "layer0.opacity": 0.8,
+        //"layer0.texture": "Theme - Gravity/assets/arrow_fold_right.png",
+        //"layer0.opacity": 0.4,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/assets/arrow_fold_right.png",
+        "layer1.texture": "Theme - Gravity/assets/arrow_right_over.png",
+        //"layer1.texture": "Theme - Gravity/assets/arrow_fold_right.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
         "content_margin": [9, 7, 8, 6]
@@ -800,8 +803,10 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/assets/arrow_fold_down.png",
-        "layer1.texture": "Theme - Gravity/assets/arrow_fold_down.png"
+        "layer0.texture": "Theme - Gravity/assets/arrow_down.png",
+        "layer1.texture": "Theme - Gravity/assets/arrow_down_over.png"
+        //"layer0.texture": "Theme - Gravity/assets/arrow_fold_down.png",
+        //"layer1.texture": "Theme - Gravity/assets/arrow_fold_down.png"
     },
 
     //
