@@ -18,6 +18,7 @@ The Gravity theme only works with Sublime Text 3, latest build. It hasn't been t
 * Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
 * Load up that directory in Terminal app; for example: `cd /Users/Library/Application Support/Sublime Text 3/Packages`
 * Next, run this GIT command: `git clone git@github.com:frankyonnetti/gravity-sublime-theme.git"`
+* Rename the folder to `Theme - Gravity`
 
 
 ## Install manually
