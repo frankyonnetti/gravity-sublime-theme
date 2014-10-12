@@ -193,7 +193,7 @@
 
     {
         "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 6],
+        "content_margin": [9, 7, 8, 8],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold_left.png",
         "layer0.opacity": 0.3,
         //"layer0.texture": "Theme - Gravity/assets/arrow_left.png",
@@ -202,7 +202,7 @@
         "layer1.texture": "Theme - Gravity/assets/arrow_fold_left.png",
         //"layer1.texture": "Theme - Gravity/assets/arrow_left_over.png",
         "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0,
+        "layer1.inner_margin": 0
     },
     {
         "class": "scroll_tabs_left_button",
@@ -213,7 +213,7 @@
 
     {
         "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 13, 6],
+        "content_margin": [9, 7, 13, 8],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold2_right.png",
         "layer0.opacity": 0.3,
         //"layer0.texture": "Theme - Gravity/assets/arrow_right.png",
@@ -221,7 +221,7 @@
         "layer0.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/assets/arrow_fold2_right.png",
         "layer1.opacity": 0.0,
-        "layer1.inner_margin": 0,
+        "layer1.inner_margin": 0
     },
     {
         "class": "scroll_tabs_right_button",
@@ -232,7 +232,7 @@
 
     {
         "class": "show_tabs_dropdown_button",
-        "content_margin": [9, 7, 8, 6],
+        "content_margin": [9, 7, 8, 8],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold_down.png",
         "layer0.opacity": 0.3,
         "layer0.inner_margin": 0,
@@ -344,7 +344,7 @@
 
     {
         "class": "button_control",
-        "content_margin": [16, 8],
+        "content_margin": [16, 9],
         "min_size": [70, 0],
         "layer0.texture": "Theme - Gravity/assets/full_button.png",
         "layer0.opacity": 1.0,
@@ -405,18 +405,18 @@
 
     {
         "class": "dropdown_button_control",
-        "content_margin": [8, 8],
+        "content_margin": [8, 9],
         "layer0.texture": "Theme - Gravity/assets/down_arrow_inv.png",
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [4, 4,],
-        "layer1.texture": "Theme - Gravity/assets/down_arrow_inv_hover.png",
+        "layer0.opacity": 0.2,
+        "layer0.inner_margin": [4, 4],
+        "layer1.texture": "Theme - Gravity/assets/down_arrow_inv.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [4, 4],
     },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.3
     },
 
     //
@@ -669,11 +669,11 @@
         "layer0.texture": "Theme - Gravity/assets/status_bar.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 4, 4, 2]
+        "content_margin": [14, 4, 4, 3]
     },
     {
         "class": "status_container",
-        "content_margin": [0, 2, 0, 3],
+        "content_margin": [0, 2, 0, 2],
     },
     {
         "class": "status_button",
@@ -689,11 +689,21 @@
     // ! Quick Panel
     // ----------------------------------------------------------
 
+    // {
+    //     "class": "overlay_control",
+    //     "layer0.tint": [45, 45, 45],
+    //     "layer0.opacity": 1.0,
+    //     "content_margin": [3, 3, 3, 3]
+    // },
     {
         "class": "overlay_control",
-        "layer0.tint": [45, 45, 45],
+        "layer0.texture": "Theme - Gravity/assets/overlay_bg.png",
+        "layer0.inner_margin": [30, 30],
         "layer0.opacity": 1.0,
-        "content_margin": [3, 3, 3, 3]
+        "layer1.texture": "Theme - Gravity/assets/quick_panel_bg.png",
+        "layer1.inner_margin": [30, 0, 20, 20],
+        "layer1.opacity": 1.0,
+        "content_margin": [16, 3, 16, 22]
     },
     {
         "class": "quick_panel",
@@ -703,7 +713,7 @@
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [34, 34, 34],
+        "layer0.tint": [45, 45, 45],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
         "layer1.tint": [30, 30, 30],
@@ -719,7 +729,7 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [207, 207, 207, 255],
+        "fg": [182, 182, 182, 255],
         "match_fg": [59, 166, 219, 255],
         "selected_fg": [200, 200, 200, 255],
         "selected_match_fg": [255, 255, 255, 255]
@@ -741,7 +751,7 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [36, 36, 36],
+        "layer0.tint": [45, 45, 45],
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
