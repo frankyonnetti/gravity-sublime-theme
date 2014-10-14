@@ -1,10 +1,4 @@
 [
-    //
-    // Colors
-    // Blue: [75, 116, 145]
-    // ----------------------------------------------------------
-
-
     // ! Tabs
     // ----------------------------------------------------------
 
@@ -232,7 +226,7 @@
 
     {
         "class": "show_tabs_dropdown_button",
-        "content_margin": [9, 7, 8, 8],
+        "content_margin": [14, 7, 10, 8],
         "layer0.texture": "Theme - Gravity/assets/arrow_fold_down.png",
         "layer0.opacity": 0.3,
         "layer0.inner_margin": 0,
@@ -265,15 +259,14 @@
         "indent_offset": 17,
         "indent_top_level": false,
         "layer0.tint": [45, 45, 45],
-        "layer0.opacity": 1.0,
-        "dark_content": false
+        "layer0.opacity": 1.0
     },
     {
         "class": "sidebar_heading",
         "color": [169, 169, 169],
-        "font.bold": true,
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, -1]
+        "font.bold": true
+        //"shadow_color": [0, 0, 0],
+        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_heading",
@@ -723,14 +716,14 @@
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [75, 116, 145],
+        "layer0.tint": [76, 121, 153],
         "layer1.opacity": 0.0
     },
     {
         "class": "quick_panel_label",
         "fg": [182, 182, 182, 255],
         "match_fg": [59, 166, 219, 255],
-        "selected_fg": [200, 200, 200, 255],
+        "selected_fg": [255, 255, 255, 255],
         "selected_match_fg": [255, 255, 255, 255]
     },
     {
