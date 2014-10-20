@@ -2,7 +2,7 @@
 
 ### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme. 
 
-Created this UI theme using a port of the Default theme that comes with ST3. It was a great experence and I hope coders enjoy it as much as I have creating it. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
+Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
 
 
 ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity-screenshot1-no4.png)
