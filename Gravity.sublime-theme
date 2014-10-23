@@ -11,7 +11,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        "tab_height": 36,
+        "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -246,7 +246,7 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [38, 38, 38],
+        "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
