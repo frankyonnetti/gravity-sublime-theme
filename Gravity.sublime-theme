@@ -653,7 +653,7 @@
         "class": "panel_control",
         "layer0.texture": "Theme - Gravity/assets/panel_control_bg.png",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [0, 1],
+        "content_margin": [1, 2],
         "layer0.opacity": 1.0
     },
     {
