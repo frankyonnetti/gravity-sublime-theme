@@ -5,12 +5,10 @@
 Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
 
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity-screenshot1-no4.png)
-
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity-screenshot2-no4.png)
+![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity-screenshot-no6.png)
 
 
-The Gravity theme has only works with Sublime Text 3, latest build. It hasn't been tested on earlier builds.
+The Gravity theme only works with Sublime Text 3, latest build. It hasn't been tested on earlier builds.
 
 ## Install using Package Control
 
