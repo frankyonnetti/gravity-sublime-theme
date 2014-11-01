@@ -634,7 +634,7 @@
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/assets/input_field.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [10, 14],
+        "content_margin": [7, 11, 7, 10]
     },
     {
         "class": "text_line_control",
@@ -650,7 +650,7 @@
         "class": "panel_control",
         "layer0.texture": "Theme - Gravity/assets/panel_control_bg.png",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [1, 2],
+        "content_margin": [5, 7, 10 , 7],
         "layer0.opacity": 1.0
     },
     {
@@ -658,7 +658,7 @@
         "layer0.texture": "Theme - Gravity/assets/status_bar.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 4, 4, 3]
+        "content_margin": [14, 5, 4, 4]
     },
     {
         "class": "status_container",
