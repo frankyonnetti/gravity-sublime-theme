@@ -766,7 +766,7 @@
 
     {
         "class": "sheet_container_control",
-        "layer0.tint": [64, 64, 64],
+        "layer0.tint": [50, 50, 50],
         "layer0.opacity": 1.0
     },
 
