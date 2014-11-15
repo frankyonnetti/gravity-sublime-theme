@@ -42,17 +42,28 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 
 ## Replacing the default "fold" icon
 
-Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/fold.png)
+Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: 
+
+![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/fold.png)
 
 * Download the [directory with icon](https://s3.amazonaws.com/yonnetti-sublime/gravity/Theme-Default.zip) separately and place it in the **"Packages"** directory.
 * You can get there by using the menu item `Preferences > Browse Packages...`
 
 
-## Syntax Color Scheme
+## Syntax color scheme
 
 The syntax color scheme in each screenshot is a port of the Monokai-Sublime scheme created for Gravity.
 
 Once you have Gravity installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
+
+
+## App icon
+
+Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-sublime/gravity/GravityAppIcons.zip) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
+
+To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
+
+![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-white.png) ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-orange.png)
 
 
 ## Usage license
