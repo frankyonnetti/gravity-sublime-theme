@@ -256,7 +256,7 @@
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
-        "layer0.tint": [50, 50, 50],
+        "layer0.tint": [50, 50, 50], // [235, 235, 235] gray sidebar
         "layer0.opacity": 1.0
     },
     {

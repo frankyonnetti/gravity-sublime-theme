@@ -59,11 +59,11 @@ Once you have Gravity installed, you can select the scheme by using the menu ite
 
 ## App icon
 
-Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-sublime/gravity/GravityAppIcons.zip) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
+Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-sublime/gravity/Gravity-App-Icons-101.zip) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
 
 To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-white.png) ![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-orange.png)
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-orange-101.png" width="128" height="128">
 
 
 ## Usage license
