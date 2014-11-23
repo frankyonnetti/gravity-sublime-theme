@@ -244,7 +244,7 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [40, 40, 40],
+        "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 0, 0],
@@ -256,7 +256,7 @@
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
-        "layer0.tint": [50, 50, 50], // [235, 235, 235] gray sidebar
+        "layer0.tint": [45, 45, 45], // [235, 235, 235] gray sidebar
         "layer0.opacity": 1.0
     },
     {
@@ -323,7 +323,7 @@
 
     {
         "class": "label_control",
-        "color": [96, 96, 96]
+        "color": [127, 127, 127],
         //"shadow_color": [200, 200, 200],
         //"shadow_offset": [0, 1]
     },
@@ -628,6 +628,7 @@
 
     //
     // ! Text field
+    //   text color bg: Widget - Gravity.stTheme line: 13
     // ----------------------------------------------------------
 
     {
