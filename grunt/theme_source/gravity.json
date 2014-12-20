@@ -61,7 +61,7 @@
     {
         "class": "button_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/full_button.png",
-        "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"]
+        "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"
     },
 
     //
