@@ -1,6 +1,203 @@
     // Gravity UI
 
     {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        //"layer0.tint": [74, 101, 117, 255], // flat blue
+        "layer0.tint": [93, 93, 93]
+    },
+
+    //
+    // ! Sidebar
+    // ----------------------------------------------------------
+
+    {
+        "class": "sidebar_container",
+        "layer0.tint": [30, 30, 30],
+        "content_margin": [0, 0, 1, 0]
+    },
+    {
         "class": "sidebar_tree",
         "layer0.tint": [45, 45, 45]
+    },
+    {
+        "class": "sidebar_heading",
+        "color": [169, 169, 169]
+    },
+    {
+        "class": "sidebar_label",
+        "color": [207, 207, 207]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [255, 255, 255]
+        //"settings": ["bold_folder_labels"],
+        //"color": [207, 207, 207]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "color": [170, 170, 170],
+        //"settings": ["bold_folder_labels"]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
+        //"settings": ["bold_folder_labels"],
+        "color": [221, 221, 221]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+        //"settings": ["bold_folder_labels"],
+        "color": [170, 170, 170]
+    },
+
+    //
+    // ! Buttons
+    // ----------------------------------------------------------
+
+    {
+        "class": "button_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/full_button.png",
+        "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"]
+    },
+
+    //
+    // ! Small Find Icon Buttons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_button_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/middle_button.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/left_button.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/right_button.png"
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/mini_button.png"
+    },
+
+    //
+    // ! Scrollbars
+    // ----------------------------------------------------------
+
+    {
+        "class": "scroll_bar_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_vertical.png"
+    },
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_horizontal.png"
+    },
+    {
+        "class": "scroll_corner_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_corner.png"
+    },
+    {
+        "class": "puck_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_vertical.png"
+    },
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_horizontal.png"
+    },
+
+    //
+    // ! Status bar
+    // ----------------------------------------------------------
+
+    {
+        "class": "panel_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/panel_control_bg.png"
+    },
+    {
+        "class": "status_bar",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png"
+    },
+
+    //
+    // ! Popup Control
+    // ----------------------------------------------------------
+
+    {
+        "class": "disclosure_button_control",
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_right.png",
+        "layer0.opacity": 0.4,
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_right.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "disclosure_button_control",
+        "parents":
+        [
+            { "class": "tree_row", "attributes": ["hover"] }
+        ],
+        // "attributes": ["hover"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 0.4
+    },
+    {
+        "class": "disclosure_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_down.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_down.png"
+    },
+
+    //
+    // ! file and folder icons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_file_type",
+        // layer0.texture is filled in by code with the relevant icon name
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "icon_file_type",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "icon_file_type",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.opacity": 0.9
+    },
+    {
+        "class": "icon_folder",
+        "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
+        "layer0.opacity": 0.5
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.opacity": 0.5
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        //"layer0.texture": "Theme - Gravity/Gravity/icons/folder_open.png",
+        "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
+    },
+    {
+        "class": "icon_folder_dup",
+        "layer0.texture": "Theme - Gravity/Gravity/icons/folder_dup.png",
+        "layer0.opacity": 0.5
     },

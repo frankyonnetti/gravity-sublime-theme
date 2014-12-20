@@ -14,11 +14,11 @@ module.exports = function(grunt) {
       },
       gravity: {
         src: ['theme_source/base.json', 'theme_source/gravity.json'],
-        dest: 'export/Gravity.sublime-theme',
+        dest: '../Gravity/Gravity.sublime-theme',
       },
       reverse: {
         src: ['theme_source/base.json', 'theme_source/r_gravity.json'],
-        dest: 'export/Reverse Gravity.sublime-theme',
+        dest: '../Reverse Gravity/Reverse Gravity.sublime-theme',
       },
     },
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       },
       concat: {
         files: ['theme_source/*.json'],
-        tasks: ['concat', 'notify:concat'],
+        tasks: ['concat'], //'notify:concat'
       },
     },
 
