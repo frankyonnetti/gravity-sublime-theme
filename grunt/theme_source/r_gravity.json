@@ -1,9 +1,120 @@
     // Reverse Gravity UI
 
+    //
+    // ! Global Label control
+    // ----------------------------------------------------------
+
+    {
+        "class": "label_control",
+        "color": [88, 88, 88]
+    },
     {
         "class": "tree_row",
         "attributes": ["selected"],
         "layer0.tint": [206, 206, 206]
+    },
+
+    // ! Tabs
+    // ----------------------------------------------------------
+
+    {
+        "class": "tabset_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tabset_background.png"
+    },
+    {
+        "class": "tab_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_inactive.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active.png"
+    },
+    {
+        // ! Tab labels
+        "class": "tab_label",
+        "fg": [102, 102, 102],
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "fg": [51, 51, 51]
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [51, 51, 51]
+    },
+    {
+        // ! Tab close button
+        "class": "tab_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_close.png",
+        "layer0.opacity": 0.7,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_close_hover.png",
+        "layer1.opacity": 0
+    },
+        {
+        // ! Tab close button hover
+        "class": "tab_close_button",
+        "attributes": ["hover"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+    {
+        // ! Tab dirty button
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_dirty.png",
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0
+    },
+    {
+        // ! Tab dirty button hover
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "attributes": ["hover"],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_dirty_hover.png",
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+
+    // ! -- Tab set scroll left scroll right
+
+    {
+        "class": "scroll_tabs_left_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
+        "layer1.opacity": 0
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
     },
 
     //
@@ -83,6 +194,18 @@
         "attributes": ["left", "right"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/mini_button.png"
     },
+    {
+        "class": "dropdown_button_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/down_arrow_inv.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/down_arrow_inv.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
 
     //
     // ! Scrollbars
@@ -112,6 +235,16 @@
     },
 
     //
+    // ! Text field
+    //   text color bg: Widget - Gravity.stTheme line: 13
+    // ----------------------------------------------------------
+
+    {
+        "class": "text_line_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field.png"
+    },
+
+    //
     // ! Status bar
     // ----------------------------------------------------------
 
@@ -129,10 +262,23 @@
     // ----------------------------------------------------------
 
     {
+        "class": "tool_tip_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tool_tip_background.png",
+    },
+    {
+        "class": "tool_tip_label_control",
+        "color": [255, 255, 255, 240]
+    },
+
+    //
+    // ! Close button
+    // ----------------------------------------------------------
+
+    {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_right.png",
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_right.png",
         "layer1.opacity": 1.0
     },
     {
@@ -147,8 +293,152 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
-        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_down.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_down.png"
+    },
+
+    {
+        "class": "close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/dirty_close_indicator.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "panel_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.7
+    },
+
+    //
+    // ! icons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_case.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_case_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_highlight.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_highlight_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_inselection.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_inselection_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_reverse",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_reverse.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_reverse_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wholeword.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wholeword_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wrap.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wrap_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/replace_preserve_case.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/replace_preserve_case_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/context.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/context_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/use_buffer.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/use_buffer_selected.png",
+        "layer0.opacity": 1.0
     },
 
     //

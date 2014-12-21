@@ -5,7 +5,6 @@
 
     {
         "class": "tabset_control",
-        "layer0.texture": "Theme - Gravity/shared_assets/tabset_background.png",
         "layer0.inner_margin": [10, 0],
         "layer0.opacity": 1.0,
         "content_margin": 0,
@@ -25,129 +24,49 @@
         "settings": ["mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
-
     {
         "class": "tab_control",
         "content_margin": [12, 3, 12, 3],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_inactive.png",
         "layer0.inner_margin": [5, 5],
         "layer0.opacity": 1.0
     },
-
-    // ! -- Tab close state
-
     {
+        // ! Tab close state
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
         "content_margin": [22, 3, 7, 3]
     },
-
-    // Tab hover state
-
-    // {
-    //     "class": "tab_control",
-    //     "attributes": ["hover"],
-    //     "layer0.texture": "Theme - Gravity/shared_assets/tab_hover.png"
-    // },
-
-    // ! -- Tab active state
-
     {
-        "class": "tab_control",
-        "attributes": ["selected"],
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_active.png"
-    },
-
-    // ! -- Tab dirty state (close button hidden)
-
-    {
+        // ! Tab dirty state (close button hidden)
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "attributes": ["dirty"],
         "content_margin": [12, 3, 7, 3]
     },
-
-    // ! -- Tab labels
-
     {
+        // ! Tab labels
         "class": "tab_label",
         "fade": false,
-        "fg": [174, 174, 174],
+        // "fg": [174, 174, 174],
         "font.bold" : false,
         "font.size" : 12
     },
     {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [221, 221, 221]
-    },
-    {
-        "class": "tab_label",
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [221, 221, 221]
-    },
-
-    // ! -- Tab close button
-
-    {
+        // ! Tab close button
         "class": "tab_close_button",
         "content_margin": [0, 0],
-
-        // Tab close default settings
-
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_close.png",
-        "layer0.opacity": 0.25,
         "layer0.inner_margin": [0, 0],
-
-        // Tab close hover settings
-
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_close_hover.png",
-        "layer1.opacity": 0
     },
-
-    // ! -- Tab button size
-
     {
+        // ! Tab button size
         "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
         "content_margin": [8, 8]
     },
-
-    // ! -- Tab close button hover
-
     {
-        "class": "tab_close_button",
-        "attributes": ["hover"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 0.2
-    },
-
-    // ! -- Tab dirty button
-
-    {
-        "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty.png",
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0
-    },
-
-    // ! -- Tab dirty button hover
-
-    {
-        "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "attributes": ["hover"],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_hover.png",
-        "layer0.opacity": 0,
-        "layer1.opacity": 1.0
-    },
-
-    // ! -- Tab dirty button active
-
-    {
+        // ! Tab dirty button active
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
         "attributes": ["selected"],
@@ -155,20 +74,17 @@
         "layer1.opacity": 0
     },
 
-    // Tab close button hidden with highlight modified flag true
+    // !-- Tab close button hidden with highlight modified flag true
 
     {
-        // Tab dirty state (close button hidden)
-
+        // ! Tab dirty state (close button hidden)
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "attributes": ["dirty"],
         "content_margin": [22, 6, 15, 4]
     },
-
-    // Tab dirty button (close button hidden)
-
     {
+        // ! Tab dirty button (close button hidden)
         "class": "tab_close_button",
         "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -187,56 +103,20 @@
     {
         "class": "scroll_tabs_left_button",
         "content_margin": [9, 7, 8, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_left.png",
-        "layer0.opacity": 0.3,
-        //"layer0.texture": "Theme - Gravity/shared_assets/arrow_left.png",
-        //"layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_left.png",
-        //"layer1.texture": "Theme - Gravity/shared_assets/arrow_left.png",
-        "layer1.opacity": 0.0,
         "layer1.inner_margin": 0
     },
-    {
-        "class": "scroll_tabs_left_button",
-        "attributes": ["hover"],
-        //"layer1.opacity": 1.0
-        "layer1.opacity": 0.8
-    },
-
     {
         "class": "scroll_tabs_right_button",
         "content_margin": [9, 7, 13, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold2_right.png",
-        "layer0.opacity": 0.3,
-        //"layer0.texture": "Theme - Gravity/shared_assets/arrow_right.png",
-        //"layer0.opacity": 1.0,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold2_right.png",
-        "layer1.opacity": 0.0,
         "layer1.inner_margin": 0
     },
     {
-        "class": "scroll_tabs_right_button",
-        "attributes": ["hover"],
-        //"layer1.opacity": 1.0
-        "layer1.opacity": 0.8
-    },
-
-    {
         "class": "show_tabs_dropdown_button",
         "content_margin": [14, 7, 10, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
-        "layer0.opacity": 0.3,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
-        "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
-    },
-    {
-        "class": "show_tabs_dropdown_button",
-        "attributes": ["hover"],
-        "layer1.opacity": 0.8
     },
 
     //
@@ -245,11 +125,9 @@
 
     {
         "class": "sidebar_container",
-        // "layer0.tint": [30, 30, 30], **
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
-        "layer0.inner_margin": [0, 0, 0, 0],
-        // "content_margin": [0, 0, 1, 0] **
+        "layer0.inner_margin": [0, 0, 0, 0]
     },
     {
         "class": "sidebar_tree",
@@ -257,12 +135,10 @@
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
-        // "layer0.tint": [45, 45, 45], **
         "layer0.opacity": 1.0
     },
     {
         "class": "sidebar_heading",
-        // "color": [169, 169, 169], **
         "font.bold": true
         //"shadow_color": [0, 0, 0],
         //"shadow_offset": [0, -1]
@@ -274,7 +150,6 @@
     },
     {
         "class": "sidebar_label",
-        // "color": [207, 207, 207], **
         "font.bold": false,
         "font.italic": false
         //"shadow_color": [0, 0, 0],
@@ -294,17 +169,6 @@
     },
 
     //
-    // ! Global Label control
-    // ----------------------------------------------------------
-
-    {
-        "class": "label_control",
-        "color": [127, 127, 127],
-        //"shadow_color": [200, 200, 200],
-        //"shadow_offset": [0, 1]
-    },
-
-    //
     // ! Buttons
     // ----------------------------------------------------------
 
@@ -312,13 +176,10 @@
         "class": "button_control",
         "content_margin": [16, 10, 16, 9],
         "min_size": [70, 0],
-        // "layer0.texture": "Theme - Gravity/shared_assets/full_button.png", **
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
-        // "layer1.texture": "Theme - Gravity/shared_assets/full_button_indented.png", **
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [10, 10]
-        // "layer2.texture": "Theme - Gravity/shared_assets/full_button_hover.png", **
         // "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
         // "layer2.inner_margin": [10, 10]
     },
@@ -345,7 +206,6 @@
 
     {
         "class": "icon_button_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/middle_button.png", **
         "layer0.inner_margin": [6, 6],
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
@@ -353,19 +213,16 @@
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        // "layer0.texture": "Theme - Gravity/shared_assets/left_button.png", **
         "layer0.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        // "layer0.texture": "Theme - Gravity/shared_assets/right_button.png", **
         "layer0.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        // "layer0.texture": "Theme - Gravity/shared_assets/mini_button.png", **
         "layer0.opacity": 1.0,
         "layer0.draw_center": true
     },
@@ -373,17 +230,8 @@
     {
         "class": "dropdown_button_control",
         "content_margin": [8, 9],
-        "layer0.texture": "Theme - Gravity/shared_assets/down_arrow_inv.png",
-        "layer0.opacity": 0.2,
         "layer0.inner_margin": [4, 4],
-        "layer1.texture": "Theme - Gravity/shared_assets/down_arrow_inv.png",
-        "layer1.opacity": 0.0,
-        "layer1.inner_margin": [4, 4],
-    },
-    {
-        "class": "dropdown_button_control",
-        "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.inner_margin": [4, 4]
     },
 
     //
@@ -392,7 +240,6 @@
 
     {
         "class": "scroll_bar_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/normal_bar_vertical.png", **
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [0, 6],
         "blur": true
@@ -400,20 +247,17 @@
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        // "layer0.texture": "Theme - Gravity/shared_assets/normal_bar_horizontal.png", **
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 0],
         "blur": false
     },
     {
         "class": "scroll_corner_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/normal_bar_corner.png", **
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [1, 1]
     },
     {
         "class": "puck_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/normal_thumb_vertical.png", **
         "layer0.opacity": 0.2,
         "layer0.inner_margin": [0, 10],
         "content_margin": [8, 12],
@@ -422,7 +266,6 @@
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        // "layer0.texture": "Theme - Gravity/shared_assets/normal_thumb_horizontal.png", **
         "layer0.opacity": 0.2,
         "layer0.inner_margin": [10, 0],
         "content_margin": [12, 8],
@@ -483,22 +326,13 @@
     },
     {
         "class": "tool_tip_control",
-        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background.png",
         "layer0.inner_margin": [2, 2],
         "layer0.opacity": 1.0,
         "content_margin": [10, 5]
     },
     {
-        "class": "tool_tip_label_control",
-        "color": [255, 255, 255, 140]
-    },
-    {
         "class": "disclosure_button_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/arrow_right.png", **
-        // "layer0.opacity": 0.4, **
         "layer0.inner_margin": 0,
-        // "layer1.texture": "Theme - Gravity/shared_assets/arrow_right.png", **
-        // "layer1.opacity": 0.0, **
         "layer1.inner_margin": 0,
         "content_margin": [9, 7, 8, 6]
     },
@@ -521,7 +355,6 @@
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        // "layer0.tint": [93, 93, 93], **
         "layer0.opacity": 1.0
     },
 
@@ -531,41 +364,17 @@
 
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Gravity/shared_assets/close_x.png",
-        "layer0.opacity": 0.3,
         "layer0.inner_margin": 0,
         "content_margin": [8, 8]
     },
     {
-        "class": "close_button",
-        "attributes": ["dirty"],
-        "layer0.texture": "Theme - Gravity/shared_assets/dirty_close_indicator.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "close_button",
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Gravity/shared_assets/close_x_hover.png",
-        "layer0.opacity": 0.3
-    },
-
-    {
         "class": "panel_close_button",
-        "layer0.texture": "Theme - Gravity/shared_assets/close_x.png",
-        "layer0.opacity": 0.3,
         "content_margin": [8, 8]
-    },
-    {
-        "class": "panel_close_button",
-        "layer0.texture": "Theme - Gravity/shared_assets/close_x_hover.png",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.3
     },
 
     //
     // ! Minimap
     // ----------------------------------------------------------
-
 
     {
         "class": "minimap_control",
@@ -584,7 +393,6 @@
 
     {
         "class": "text_line_control",
-        "layer0.texture": "Theme - Gravity/shared_assets/input_field.png",
         "layer0.opacity": 1.0,
         "content_margin": [7, 11, 7, 10]
     },
@@ -600,14 +408,12 @@
 
     {
         "class": "panel_control",
-        // "layer0.texture": "Theme - Gravity/shared_assets/panel_control_bg.png", **
         "layer0.inner_margin": [2, 12, 2, 2],
         "content_margin": [5, 7, 10 , 7],
         "layer0.opacity": 1.0
     },
     {
         "class": "status_bar",
-        // "layer0.texture": "Theme - Gravity/shared_assets/status_bar.png", **
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [14, 3, 4, 2]
@@ -728,13 +534,10 @@
 
     {
         "class": "fold_button_control",
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_right.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
         "layer0.opacity": 0.3,
-        //"layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
-        //"layer0.opacity": 0.4,
         "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_right.png",
-        //"layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
         "content_margin": [9, 7, 8, 6]
@@ -748,10 +551,8 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_down.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_down.png"
-        //"layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
-        //"layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
     },
 
     //
@@ -792,133 +593,43 @@
 
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_regex.png",
-        "layer0.opacity": 0.5,
-        "content_margin": [8, 8]
-    },
-    {
-        "class": "icon_regex",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_regex_selected.png",
-        "layer0.opacity": 0.8,
-        "content_margin": [8, 8]
-    },
-
-    {
-        "class": "icon_case",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_case.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_case_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_highlight",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_highlight.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_highlight_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_in_selection",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_inselection.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_in_selection",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_inselection_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_reverse",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_reverse.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_reverse",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_reverse_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_whole_word",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_wholeword.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_wholeword_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_wrap",
-        "layer0.texture": "Theme - Gravity/shared_icons/find_wrap.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/find_wrap_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Gravity/shared_icons/replace_preserve_case.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/replace_preserve_case_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_context",
-        "layer0.texture": "Theme - Gravity/shared_icons/context.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/context_selected.png",
-        "layer0.opacity": 0.8
-    },
-
-    {
-        "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Gravity/shared_icons/use_buffer.png",
-        "layer0.opacity": 0.5,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
-        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/shared_icons/use_buffer_selected.png",
-        "layer0.opacity": 0.8
+        "content_margin": [8, 8]
     },
 
     //
@@ -963,10 +674,121 @@
 
     // Reverse Gravity UI
 
+    //
+    // ! Global Label control
+    // ----------------------------------------------------------
+
+    {
+        "class": "label_control",
+        "color": [88, 88, 88]
+    },
     {
         "class": "tree_row",
         "attributes": ["selected"],
         "layer0.tint": [206, 206, 206]
+    },
+
+    // ! Tabs
+    // ----------------------------------------------------------
+
+    {
+        "class": "tabset_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tabset_background.png"
+    },
+    {
+        "class": "tab_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_inactive.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active.png"
+    },
+    {
+        // ! Tab labels
+        "class": "tab_label",
+        "fg": [102, 102, 102],
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+        "fg": [51, 51, 51]
+    },
+    {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "fg": [51, 51, 51]
+    },
+    {
+        // ! Tab close button
+        "class": "tab_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_close.png",
+        "layer0.opacity": 0.7,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_close_hover.png",
+        "layer1.opacity": 0
+    },
+        {
+        // ! Tab close button hover
+        "class": "tab_close_button",
+        "attributes": ["hover"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+    {
+        // ! Tab dirty button
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_dirty.png",
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0
+    },
+    {
+        // ! Tab dirty button hover
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "attributes": ["hover"],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/tab_dirty_hover.png",
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+
+    // ! -- Tab set scroll left scroll right
+
+    {
+        "class": "scroll_tabs_left_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
+        "layer1.opacity": 0
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
     },
 
     //
@@ -1046,6 +868,18 @@
         "attributes": ["left", "right"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/mini_button.png"
     },
+    {
+        "class": "dropdown_button_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/down_arrow_inv.png",
+        "layer0.opacity": 0.8,
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/down_arrow_inv.png",
+        "layer1.opacity": 0.0
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer1.opacity": 1.0
+    },
 
     //
     // ! Scrollbars
@@ -1075,6 +909,16 @@
     },
 
     //
+    // ! Text field
+    //   text color bg: Widget - Gravity.stTheme line: 13
+    // ----------------------------------------------------------
+
+    {
+        "class": "text_line_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field.png"
+    },
+
+    //
     // ! Status bar
     // ----------------------------------------------------------
 
@@ -1092,10 +936,23 @@
     // ----------------------------------------------------------
 
     {
+        "class": "tool_tip_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tool_tip_background.png",
+    },
+    {
+        "class": "tool_tip_label_control",
+        "color": [255, 255, 255, 240]
+    },
+
+    //
+    // ! Close button
+    // ----------------------------------------------------------
+
+    {
         "class": "disclosure_button_control",
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_right.png",
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_right.png",
         "layer1.opacity": 1.0
     },
     {
@@ -1110,8 +967,152 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
-        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_down.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_down.png"
+    },
+
+    {
+        "class": "close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/dirty_close_indicator.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        "class": "panel_close_button",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.7
+    },
+
+    //
+    // ! icons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_regex",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_regex",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_case",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_case.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_case_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_highlight",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_highlight.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_highlight",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_highlight_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_in_selection",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_inselection.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_in_selection",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_inselection_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_reverse",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_reverse.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_reverse",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_reverse_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_whole_word",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wholeword.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_whole_word",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wholeword_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_wrap",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wrap.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_wrap",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wrap_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_preserve_case",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/replace_preserve_case.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_preserve_case",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/replace_preserve_case_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_context",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/context.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_context",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/context_selected.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_use_buffer",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/use_buffer.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/use_buffer_selected.png",
+        "layer0.opacity": 1.0
     },
 
     //
