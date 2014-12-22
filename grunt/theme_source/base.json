@@ -650,14 +650,14 @@
         {
             "keyframes":
             [
-                "Theme - Gravity/shared_icons/spinner7.png",
-                "Theme - Gravity/shared_icons/spinner6.png",
-                "Theme - Gravity/shared_icons/spinner5.png",
-                "Theme - Gravity/shared_icons/spinner4.png",
-                "Theme - Gravity/shared_icons/spinner3.png",
-                "Theme - Gravity/shared_icons/spinner2.png",
-                "Theme - Gravity/shared_icons/spinner1.png",
-                "Theme - Gravity/shared_icons/spinner.png",
+                "Theme - Gravity/shared_assets/spinner7.png",
+                "Theme - Gravity/shared_assets/spinner6.png",
+                "Theme - Gravity/shared_assets/spinner5.png",
+                "Theme - Gravity/shared_assets/spinner4.png",
+                "Theme - Gravity/shared_assets/spinner3.png",
+                "Theme - Gravity/shared_assets/spinner2.png",
+                "Theme - Gravity/shared_assets/spinner1.png",
+                "Theme - Gravity/shared_assets/spinner.png",
             ],
             "loop": true,
             "frame_time": 0.075,
