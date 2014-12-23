@@ -19,6 +19,23 @@
 
     {
         "class": "tabset_control",
+        "tab_height": 31
+    },
+    {
+        // ! Tab close state
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [22, 1, 7, 1]
+    },
+    {
+        // ! Tab dirty state (close button hidden)
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [12, 1, 7, 1]
+    },
+    {
+        "class": "tabset_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tabset_background.png"
     },
     {
@@ -226,12 +243,14 @@
     },
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_vertical.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_vertical.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_horizontal.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_horizontal.png",
+        "layer0.opacity": 1.0
     },
 
     //
@@ -255,6 +274,54 @@
     {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/status_bar.png"
+    },
+
+    //
+    // ! Quick Panel
+    // ----------------------------------------------------------
+
+    {
+        "class": "overlay_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bg.png",
+        "content_margin": [19, 5, 19, 25]
+    },
+    {
+        // super + p
+        "class": "quick_panel_row",
+        "layer0.tint": [252, 252, 252],
+        "layer1.tint": [252, 252, 252],
+    },
+    {
+        // super + p
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [67, 152, 250] // blue
+    },
+    {
+        "class": "quick_panel_label",
+        "fg": [53, 53, 53, 255],
+        "match_fg": [59, 166, 219, 255], // blue
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [166, 229, 255, 255] // color change while typing
+    },
+    {
+        "class": "quick_panel_path_label",
+        "fg": [153, 153, 153, 100],
+        "match_fg": [153, 153, 153, 255],
+        "selected_fg": [166, 229, 255, 100],
+        "selected_match_fg": [255, 255, 255, 255]
+    },
+
+    // ! Mini quick panel
+
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.tint": [252, 252, 252]
+    },
+    {
+        "class": "mini_quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [67, 152, 250] // blue
     },
 
     //
