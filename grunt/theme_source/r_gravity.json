@@ -325,19 +325,6 @@
     },
 
     //
-    // ! Popup Control
-    // ----------------------------------------------------------
-
-    {
-        "class": "tool_tip_control",
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tool_tip_background.png",
-    },
-    {
-        "class": "tool_tip_label_control",
-        "color": [255, 255, 255, 240]
-    },
-
-    //
     // ! Close button
     // ----------------------------------------------------------
 
@@ -400,7 +387,7 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_regex",
@@ -411,7 +398,7 @@
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_case.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_case",
@@ -422,7 +409,7 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_highlight.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_highlight",
@@ -433,7 +420,7 @@
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_inselection.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_in_selection",
@@ -444,7 +431,7 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_reverse.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_reverse",
@@ -455,7 +442,7 @@
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wholeword.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_whole_word",
@@ -466,7 +453,7 @@
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_wrap.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_wrap",
@@ -477,7 +464,7 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/replace_preserve_case.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_preserve_case",
@@ -488,7 +475,7 @@
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/context.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_context",
@@ -499,7 +486,7 @@
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/use_buffer.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_use_buffer",

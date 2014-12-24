@@ -35,7 +35,6 @@
         // ! Tab labels
         "class": "tab_label",
         "fade": false,
-        // "fg": [174, 174, 174],
         "font.bold" : false,
         "font.size" : 12
     },
@@ -311,8 +310,13 @@
     {
         "class": "tool_tip_control",
         "layer0.inner_margin": [2, 2],
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background.png",
         "layer0.opacity": 1.0,
         "content_margin": [10, 5]
+    },
+    {
+        "class": "tool_tip_label_control",
+        "color": [51, 51, 51, 255]
     },
     {
         "class": "disclosure_button_control",
@@ -328,16 +332,6 @@
     },
     {
         "class": "table_row",
-        "attributes": ["selected"],
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "tree_row",
-        "layer0.opacity": 0.0,
-        "layer0.inner_margin": [1, 1]
-    },
-    {
-        "class": "tree_row",
         "attributes": ["selected"],
         "layer0.opacity": 1.0
     },
@@ -468,16 +462,16 @@
     {
         "class": "auto_complete",
         "row_padding": [5, 5],
-        "layer0.tint": [33, 33, 33],
+        "layer0.tint": [246, 246, 246],
         "layer0.opacity": 1.0
     },
     {
         "class": "auto_complete_label",
-        "fg": [140, 140, 140],
-        "match_fg": [255, 255, 255],
+        "fg": [153, 153, 153],
+        "match_fg": [0, 0, 0],
         "bg": [26, 26, 26],
         "selected_fg": [255, 255, 255],
-        "selected_match_fg": [255, 255, 255],
+        "selected_match_fg": [0, 0, 0],
         "selected_bg": [85, 85, 85]
     },
 

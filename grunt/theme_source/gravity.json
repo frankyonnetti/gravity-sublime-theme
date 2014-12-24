@@ -105,7 +105,7 @@
         "layer1.opacity": 1.0
     },
 
-    // ! -- Tab set scroll left scroll right
+    // ! Tab set scroll left scroll right
 
     {
         "class": "scroll_tabs_left_button",
@@ -227,14 +227,14 @@
     {
         "class": "dropdown_button_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/down_arrow_inv.png",
-        "layer0.opacity": 0.2,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Gravity/assets/down_arrow_inv.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "dropdown_button_control",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.4
     },
 
     //
@@ -336,19 +336,6 @@
     },
 
     //
-    // ! Popup Control
-    // ----------------------------------------------------------
-
-    {
-        "class": "tool_tip_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tool_tip_background.png",
-    },
-    {
-        "class": "tool_tip_label_control",
-        "color": [255, 255, 255, 140]
-    },
-
-    //
     // ! Close button
     // ----------------------------------------------------------
 
@@ -411,7 +398,7 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_regex.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_regex",
@@ -422,7 +409,7 @@
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_case.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_case",
@@ -433,7 +420,7 @@
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_highlight.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_highlight",
@@ -444,7 +431,7 @@
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_inselection.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_in_selection",
@@ -455,7 +442,7 @@
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_reverse.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_reverse",
@@ -466,7 +453,7 @@
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_wholeword.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_whole_word",
@@ -477,7 +464,7 @@
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_wrap.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_wrap",
@@ -488,7 +475,7 @@
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Gravity/Gravity/icons/replace_preserve_case.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_preserve_case",
@@ -499,7 +486,7 @@
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Gravity/Gravity/icons/context.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_context",
@@ -510,12 +497,12 @@
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Gravity/Gravity/icons/use_buffer.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Gravity/Gravity/icons/use_buffer_selected.png",
+        "layer0.texture": "Theme - Gravity/Gravity/icons/use_buffer.png",
         "layer0.opacity": 0.8
     },
 
