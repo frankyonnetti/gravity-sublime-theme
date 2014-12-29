@@ -11,7 +11,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        // "tab_height": 33,
+        // "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -337,6 +337,17 @@
         "layer0.opacity": 1.0
     },
 
+    {
+        "class": "tree_row",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
     //
     // ! Close button
     // ----------------------------------------------------------
@@ -441,11 +452,6 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer1.opacity": 0.0
-    },
-    {
-        "class": "quick_panel_score_label",
-        "fg": [28, 177, 239, 255],
-        "selected_fg": [166, 229, 255, 255]
     },
 
     // ! Mini quick panel
@@ -704,7 +710,7 @@
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.4,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
@@ -713,14 +719,14 @@
         "class": "tab_close_button",
         "attributes": ["hover"],
         "layer0.opacity": 0,
-        "layer1.opacity": 0.4
+        "layer1.opacity": 1.0
     },
     {
         // ! Tab dirty button
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_dirty.png",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.8,
         "layer1.opacity": 0
     },
     {
@@ -934,21 +940,26 @@
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [76, 121, 153] // blue
+        "layer0.tint": [93, 93, 93] // highlight light
     },
     {
         "class": "quick_panel_label",
         "fg": [182, 182, 182, 255],
-        "match_fg": [59, 166, 219, 255], // blue
+        "match_fg": [59, 166, 219, 255], // highlight light
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [255, 255, 255, 255]
+        "selected_match_fg": [92, 195, 246, 255] // color change while typing
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [255, 255, 255, 100],
-        "match_fg": [255, 255, 255, 255],
-        "selected_fg": [255, 255, 255, 100],
-        "selected_match_fg": [255, 255, 255, 255]
+        "fg": [93, 93, 93, 100],
+        "match_fg": [255, 255, 255, 100],
+        "selected_fg": [170, 170, 170, 100],
+        "selected_match_fg": [255, 255, 255, 100]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [28, 177, 239, 255],
+        "selected_fg": [92, 195, 246, 255] // highlight light
     },
 
     // ! Mini quick panel
@@ -960,7 +971,7 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [75, 116, 145] // blue
+        "layer0.tint": [93, 93, 93] // highlight
     },
 
     //
@@ -999,13 +1010,13 @@
         "class": "close_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
-        "layer0.opacity": 0.3
+        "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_indicator.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.7
     },
     {
         "class": "panel_close_button",
@@ -1016,7 +1027,7 @@
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
-        "layer0.opacity": 0.3
+        "layer0.opacity": 1.0
     },
 
     //

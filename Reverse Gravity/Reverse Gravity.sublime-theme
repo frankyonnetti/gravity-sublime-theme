@@ -11,7 +11,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        // "tab_height": 33,
+        // "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -337,6 +337,17 @@
         "layer0.opacity": 1.0
     },
 
+    {
+        "class": "tree_row",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
     //
     // ! Close button
     // ----------------------------------------------------------
@@ -441,11 +452,6 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer1.opacity": 0.0
-    },
-    {
-        "class": "quick_panel_score_label",
-        "fg": [28, 177, 239, 255],
-        "selected_fg": [166, 229, 255, 255]
     },
 
     // ! Mini quick panel
@@ -647,20 +653,20 @@
 
     {
         "class": "tabset_control",
-        "tab_height": 31
+        "tab_height": 29
     },
     {
         // ! Tab close state
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [22, 1, 7, 1]
+        "content_margin": [22, 0, 7, 0]
     },
     {
         // ! Tab dirty state (close button hidden)
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "attributes": ["dirty"],
-        "content_margin": [12, 1, 7, 1]
+        "content_margin": [12, 0, 7, 0]
     },
     {
         "class": "tabset_control",
@@ -728,38 +734,38 @@
     {
         "class": "scroll_tabs_left_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
         "layer1.opacity": 0
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.3
     },
     {
         "class": "scroll_tabs_right_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.3
     },
     {
         "class": "show_tabs_dropdown_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.3
     },
 
     //
@@ -773,7 +779,7 @@
     },
     {
         "class": "sidebar_tree",
-        "layer0.tint": [246, 246, 246] // 246 235
+        "layer0.tint": [242, 242, 242] // 246 235
     },
     {
         "class": "sidebar_heading",
@@ -923,21 +929,26 @@
         // super + p
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [67, 152, 250] // blue
+        "layer0.tint": [93, 93, 93] // highlight
     },
     {
         "class": "quick_panel_label",
         "fg": [53, 53, 53, 255],
-        "match_fg": [59, 166, 219, 255], // blue
+        "match_fg": [59, 166, 219, 255], // highlight light
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [166, 229, 255, 255] // color change while typing
+        "selected_match_fg": [59, 166, 219, 255] // color change while typing
     },
     {
         "class": "quick_panel_path_label",
         "fg": [153, 153, 153, 100],
         "match_fg": [153, 153, 153, 255],
-        "selected_fg": [166, 229, 255, 100],
+        "selected_fg": [207, 207, 207, 100],
         "selected_match_fg": [255, 255, 255, 255]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [207, 207, 207, 255],
+        "selected_fg": [207, 207, 207, 255] // highlight light
     },
 
     // ! Mini quick panel
@@ -949,7 +960,7 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [67, 152, 250] // blue
+        "layer0.tint": [93, 93, 93] // highlight
     },
 
     //

@@ -10,7 +10,7 @@
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
-        // "tab_height": 33,
+        // "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -336,6 +336,17 @@
         "layer0.opacity": 1.0
     },
 
+    {
+        "class": "tree_row",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
     //
     // ! Close button
     // ----------------------------------------------------------
@@ -440,11 +451,6 @@
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer1.opacity": 0.0
-    },
-    {
-        "class": "quick_panel_score_label",
-        "fg": [28, 177, 239, 255],
-        "selected_fg": [166, 229, 255, 255]
     },
 
     // ! Mini quick panel
