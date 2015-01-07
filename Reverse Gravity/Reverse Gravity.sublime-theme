@@ -803,7 +803,7 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [221, 221, 221]
+        "color": [51, 51, 51]
     },
     {
         "class": "sidebar_label",

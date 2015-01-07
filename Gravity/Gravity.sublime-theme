@@ -1167,12 +1167,12 @@
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_folder",
