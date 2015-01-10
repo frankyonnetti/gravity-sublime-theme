@@ -8,12 +8,11 @@ Version 2.0 introduces the **Reverse Gravity** light theme.
 
 **Gravity UI Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-gravity-2.0.png" width="1024" height="768">
+![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-gravity-2.0.png)
 
 **Reverse Gravity UI Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-rgravity-2.0.png" width="1024" height="768">
-
+![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-rgravity-2.0.png)
 
 
 The Gravity theme only works with Sublime Text 3, latest build. It hasn't been tested on earlier builds.
