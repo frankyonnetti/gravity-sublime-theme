@@ -32,6 +32,19 @@
         "layer0.opacity": 1.0
     },
     {
+        // ! Tab close state
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [22, 0, 7, 0]
+    },
+    {
+        // ! Tab dirty state (close button hidden)
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [12, 0, 7, 0]
+    },
+    {
         // ! Tab labels
         "class": "tab_label",
         "fade": false,

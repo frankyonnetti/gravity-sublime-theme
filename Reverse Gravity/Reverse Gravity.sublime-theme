@@ -33,6 +33,19 @@
         "layer0.opacity": 1.0
     },
     {
+        // ! Tab close state
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [22, 0, 7, 0]
+    },
+    {
+        // ! Tab dirty state (close button hidden)
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [12, 0, 7, 0]
+    },
+    {
         // ! Tab labels
         "class": "tab_label",
         "fade": false,
@@ -653,20 +666,7 @@
 
     {
         "class": "tabset_control",
-        "tab_height": 29
-    },
-    {
-        // ! Tab close state
-        "class": "tab_control",
-        "settings": ["show_tab_close_buttons"],
-        "content_margin": [22, 0, 7, 0]
-    },
-    {
-        // ! Tab dirty state (close button hidden)
-        "class": "tab_control",
-        "settings": ["!show_tab_close_buttons"],
-        "attributes": ["dirty"],
-        "content_margin": [12, 0, 7, 0]
+        "tab_height": 31
     },
     {
         "class": "tabset_control",
@@ -674,6 +674,11 @@
     },
     {
         "class": "tab_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_inactive_scroll.png"
+    },
+    {
+        "class": "tab_control",
+        "settings": ["!enable_tab_scrolling"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_inactive.png"
     },
     {
