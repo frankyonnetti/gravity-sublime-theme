@@ -52,7 +52,7 @@
     {
         // ! Tab labels
         "class": "tab_label",
-        "fg": [174, 174, 174],
+        "fg": [133, 133, 133],
     },
     {
         "class": "tab_label",
