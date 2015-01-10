@@ -2,10 +2,18 @@
 
 ### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme. 
 
-Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark theme that feels at home on the new Yosemite OSX.
+Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on Yosemite OSX.
 
+Version 2.0 introduces the **Reverse Gravity** light theme.
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/gravity_comp_9.png)
+**Gravity UI Theme**
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-gravity-2.0.png" width="1024" height="768">
+
+**Reverse Gravity UI Theme**
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-rgravity-2.0.png" width="1024" height="768">
+
 
 
 The Gravity theme only works with Sublime Text 3, latest build. It hasn't been tested on earlier builds.
@@ -37,14 +45,16 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 ## Activating the theme
 
 * Open your setting by using the menu `Preferences > Settings - User`
-* Add, or replace, the **"theme:"** settings with `"theme": "Gravity.sublime-theme"`
+* Add, or replace, the **"theme:"** settings with 
+`"theme": "Gravity.sublime-theme"` or, 
+`"theme": "Reverse Gravity.sublime-theme"`
 
 
 ## Replacing the default "fold" icon
 
 Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: 
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/fold.png)
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/fold@2x.png" width="16" height="16">
 
 * Download the [directory with icon](https://s3.amazonaws.com/yonnetti-sublime/gravity/Theme-Default.zip) separately and place it in the **"Packages"** directory.
 * You can get there by using the menu item `Preferences > Browse Packages...`
