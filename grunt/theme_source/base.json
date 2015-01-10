@@ -1,0 +1,645 @@
+
+    // ! Tabs
+    // ----------------------------------------------------------
+
+    {
+        "class": "tabset_control",
+        "layer0.inner_margin": [10, 0],
+        "layer0.opacity": 1.0,
+        "content_margin": 0,
+        "tab_overlap": 1,
+        "tab_width": 272,
+        "tab_min_width": 100,
+        // "tab_height": 35,
+        "mouse_wheel_switch": false
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": [5, 0, 3, 0]
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["mouse_wheel_switches_tabs"],
+        "mouse_wheel_switch": true
+    },
+    {
+        "class": "tab_control",
+        "content_margin": [12, 3, 12, 3],
+        "max_margin_trim": 0,
+        "hit_test_level": 0.0,
+        "layer0.inner_margin": [5, 5],
+        "layer0.opacity": 1.0
+    },
+    {
+        // ! Tab close state
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [22, 0, 7, 0]
+    },
+    {
+        // ! Tab dirty state (close button hidden)
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [12, 0, 7, 0]
+    },
+    {
+        // ! Tab labels
+        "class": "tab_label",
+        "fade": false,
+        "font.bold" : false,
+        "font.size" : 12
+    },
+    {
+        // ! Tab close button
+        "class": "tab_close_button",
+        "content_margin": [0, 0],
+        "layer0.inner_margin": [0, 0],
+    },
+    {
+        // ! Tab button size
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [8, 8]
+    },
+    {
+        // ! Tab dirty button active
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "attributes": ["selected"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 0
+    },
+
+    // !-- Tab close button hidden with highlight modified flag true
+
+    {
+        // ! Tab dirty state (close button hidden)
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+        "attributes": ["dirty"],
+        "content_margin": [22, 6, 15, 4]
+    },
+    {
+        // ! Tab dirty button (close button hidden)
+        "class": "tab_close_button",
+        "settings": ["!show_tab_close_buttons", "highlight_modified_tabs"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "content_margin": [8, 8],
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0
+    },
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+    // ! -- Tab set scroll left scroll right
+
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [9, 7, 8, 8],
+        "layer0.inner_margin": 0,
+        "layer1.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [9, 7, 13, 8],
+        "layer0.inner_margin": 0,
+        "layer1.inner_margin": 0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "content_margin": [14, 7, 10, 8],
+        "layer0.inner_margin": 0,
+        "layer1.inner_margin": 0,
+    },
+
+    //
+    // ! Sidebar
+    // ----------------------------------------------------------
+
+    {
+        "class": "sidebar_container",
+        "layer0.opacity": 1.0,
+        "layer0.draw_center": false,
+        "layer0.inner_margin": [0, 0, 0, 0]
+    },
+    {
+        "class": "sidebar_tree",
+        "row_padding": [8, 5],
+        "indent": 12,
+        "indent_offset": 17,
+        "indent_top_level": false,
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "sidebar_heading",
+        "font.bold": true
+        //"shadow_color": [0, 0, 0],
+        //"shadow_offset": [0, -1]
+    },
+    {
+        "class": "sidebar_heading",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}]
+        //"shadow_color": [160, 174, 192]
+    },
+    {
+        "class": "sidebar_label",
+        "font.bold": false,
+        "font.italic": false
+        //"shadow_color": [0, 0, 0],
+        //"shadow_offset": [0, -1]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255]
+        //"shadow_color": [60, 60, 60],
+        //"shadow_offset": [0, 1]
+    },
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+    //
+    // ! Buttons
+    // ----------------------------------------------------------
+
+    {
+        "class": "button_control",
+        "content_margin": [16, 10, 16, 9],
+        "min_size": [70, 0],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [10, 10],
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": [10, 10]
+        // "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
+        // "layer2.inner_margin": [10, 10]
+    },
+    {
+        "class": "button_control",
+        "attributes": ["pressed"],
+        "layer0.opacity": 0,
+        "layer1.opacity": 1.0
+    },
+    // {
+    //     "class": "button_control",
+    //     "attributes": ["pressed", "hover"],
+    //     "layer2.opacity": 0.0
+    // },
+    // {
+    //     "class": "button_control",
+    //     "attributes": ["hover"],
+    //     "layer2.opacity": 0.0
+    // },
+
+    //
+    // ! Small Find Icon Buttons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_button_control",
+        "layer0.inner_margin": [6, 6],
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left"],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["right"],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_button_control",
+        "attributes": ["left", "right"],
+        "layer0.opacity": 1.0,
+        "layer0.draw_center": true
+    },
+
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [8, 9],
+        "layer0.inner_margin": [4, 4],
+        "layer1.inner_margin": [4, 4]
+    },
+
+    //
+    // ! Scrollbars
+    // ----------------------------------------------------------
+
+    {
+        "class": "scroll_bar_control",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0, 6],
+        "blur": true
+    },
+    {
+        "class": "scroll_bar_control",
+        "attributes": ["horizontal"],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [6, 0],
+        "blur": false
+    },
+    {
+        "class": "scroll_corner_control",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "puck_control",
+        "layer0.inner_margin": [0, 10],
+        "content_margin": [8, 12],
+        "blur": false
+    },
+    {
+        "class": "puck_control",
+        "attributes": ["horizontal"],
+        "layer0.inner_margin": [10, 0],
+        "content_margin": [12, 8],
+        "blur": false
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["overlay_scroll_bars"],
+        "overlay": true
+    },
+    {
+        "class": "scroll_area_control",
+        "settings": ["!overlay_scroll_bars"],
+        "overlay": false
+    },
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/shared_assets/overlay_bar_vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "blur": true
+    },
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/shared_assets/overlay_bar_horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "blur": true
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/shared_assets/overlay_thumb_vertical.png",
+        "layer0.inner_margin": [0, 5],
+        "content_margin": [5, 20],
+        "blur": true
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/shared_assets/overlay_thumb_horizontal.png",
+        "layer0.inner_margin": [5, 0],
+        "content_margin": [20, 5],
+        "blur": true
+    },
+
+    //
+    // ! Popup Control
+    // ----------------------------------------------------------
+
+    {
+        "class": "popup_control",
+        "layer0.tint": [64, 64, 64],
+        "layer0.opacity": 0,
+        "content_margin": [0, 0]
+    },
+    {
+        "class": "tool_tip_control",
+        "layer0.inner_margin": [2, 2],
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [10, 5]
+    },
+    {
+        "class": "tool_tip_label_control",
+        "color": [51, 51, 51, 255]
+    },
+    {
+        "class": "disclosure_button_control",
+        "layer0.inner_margin": 0,
+        "layer1.inner_margin": 0,
+        "content_margin": [9, 7, 8, 6]
+    },
+    {
+        "class": "table_row",
+        "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "tree_row",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": [1, 1]
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1.0
+    },
+
+    //
+    // ! Close button
+    // ----------------------------------------------------------
+
+    {
+        "class": "close_button",
+        "layer0.inner_margin": 0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "panel_close_button",
+        "content_margin": [8, 8]
+    },
+
+    //
+    // ! Minimap
+    // ----------------------------------------------------------
+
+    {
+        "class": "minimap_control",
+        "viewport_color": [68, 68, 68, 50],
+    },
+    {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "viewport_color": [68, 68, 68, 96],
+    },
+
+    //
+    // ! Text field
+    //   text color bg: Widget - Gravity.stTheme line: 13
+    // ----------------------------------------------------------
+
+    {
+        "class": "text_line_control",
+        "layer0.opacity": 1.0,
+        "content_margin": [7, 11, 7, 10]
+    },
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "panel_control"}],
+        "content_margin": [4, 7, 15, 3]
+    },
+
+    //
+    // ! Status bar
+    // ----------------------------------------------------------
+
+    {
+        "class": "panel_control",
+        "layer0.inner_margin": [2, 12, 2, 2],
+        "content_margin": [5, 7, 10 , 7],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "status_bar",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [2, 2],
+        "content_margin": [14, 3, 4, 2]
+    },
+    {
+        "class": "status_container",
+        "content_margin": [0, 2, 0, 2],
+    },
+    {
+        "class": "status_button",
+        "layer0.tint": [125, 125, 125],
+        "layer0.opacity": 0,
+        "layer0.draw_center": false,
+        "layer0.inner_margin": [1, 0, 0, 0],
+        "content_margin": [10, 2, 10, 3],
+        "min_size": [75, 0]
+    },
+
+    //
+    // ! Quick Panel
+    // ----------------------------------------------------------
+
+    {
+        "class": "overlay_control",
+        "layer0.inner_margin": [30, 30],
+        "layer0.opacity": 1.0,
+        "layer1.texture": "Theme - Gravity/shared_assets/quick_panel_bg.png",
+        "layer1.inner_margin": [30, 0, 20, 20],
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "quick_panel",
+        "row_padding": [10, 9],
+        "layer0.tint": [34, 34, 34],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "quick_panel_row",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0,
+        "layer1.inner_margin": [0, 0, 0, 1],
+        "layer1.draw_center": false,
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer1.opacity": 0.0
+    },
+
+    // ! Mini quick panel
+
+    {
+        "class": "mini_quick_panel_row",
+        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.opacity": 1.0
+    },
+
+    //
+    // ! Auto complete
+    // ----------------------------------------------------------
+
+    {
+        "class": "auto_complete",
+        "row_padding": [5, 5],
+        "layer0.tint": [246, 246, 246],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "auto_complete_label",
+        "fg": [153, 153, 153],
+        "match_fg": [0, 0, 0],
+        "bg": [26, 26, 26],
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [0, 0, 0],
+        "selected_bg": [85, 85, 85]
+    },
+
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [50, 50, 50],
+        "layer0.opacity": 1.0
+    },
+
+    //
+    // ! Fold button
+    // ----------------------------------------------------------
+
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
+        "layer0.opacity": 0.3,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0,
+        "content_margin": [9, 7, 8, 6]
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 0.3
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
+    },
+
+    //
+    // ! misc
+    // ----------------------------------------------------------
+
+    {
+        // ! Grid
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [45, 45, 45]
+    },
+
+    {
+        // ! Progress bar
+        "class": "progress_bar_control",
+        "layer0.tint": [32, 32, 32],
+        "layer0.opacity": 1.0,
+    },
+
+    {
+        "class": "progress_gauge_control",
+        "layer0.tint": [43, 102, 201],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
+    },
+
+    {
+        // ! Dialog
+        "class": "dialog",
+        "layer0.tint": [64, 64, 64],
+        "layer0.opacity": 1.0
+    },
+
+    //
+    // ! icons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_regex",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_case",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_highlight",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_in_selection",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_reverse",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_whole_word",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_wrap",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_preserve_case",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_context",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_use_buffer",
+        "content_margin": [8, 8]
+    },
+
+    //
+    // ! file and folder icons
+    // ----------------------------------------------------------
+
+    {
+        "class": "icon_file_type",
+        // layer0.texture is filled in by code with the relevant icon name
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder",
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "Theme - Gravity/shared_assets/spinner7.png",
+                "Theme - Gravity/shared_assets/spinner6.png",
+                "Theme - Gravity/shared_assets/spinner5.png",
+                "Theme - Gravity/shared_assets/spinner4.png",
+                "Theme - Gravity/shared_assets/spinner3.png",
+                "Theme - Gravity/shared_assets/spinner2.png",
+                "Theme - Gravity/shared_assets/spinner1.png",
+                "Theme - Gravity/shared_assets/spinner.png",
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder_dup",
+        "content_margin": [8, 8]
+    },
