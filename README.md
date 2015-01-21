@@ -43,10 +43,18 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 
 ## Activating the theme
 
-* Open your setting by using the menu `Preferences > Settings - User`
+* Open your settings by using the menu `Preferences > Settings - User`
 * Add, or replace, the **"theme:"** settings with 
 `"theme": "Gravity.sublime-theme"` or, 
 `"theme": "Reverse Gravity.sublime-theme"`
+
+
+**Applying the file Tab height option:** <span style="color:#fff;background-color:green;">&nbsp;new feature in 2.0.1&nbsp;</span>
+
+* Open your settings (if not already open) by using the menu `Preferences > Settings - User`
+* Add **one** of the two options:
+`"tab_height_short": true` or, 
+`"tab_height_tall": true`
 
 
 ## Replacing the default "fold" icon
@@ -64,6 +72,8 @@ Currently the only way to override the default *code folding icon* with the one 
 The syntax color scheme in each screenshot is a port of the Monokai-Sublime scheme created for Gravity.
 
 Once you have Gravity installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
+
+The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
 
 
 ## App icon

@@ -481,18 +481,7 @@
 
     {
         "class": "auto_complete",
-        "row_padding": [5, 5],
-        "layer0.tint": [246, 246, 246],
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "auto_complete_label",
-        "fg": [153, 153, 153],
-        "match_fg": [0, 0, 0],
-        "bg": [26, 26, 26],
-        "selected_fg": [255, 255, 255],
-        "selected_match_fg": [0, 0, 0],
-        "selected_bg": [85, 85, 85]
+        "row_padding": [5, 5]
     },
 
     {
@@ -672,6 +661,16 @@
     {
         "class": "tabset_control",
         "tab_height": 39
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["tab_height_short"],
+        "tab_height": 32
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["tab_height_tall"],
+        "tab_height": 46
     },
     {
         "class": "tabset_control",
@@ -977,6 +976,26 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.tint": [93, 93, 93] // highlight
+    },
+
+    //
+    // ! Auto complete
+    // ----------------------------------------------------------
+
+    {
+        "class": "auto_complete",
+        "layer0.tint": [55, 55, 55],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "auto_complete_label",
+        "fg": [182, 182, 182], // unselected type color
+        "match_fg": [59, 166, 219], // unselected match type color
+        "bg": [26, 26, 26],
+        // selected
+        "selected_fg": [255, 255, 255], // selected type color
+        "selected_match_fg": [101, 201, 251], // selected match type color
+        "selected_bg": [85, 85, 85]
     },
 
     //

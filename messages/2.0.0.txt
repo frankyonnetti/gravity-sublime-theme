@@ -1,11 +1,16 @@
 
-Thanks for using the Gravity theme.
+Thanks for using the Gravity theme!
+You "may" need to restart Sublime Text for it to display correctly.
 
-You may need to restart Sublime Text
-for it to display correctly.
+Feel free to contact me if you have any questions, or need to report any issues via:
 
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
 
-+++++++++++++++++++++++++++++++
+or Twitter
+@dh_Frank
+
+--------------------------------
 
 Changes in v2.0.0
 
@@ -15,8 +20,7 @@ Changes in v2.0.0
 - The Gravity theme value was lighten slightly overall.
 - Many other UI tweaks and cleanups.
 
-+++++++++++++++++++++++++++++++
-
+--------------------------------
 
 To activate the theme for ST3, add or replace your current theme settings with the code below.
 

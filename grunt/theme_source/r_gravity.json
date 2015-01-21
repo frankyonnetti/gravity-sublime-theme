@@ -23,6 +23,16 @@
     },
     {
         "class": "tabset_control",
+        "settings": ["tab_height_short"],
+        "tab_height": 26
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["tab_height_tall"],
+        "tab_height": 38
+    },
+    {
+        "class": "tabset_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tabset_background.png"
     },
     {
@@ -319,6 +329,26 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.tint": [93, 93, 93] // highlight
+    },
+
+    //
+    // ! Auto complete
+    // ----------------------------------------------------------
+
+    {
+        "class": "auto_complete",
+        "layer0.tint": [246, 246, 246],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "auto_complete_label",
+        "fg": [170, 170, 170],
+        "match_fg": [17, 17, 17],
+        "bg": [26, 26, 26],
+        // selected
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [17, 17, 17],
+        "selected_bg": [85, 85, 85]
     },
 
     //
