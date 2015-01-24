@@ -142,8 +142,8 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [235, 235, 235],
-        "content_margin": [0, 0, 0, 0]
+        "layer0.tint": [203, 203, 203],
+        "content_margin": [0, 0, 1, 0]
     },
     {
         "class": "sidebar_tree",
@@ -253,6 +253,29 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_horizontal.png",
         "layer0.opacity": 1.0
+    },
+    // overlay
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bar_vertical.png"
+    },
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bar_horizontal.png"
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_thumb_vertical.png"
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_thumb_horizontal.png"
     },
 
     //

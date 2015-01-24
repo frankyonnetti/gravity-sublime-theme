@@ -6,7 +6,7 @@
         "class": "tabset_control",
         "layer0.inner_margin": [10, 0],
         "layer0.opacity": 1.0,
-        "content_margin": 0,
+        "content_margin": [0, 0, 0, 0],
         "tab_overlap": 1,
         "tab_width": 272,
         "tab_min_width": 100,
@@ -50,6 +50,12 @@
         "fade": false,
         "font.bold" : false,
         "font.size" : 12
+    },
+    {
+        // ! Tab labels
+        "class": "tab_label",
+        "settings": ["tab_height_short"],
+        "font.size" : 11
     },
     {
         // ! Tab close button
@@ -258,6 +264,7 @@
         "class": "puck_control",
         "layer0.inner_margin": [0, 10],
         "content_margin": [8, 12],
+        "layer0.opacity": 1.0,
         "blur": false
     },
     {
@@ -265,6 +272,7 @@
         "attributes": ["horizontal"],
         "layer0.inner_margin": [10, 0],
         "content_margin": [12, 8],
+        "layer0.opacity": 1.0,
         "blur": false
     },
     {
@@ -280,7 +288,6 @@
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Theme - Gravity/shared_assets/overlay_bar_vertical.png",
         "layer0.inner_margin": [0, 5],
         "blur": true
     },
@@ -288,14 +295,12 @@
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/shared_assets/overlay_bar_horizontal.png",
         "layer0.inner_margin": [5, 0],
         "blur": true
     },
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Theme - Gravity/shared_assets/overlay_thumb_vertical.png",
         "layer0.inner_margin": [0, 5],
         "content_margin": [5, 20],
         "blur": true
@@ -304,7 +309,6 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/shared_assets/overlay_thumb_horizontal.png",
         "layer0.inner_margin": [5, 0],
         "content_margin": [20, 5],
         "blur": true

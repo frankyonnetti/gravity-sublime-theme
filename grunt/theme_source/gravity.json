@@ -152,7 +152,7 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [51, 51, 51],
+        "layer0.tint": [30, 30, 30],
         "content_margin": [0, 0, 1, 0]
     },
     {
@@ -258,14 +258,35 @@
     },
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_vertical.png",
-        "layer0.opacity": 0.2
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_vertical.png"
     },
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_horizontal.png",
-        "layer0.opacity": 0.2
+        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_horizontal.png"
+    },
+    // overlay
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bar_vertical.png"
+    },
+    {
+        "class": "scroll_bar_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bar_horizontal.png"
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_thumb_vertical.png"
+    },
+    {
+        "class": "puck_control",
+        "settings": ["overlay_scroll_bars"],
+        "attributes": ["horizontal"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_thumb_horizontal.png"
     },
 
     //
