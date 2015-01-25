@@ -1065,7 +1065,7 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_indicator.png",
-        "layer0.opacity": 0.7
+        "layer0.opacity": 1.0
     },
     {
         "class": "panel_close_button",
