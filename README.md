@@ -85,6 +85,20 @@ To install the white or orange app icon, select **Sublime Text** in your **Appli
 <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-orange-101.png" width="128" height="128">
 
 
+## Trouble shooting
+
+**1) Font desenders are cut off in the file UI tabs**
+
+Apply this setting to your "Settings - User" file.
+`"tab_font_small": true`
+
+**2) The "Find" feature appears to be hidden behind the status bar.**
+
+When switching themes in Sublime Text, it will retain the height for the Find bar set in the previous theme. Sometimes this will cause the bar to appear hidden behind the status bar.
+
+[To fix, simply grab the bar and pull-up.](https://github.com/frankyonnetti/gravity-sublime-theme/wiki/Theme-Trouble-Shooting)
+
+
 ## Usage license
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
