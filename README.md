@@ -69,7 +69,7 @@ Currently the only way to override the default *code folding icon* with the one 
 
 ## Syntax color scheme
 
-The syntax color scheme in each screenshot is a port of the Monokai-Sublime scheme created for Gravity.
+The syntax color scheme in each screenshot is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
 
 Once you have Gravity installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
 
@@ -87,7 +87,7 @@ To install the white or orange app icon, select **Sublime Text** in your **Appli
 
 ## Trouble shooting
 
-**1) Font desenders are cut off in the file UI tabs**
+**1) Font descenders are cut off in the file UI tabs**
 
 Apply this setting to your "Settings - User" file.
 `"tab_font_small": true`
