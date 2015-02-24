@@ -53,7 +53,7 @@ Changes in 2.0.5 / 2.0.6
 
 Changes in 2.0.4
 
-- Added a fix for a bug that caused the file tab font desenders to get cut off (g, y, etc.) on Linux and Windows. Macs are not effected.
+- Added a fix for a bug that caused the file tab font descenders to get cut off (g, y, etc.) on Linux and Windows. Macs are not effected.
 https://github.com/jamiewilson/predawn/issues/35#issuecomment-51838224
     - Thanks giltig https://github.com/giltig
 - To apply the fix, add this setting to your "Settings - User" file.
