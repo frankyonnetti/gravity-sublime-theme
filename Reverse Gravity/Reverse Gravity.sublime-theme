@@ -532,13 +532,6 @@
     // ----------------------------------------------------------
 
     {
-        // ! Grid
-        "class": "grid_layout_control",
-        "border_size": 1,
-        "border_color": [45, 45, 45]
-    },
-
-    {
         // ! Progress bar
         "class": "progress_bar_control",
         "layer0.tint": [32, 32, 32],
@@ -1074,6 +1067,17 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
         "layer0.opacity": 0.7
+    },
+
+    //
+    // ! misc
+    // ----------------------------------------------------------
+
+    {
+        // ! Grid
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [133, 133, 133]
     },
 
     //
