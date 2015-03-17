@@ -129,7 +129,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#678CB1</string>
+				<string>#eeeeee</string>
 			</dict>
 		</dict>
 		<dict>
@@ -708,6 +708,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>JS: Other Property</string>
+			<key>scope</key>
+			<string>variable.language.js, variable.other.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#678cb1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>JSON String</string>
 			<key>scope</key>
 			<string>meta.structure.dictionary.json string.quoted.double.json</string>
@@ -817,7 +828,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f6aa11</string>
+				<string>#eeeeee</string>
 			</dict>
 		</dict>
 		<dict>
