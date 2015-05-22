@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       },
       concat: {
         files: ['theme_source/*.json'],
-        tasks: ['concat'], //'notify:concat'
+        tasks: ['concat', 'notify:concat'],
       },
     },
 

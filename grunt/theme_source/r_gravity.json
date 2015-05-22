@@ -435,10 +435,22 @@
     // ----------------------------------------------------------
 
     {
+        // ! Progress bar
+        "class": "progress_bar_control",
+        "layer0.tint": [188, 188, 188],
+        "layer0.opacity": 1.0,
+    },
+    {
         // ! Grid
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [133, 133, 133]
+        "border_color": [45, 45, 45]
+    },
+        {
+        // ! Dialog
+        "class": "dialog",
+        "layer0.tint": [236, 236, 236],
+        "layer0.opacity": 1.0
     },
 
     //
