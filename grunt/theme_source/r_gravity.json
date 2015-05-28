@@ -444,7 +444,7 @@
         // ! Grid
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [45, 45, 45]
+        "border_color": [133, 133, 133]
     },
         {
         // ! Dialog
