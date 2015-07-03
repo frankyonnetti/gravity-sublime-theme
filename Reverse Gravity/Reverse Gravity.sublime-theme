@@ -634,9 +634,21 @@
         "color": [88, 88, 88]
     },
     {
+        // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
         "layer0.tint": [206, 206, 206]
+    },
+    // {   // not working :(
+    //     "class": "tree_row",
+    //     "attributes": ["expandable"],
+    //     "layer0.tint": [206, 206, 206]
+    // },
+    {
+        "class": "tree_row",
+        "settings": ["highlight_color_blue"],
+        "attributes": ["selected"],
+        "layer0.tint": [65, 155, 249, 255]
     },
 
     // ! Tabs
@@ -768,7 +780,7 @@
     {
         "class": "sidebar_container",
         "layer0.tint": [203, 203, 203],
-        "content_margin": [0, 0, 1, 0]
+        "content_margin": [0, 0, 0, 0]
     },
     {
         "class": "sidebar_tree",
@@ -789,6 +801,18 @@
     },
     {
         "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "color": [51, 51, 51]
     },
@@ -800,9 +824,21 @@
     },
     {
         "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         //"settings": ["bold_folder_labels"],
         "color": [51, 51, 51]
+    },
+    {
+        "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
+        "color": [255, 255, 255]
     },
 
     //
@@ -1224,6 +1260,11 @@
     },
     {
         "class": "icon_folder",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
+    },
+    {
+        "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.opacity": 1.0
     },
@@ -1235,7 +1276,19 @@
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png"
+    },
+    {
+        "class": "icon_folder",
+        "settings": ["highlight_color_blue"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
+    },
+    {
+        "class": "icon_folder",
+        "settings": ["highlight_color_blue"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded", "selected"] }],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
     },
     {
         "class": "icon_folder_dup",
