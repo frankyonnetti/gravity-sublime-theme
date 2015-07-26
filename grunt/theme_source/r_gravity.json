@@ -14,16 +14,11 @@
         "attributes": ["selected"],
         "layer0.tint": [206, 206, 206]
     },
-    // {   // not working :(
-    //     "class": "tree_row",
-    //     "attributes": ["expandable"],
-    //     "layer0.tint": [206, 206, 206]
-    // },
     {
         "class": "tree_row",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        "layer0.tint": [65, 155, 249, 255]
+        "layer0.tint": [9, 144, 187, 255]
     },
 
     // ! Tabs
@@ -103,7 +98,7 @@
         "class": "tab_close_button",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
     },
     {
         // ! Tab dirty button hover
@@ -120,7 +115,7 @@
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_hover.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
     },
 
     // ! -- Tab set scroll left scroll right
@@ -456,6 +451,7 @@
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_down.png"
     },
 
+    // Sidebar close buttons
     {
         "class": "close_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
@@ -463,9 +459,22 @@
     },
     {
         "class": "close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
         "layer0.opacity": 0.7
+    },
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue_hover.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
@@ -474,6 +483,14 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/dirty_close_blue_indicator.png"
+    },
+
+    // Bottom panel close button
+    {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x.png",
         "layer0.opacity": 0.7
@@ -483,6 +500,12 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
         "layer0.opacity": 0.7
+    },
+    {
+        "class": "panel_close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue_hover.png",
+        "attributes": ["hover"]
     },
 
     //

@@ -90,7 +90,7 @@
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.5,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
@@ -113,7 +113,7 @@
         "class": "tab_close_button",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
     },
     {
         // ! Tab dirty button hover
@@ -129,7 +129,7 @@
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_hover.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
     },
 
 
@@ -183,7 +183,7 @@
     },
     {
         "class": "sidebar_tree",
-        "layer0.tint": [35, 35, 35] //51
+        "layer0.tint": [37, 37, 37] //51
     },
     {
         "class": "sidebar_heading",
@@ -459,15 +459,30 @@
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png",
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png"
     },
+
+    // Sidebar close buttons
     {
         "class": "close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.3
+        "layer0.opacity": 0.9
+    },
+    {
+        "class": "close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue.png",
+        "layer0.opacity": 0.8
     },
     {
         "class": "close_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
         "layer0.opacity": 1.0
     },
     {
@@ -477,15 +492,30 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_blue_indicator.png",
+        "layer0.opacity": 1.0
+    },
+
+    // Bottom panel close button
+    {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.3
+        "layer0.opacity": 0.7
     },
     {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
+        "attributes": ["hover"]
     },
 
     //
