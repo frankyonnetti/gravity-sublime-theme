@@ -35,7 +35,7 @@
 				<key>activeGuide</key>
 				<string>#6b8595</string>
 				<key>background</key>
-				<string>#252525</string>
+				<string>#2f2f2f</string>
 				<key>bracketContentsForeground</key>
 				<string>#dddddda5</string>
 				<key>bracketContentsOptions</key>
@@ -55,11 +55,13 @@
 				<key>invisibles</key>
 				<string>#3e3e3e</string>
 				<key>lineHighlight</key>
-				<string>#333333</string>
+				<string>#3d3d3d</string>
+				<key>gutterForeground</key>
+				<string>#454545</string>
 				<key>selection</key>
 				<string>#444444</string>
 				<key>selectionBorder</key>
-				<string>#555555</string>
+				<string>#656565</string>
 				<key>stackGuide</key>
 				<string>#635f2d</string>
 				<key>tagsOptions</key>
@@ -923,6 +925,7 @@
 				<string>#eeeeee</string>
 			</dict>
 		</dict>
+		<!--
 		<dict>
 			<key>name</key>
 			<string>Invalid</string>
@@ -938,6 +941,7 @@
 				<string>#f8f8f0</string>
 			</dict>
 		</dict>
+		-->
 		<dict>
 			<key>name</key>
 			<string>Invalid deprecated</string>
