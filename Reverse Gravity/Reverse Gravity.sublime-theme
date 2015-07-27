@@ -653,7 +653,7 @@
         "class": "tree_row",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        "layer0.tint": [9, 144, 187, 255]
+        "layer0.tint": [9, 144, 187, 200]
     },
 
     // ! Tabs
@@ -661,17 +661,17 @@
 
     {
         "class": "tabset_control",
-        "tab_height": 31
+        "tab_height": 39
     },
     {
         "class": "tabset_control",
         "settings": ["tab_height_short"],
-        "tab_height": 26
+        "tab_height": 32
     },
     {
         "class": "tabset_control",
         "settings": ["tab_height_tall"],
-        "tab_height": 38
+        "tab_height": 48
     },
     {
         "class": "tabset_control",
@@ -690,6 +690,12 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active.png"
     },
     {
         // ! Tab labels
@@ -798,8 +804,8 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [203, 203, 203],
-        "content_margin": [0, 0, 0, 0]
+        "layer0.tint": [232, 232, 232],
+        "content_margin": [0, 0, 1, 0]
     },
     {
         "class": "sidebar_tree",
@@ -1305,11 +1311,11 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png",
         "layer0.opacity": 1.0
     },
-    {
-        "class": "icon_folder",
-        "settings": ["highlight_color_blue"],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
-    },
+    // {
+    //     "class": "icon_folder",
+    //     "settings": ["highlight_color_blue"],
+    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
+    // },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
@@ -1320,29 +1326,29 @@
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
         "layer0.opacity": 1.0
     },
-    {
-        "class": "icon_folder",
-        "settings": ["highlight_color_blue"],
-        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
-    },
+    // {
+    //     "class": "icon_folder",
+    //     "settings": ["highlight_color_blue"],
+    //     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
+    // },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png"
     },
-    {
-        "class": "icon_folder",
-        "settings": ["highlight_color_blue"],
-        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
-    },
-    {
-        "class": "icon_folder",
-        "settings": ["highlight_color_blue"],
-        "parents": [{ "class": "tree_row", "attributes": ["expanded", "selected"] }],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
-    },
+    // {
+    //     "class": "icon_folder",
+    //     "settings": ["highlight_color_blue"],
+    //     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
+    // },
+    // {
+    //     "class": "icon_folder",
+    //     "settings": ["highlight_color_blue"],
+    //     "parents": [{ "class": "tree_row", "attributes": ["expanded", "selected"] }],
+    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
+    // },
     {
         "class": "icon_folder_dup",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_dup.png",
