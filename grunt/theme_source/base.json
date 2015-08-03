@@ -431,7 +431,7 @@
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [5, 7, 10 , 7],
+        "content_margin": [5, 7, 10, 7],
         "layer0.opacity": 1.0
     },
     {

@@ -364,10 +364,11 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bg.png",
-        "content_margin": [19, 5, 19, 25]
+        "content_margin": [15, 5, 15, 21]
     },
     {
         // super + p
+        // panel background and line color
         "class": "quick_panel_row",
         "layer0.tint": [252, 252, 252],
         "layer1.tint": [252, 252, 252],
@@ -376,29 +377,18 @@
         // super + p
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight
+        "layer0.tint": [215, 215, 215] // highlight selected background color
     },
     {
-        "class": "quick_panel_label",
-        "fg": [53, 53, 53, 255],
-        "match_fg": [59, 166, 219, 255], // highlight light
-        "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [59, 166, 219, 255] // color change while typing
-    },
-    {
-        "class": "quick_panel_path_label",
-        "fg": [153, 153, 153, 100],
-        "match_fg": [153, 153, 153, 255],
-        "selected_fg": [207, 207, 207, 100],
-        "selected_match_fg": [255, 255, 255, 255]
-    },
-    {
-        "class": "quick_panel_score_label",
-        "fg": [207, 207, 207, 255],
-        "selected_fg": [207, 207, 207, 255] // highlight light
+        // super + p
+        "class": "quick_panel_row",
+        "settings": ["highlight_color_blue"], // blue
+        "attributes": ["selected"],
+        "layer0.tint": [58, 164, 197] // highlight selected background color
     },
 
     // ! Mini quick panel
+    // super + shift + p
 
     {
         "class": "mini_quick_panel_row",
@@ -407,7 +397,48 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight
+        "layer0.tint": [215, 215, 215] // highlight
+    },
+    {
+        "class": "mini_quick_panel_row",
+        "settings": ["highlight_color_blue"], // blue
+        "attributes": ["selected"],
+        "layer0.tint": [58, 164, 197] // highlight
+    },
+
+     // ! Quick panel shared
+    {
+        "class": "quick_panel_label",
+        "fg": [114, 114, 114, 255],
+        "match_fg": [34, 34, 34, 255], // highlight light
+        "selected_fg": [114, 114, 114, 255],
+        "selected_match_fg": [34, 34, 34, 255] // color change while typing
+    },
+    {
+        "class": "quick_panel_label",
+        "settings": ["highlight_color_blue"], // blue
+        "match_fg": [58, 164, 197, 255], // highlight
+        "selected_fg": [188, 239, 255, 255],
+        "selected_match_fg": [255, 255, 255, 255] // color change while typing
+    },
+    {
+        "class": "quick_panel_path_label",
+        "fg": [200, 200, 200, 255],
+        "match_fg": [34, 34, 34, 255],
+        "selected_fg": [114, 114, 114, 255],
+        "selected_match_fg": [34, 34, 34, 255]
+    },
+    {
+        "class": "quick_panel_path_label",
+        "settings": ["highlight_color_blue"], // blue
+        "match_fg": [58, 164, 197, 255],
+        "selected_fg": [27, 103, 138, 255],
+        "selected_match_fg": [255, 255, 255, 255]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [207, 207, 207, 255],
+        "selected_fg": [255, 255, 255, 255] // highlight light
     },
 
     //
@@ -416,18 +447,24 @@
 
     {
         "class": "auto_complete",
-        "layer0.tint": [246, 246, 246],
+        "layer0.tint": [242, 242, 242],
         "layer0.opacity": 1.0
+    },
+
+    {
+        "class": "auto_complete_label",
+        "fg": [114, 114, 114], // text
+        "match_fg": [34, 34, 34], // match text
+        "bg": [252, 252, 252], // ?
+        // selected
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [255, 255, 255],
+        "selected_bg": [215, 215, 215] // highlight bg
     },
     {
         "class": "auto_complete_label",
-        "fg": [170, 170, 170],
-        "match_fg": [17, 17, 17],
-        "bg": [26, 26, 26],
-        // selected
-        "selected_fg": [255, 255, 255],
-        "selected_match_fg": [17, 17, 17],
-        "selected_bg": [85, 85, 85]
+        "settings": ["highlight_color_blue"], // blue
+        "match_fg": [58, 164, 197]
     },
 
     //
@@ -528,7 +565,7 @@
         // ! Grid
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [133, 133, 133]
+        "border_color": [221, 221, 221]
     },
         {
         // ! Dialog

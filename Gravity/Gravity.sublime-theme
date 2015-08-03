@@ -432,7 +432,7 @@
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [5, 7, 10 , 7],
+        "content_margin": [5, 7, 10, 7],
         "layer0.opacity": 1.0
     },
     {
@@ -1003,12 +1003,12 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bg.png",
-        "content_margin": [16, 3, 16, 22] // [14, 0, 14, 20]
+        "content_margin": [15, 3, 15, 20] // [14, 0, 14, 20]
     },
     {
         "class": "quick_panel_row",
         "layer0.tint": [55, 55, 55],
-        "layer1.tint": [30, 30, 30],
+        "layer1.tint": [55, 55, 55],
     },
     {
         "class": "quick_panel_row",
