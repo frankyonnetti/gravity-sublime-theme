@@ -141,7 +141,7 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 5],
+        "row_padding": [8, 6],
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
@@ -161,7 +161,8 @@
     {
         "class": "sidebar_label",
         "font.bold": false,
-        "font.italic": false
+        "font.italic": false,
+        "font.size": 12.0 // 11.0 is default
         //"shadow_color": [0, 0, 0],
         //"shadow_offset": [0, -1]
     },
@@ -333,13 +334,23 @@
     {
         "class": "tool_tip_control",
         "layer0.inner_margin": [2, 2],
-        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_gray.png",
         "layer0.opacity": 1.0,
         "content_margin": [10, 5]
     },
     {
+        "class": "tool_tip_control",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_blue.png"
+    },
+    {
         "class": "tool_tip_label_control",
         "color": [51, 51, 51, 255]
+    },
+    {
+        "class": "tool_tip_label_control",
+        "settings": ["highlight_color_blue"],
+        "color": [255, 255, 255, 255]
     },
     {
         "class": "disclosure_button_control",
@@ -421,14 +432,14 @@
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [5, 7, 10 , 7],
+        "content_margin": [5, 7, 10, 7],
         "layer0.opacity": 1.0
     },
     {
         "class": "status_bar",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 3, 4, 2]
+        "content_margin": [14, 6, 4, 6]
     },
     {
         "class": "status_container",

@@ -142,7 +142,7 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 5],
+        "row_padding": [8, 6],
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
@@ -162,7 +162,8 @@
     {
         "class": "sidebar_label",
         "font.bold": false,
-        "font.italic": false
+        "font.italic": false,
+        "font.size": 12.0 // 11.0 is default
         //"shadow_color": [0, 0, 0],
         //"shadow_offset": [0, -1]
     },
@@ -334,13 +335,23 @@
     {
         "class": "tool_tip_control",
         "layer0.inner_margin": [2, 2],
-        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_gray.png",
         "layer0.opacity": 1.0,
         "content_margin": [10, 5]
     },
     {
+        "class": "tool_tip_control",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_blue.png"
+    },
+    {
         "class": "tool_tip_label_control",
         "color": [51, 51, 51, 255]
+    },
+    {
+        "class": "tool_tip_label_control",
+        "settings": ["highlight_color_blue"],
+        "color": [255, 255, 255, 255]
     },
     {
         "class": "disclosure_button_control",
@@ -422,14 +433,14 @@
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
-        "content_margin": [5, 7, 10 , 7],
+        "content_margin": [5, 7, 10, 7],
         "layer0.opacity": 1.0
     },
     {
         "class": "status_bar",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 3, 4, 2]
+        "content_margin": [14, 6, 4, 6]
     },
     {
         "class": "status_container",
@@ -632,16 +643,22 @@
 
     {
         "class": "label_control",
-        "color": [154, 154, 154]
+        "color": [170, 170, 170]
         //"shadow_color": [200, 200, 200],
         //"shadow_offset": [0, 1]
     },
 
     {
+        // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        //"layer0.tint": [74, 101, 117, 255], // flat blue
         "layer0.tint": [93, 93, 93]
+    },
+    {
+        "class": "tree_row",
+        "settings": ["highlight_color_blue"],
+        "attributes": ["selected"],
+        "layer0.tint": [9, 144, 187, 255] // #0990bb
     },
 
     // ! Tabs
@@ -659,7 +676,7 @@
     {
         "class": "tabset_control",
         "settings": ["tab_height_tall"],
-        "tab_height": 46
+        "tab_height": 48 //46
     },
     {
         "class": "tabset_control",
@@ -685,6 +702,12 @@
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_active.png"
     },
     {
+        "class": "tab_control",
+        "settings": ["highlight_color_blue"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_blue_active.png"
+    },
+    {
         // ! Tab labels
         "class": "tab_label",
         "fg": [133, 133, 133],
@@ -703,11 +726,11 @@
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.5,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
-        {
+    {
         // ! Tab close button hover
         "class": "tab_close_button",
         "attributes": ["hover"],
@@ -723,6 +746,12 @@
         "layer1.opacity": 0
     },
     {
+        "class": "tab_close_button",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
+    },
+    {
         // ! Tab dirty button hover
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
@@ -731,6 +760,14 @@
         "layer0.opacity": 0,
         "layer1.opacity": 1.0
     },
+    {
+        "class": "tab_close_button",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "attributes": ["hover"],
+        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
+    },
+
 
     // ! Tab set scroll left scroll right
 
@@ -777,12 +814,12 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [30, 30, 30],
+        "layer0.tint": [47, 47, 47],
         "content_margin": [0, 0, 1, 0]
     },
     {
         "class": "sidebar_tree",
-        "layer0.tint": [51, 51, 51]
+        "layer0.tint": [37, 37, 37] //51
     },
     {
         "class": "sidebar_heading",
@@ -794,10 +831,21 @@
     },
     {
         "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "color": [255, 255, 255]
+    },
+    {
+        "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [185, 185, 185]
-        //"settings": ["bold_folder_labels"],
-        //"color": [207, 207, 207]
+        //"settings": ["bold_folder_labels"]
+    },
+    {
+        "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
+        "color": [255, 255, 255]
     },
     {
         "class": "sidebar_label",
@@ -816,6 +864,13 @@
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         //"settings": ["bold_folder_labels"],
         "color": [185, 185, 185]
+    },
+    {
+        "class": "sidebar_label",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
+        //"settings": ["bold_folder_labels"],
+        "color": [221, 221, 221]
     },
 
     //
@@ -949,12 +1004,12 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bg.png",
-        "content_margin": [16, 3, 16, 22]
+        "content_margin": [16, 4, 16, 22]
     },
     {
         "class": "quick_panel_row",
         "layer0.tint": [55, 55, 55],
-        "layer1.tint": [30, 30, 30],
+        "layer1.tint": [50, 50, 50],
     },
     {
         "class": "quick_panel_row",
@@ -1040,15 +1095,30 @@
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png",
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png"
     },
+
+    // Sidebar close buttons
     {
         "class": "close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.3
+        "layer0.opacity": 0.9
+    },
+    {
+        "class": "close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue.png",
+        "layer0.opacity": 0.8
     },
     {
         "class": "close_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "close_button",
+        "attributes": ["hover"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
         "layer0.opacity": 1.0
     },
     {
@@ -1058,15 +1128,30 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "close_button",
+        "attributes": ["dirty"],
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_blue_indicator.png",
+        "layer0.opacity": 1.0
+    },
+
+    // Bottom panel close button
+    {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.3
+        "layer0.opacity": 0.7
     },
     {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_close_button",
+        "settings": ["highlight_color_blue"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
+        "attributes": ["hover"]
     },
 
     //
@@ -1227,6 +1312,12 @@
         "layer0.opacity": 0.9
     },
     {
+        "class": "icon_file_type",
+        "settings": ["highlight_color_blue"],
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.opacity": 1.0
+    },
+    {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
         "layer0.opacity": 0.5
@@ -1240,6 +1331,12 @@
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
         "layer0.opacity": 0.7
+    },
+    {
+        "class": "icon_folder",
+        "settings": ["highlight_color_blue"],
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.opacity": 1.0
     },
     {
         "class": "icon_folder",
