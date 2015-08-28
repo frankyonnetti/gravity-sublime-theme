@@ -2,20 +2,33 @@
 
 ### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme. 
 
-Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on Yosemite OSX.
+Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on OS X Yosemite & El Capitan.
 
-Version 2.0 introduces the **Reverse Gravity** light theme.
+* Version 2.5 introduces OS X blue highlight color and cleaned up UI.
+* Version 2.0 introduces the **Reverse Gravity** light theme.
 
-**Gravity UI Theme**
+---
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-gravity-2.0.png)
+**Gravity Theme**
 
-**Reverse Gravity UI Theme**
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_2.5.png">
 
-![image](https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots-rgravity-2.0.png)
+**Gravity Theme with Blue Highlight Color**
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_blue_2.5.png">
+
+---
+
+**Reverse Gravity Theme**
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_2.5.png">
+
+**Reverse Gravity Theme with Blue Highlight Color**
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_blue_2.5.png">
 
 
-The Gravity theme only works with Sublime Text 3, latest build. It hasn't been tested on earlier builds.
+_The Gravity theme only works with Sublime Text 3 and hasn't been tested on earlier versions._
 
 ## Install using Package Control
 
@@ -49,19 +62,23 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 `"theme": "Reverse Gravity.sublime-theme"`
 
 
-**Applying the file Tab height option:** <span style="color:#fff;background-color:green;">&nbsp;new feature in 2.0.1&nbsp;</span>
+**Applying the file Tab height option:**
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User`
 * Add **one** of the two options:
 `"tab_height_short": true` or, 
 `"tab_height_tall": true`
 
+**Applying the blue hightlight color option:**
+
+* Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
+`"highlight_color_blue": true`
 
 ## Replacing the default "fold" icon
 
 Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: 
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/fold@2x.png" width="16" height="16">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/fold%402x.png" width="16" height="16">
 
 * Download the [directory with icon](https://s3.amazonaws.com/yonnetti-sublime/gravity/Theme-Default.zip) separately and place it in the **"Packages"** directory.
 * You can get there by using the menu item `Preferences > Browse Packages...`
@@ -82,7 +99,7 @@ Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-subl
 
 To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/app-icon-orange-101.png" width="128" height="128">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="128" height="128">
 
 
 ## Trouble shooting
