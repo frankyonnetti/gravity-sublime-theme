@@ -30,17 +30,12 @@
 
     {
         "class": "tabset_control",
-        "tab_height": 39
-    },
-    {
-        "class": "tabset_control",
-        "settings": ["tab_height_short"],
-        "tab_height": 32
+        "tab_height": 41
     },
     {
         "class": "tabset_control",
         "settings": ["tab_height_tall"],
-        "tab_height": 48 //46
+        "tab_height": 47
     },
     {
         "class": "tabset_control",

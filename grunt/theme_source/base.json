@@ -28,21 +28,28 @@
         "content_margin": [12, 3, 12, 3],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
-        "layer0.inner_margin": [5, 5],
+        "layer0.inner_margin": [5, 5, 5, 5],
         "layer0.opacity": 1.0
     },
     {
-        // ! Tab close state
+        // ! Tab close state / tab label margin
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
         "content_margin": [22, 0, 7, 0]
     },
     {
-        // ! Tab dirty state (close button hidden)
+        // ! Tab dirty state (close button hidden) / tab label margin
         "class": "tab_control",
         "settings": ["!show_tab_close_buttons"],
         "attributes": ["dirty"],
         "content_margin": [12, 0, 7, 0]
+    },
+    {
+        // active tab label margin
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [22, 0, 7, 1]
     },
     {
         // ! Tab labels
@@ -50,12 +57,6 @@
         "fade": false,
         "font.bold" : false,
         "font.size" : 12
-    },
-    {
-        // ! Tab labels - height short
-        "class": "tab_label",
-        "settings": ["tab_height_short"],
-        "font.size" : 11.3
     },
     {
         // ! Tab labels - font small

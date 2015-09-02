@@ -11,21 +11,21 @@ Created this UI theme using a port of the Default theme that comes with ST3. The
 
 **Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_2.5.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_2.5.1.png">
 
 **Gravity Theme with Blue Highlight Color**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_blue_2.5.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_blue_2.5.1.png">
 
 ---
 
 **Reverse Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_2.5.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_2.5.1.png">
 
 **Reverse Gravity Theme with Blue Highlight Color**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_blue_2.5.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_blue_2.5.1.png">
 
 
 _The Gravity theme only works with Sublime Text 3 and hasn't been tested on earlier versions._
@@ -65,8 +65,7 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 **Applying the file Tab height option:**
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User`
-* Add **one** of the two options:
-`"tab_height_short": true` or, 
+* And add:
 `"tab_height_tall": true`
 
 **Applying the blue hightlight color option:**

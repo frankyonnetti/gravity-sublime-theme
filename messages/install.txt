@@ -30,10 +30,8 @@ For light theme:
 }
 
 
-For file tab height option use:
+To increase the file tab height use:
 
-"tab_height_short": true
-    - or -
 "tab_height_tall": true
 
 
