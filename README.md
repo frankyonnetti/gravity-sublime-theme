@@ -87,16 +87,16 @@ Currently the only way to override the default *code folding icon* with the one 
 
 The syntax color scheme in each screenshot is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
 
-Once you have Gravity installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
-
-The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
+* Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
+* The syntax color scheme I'm using for **Reverse Gravity** is one of the default themes called `Mac Classic` 
+* The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
 
 
 ## App icon
 
 Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-sublime/gravity/Gravity-App-Icons-101.zip) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
 
-To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
+* To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
 
 <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="128" height="128">
 

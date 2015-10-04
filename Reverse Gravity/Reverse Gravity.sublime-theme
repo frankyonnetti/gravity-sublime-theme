@@ -36,7 +36,7 @@
         // ! Tab close state / tab label margin
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [22, 0, 7, 0]
+        "content_margin": [22, 0,   7, 0]
     },
     {
         // ! Tab dirty state (close button hidden) / tab label margin
@@ -143,7 +143,7 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 6],
+        // "row_padding": [8, 5],
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
@@ -806,6 +806,7 @@
     },
     {
         "class": "sidebar_tree",
+        "row_padding": [8, 5],
         "layer0.tint": [242, 242, 242] // 246 235
     },
     {

@@ -178,6 +178,7 @@
     },
     {
         "class": "sidebar_tree",
+        "row_padding": [8, 6],
         "layer0.tint": [37, 37, 37] //51
     },
     {
