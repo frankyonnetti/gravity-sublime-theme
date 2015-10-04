@@ -440,8 +440,8 @@
     {
         "class": "status_bar",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [2, 2],
-        "content_margin": [14, 6, 4, 6]
+        "layer0.inner_margin": [2, 2]
+        // "content_margin": [14, 6, 4, 6]
     },
     {
         "class": "status_container",
@@ -991,7 +991,8 @@
     },
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png"
+        "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png",
+        "content_margin": [14, 6, 4, 6]
     },
 
     //

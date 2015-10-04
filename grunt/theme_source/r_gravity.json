@@ -350,7 +350,8 @@
     },
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/status_bar.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/status_bar.png",
+        "content_margin": [14, 5, 4, 4]
     },
 
     //
