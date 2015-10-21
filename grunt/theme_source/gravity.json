@@ -239,6 +239,7 @@
 
     {
         "class": "button_control",
+        "content_margin": [16, 9, 16, 10],
         "layer0.texture": "Theme - Gravity/Gravity/assets/full_button.png",
         "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"
     },

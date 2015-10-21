@@ -186,7 +186,7 @@
 
     {
         "class": "button_control",
-        "content_margin": [16, 10, 16, 9],
+        // "content_margin": [16, 9, 16, 10],
         "min_size": [70, 0],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
@@ -220,7 +220,7 @@
         "class": "icon_button_control",
         "layer0.inner_margin": [6, 6],
         "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
+        "content_margin": [8, 7, 8, 9]
     },
     {
         "class": "icon_button_control",
