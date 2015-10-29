@@ -9,7 +9,7 @@
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
         "tab_overlap": 1,
-        "tab_width": 320,
+        "tab_width": 300,
         "tab_min_width": 70,
         // "tab_height": 35,
         "mouse_wheel_switch": false
@@ -993,7 +993,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png",
-        "content_margin": [14, 6, 4, 6]
+        "content_margin": [14, 5, 4, 4]
     },
 
     //
@@ -1298,12 +1298,12 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_file_type",

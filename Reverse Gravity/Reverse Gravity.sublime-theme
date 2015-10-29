@@ -9,7 +9,7 @@
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
         "tab_overlap": 1,
-        "tab_width": 320,
+        "tab_width": 300,
         "tab_min_width": 70,
         // "tab_height": 35,
         "mouse_wheel_switch": false
