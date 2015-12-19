@@ -16,13 +16,17 @@
         // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93]
+        // "layer0.tint": [93, 93, 93],
+        "layer0.tint": [255, 255, 255, 255],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight.png"
     },
     {
         "class": "tree_row",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        "layer0.tint": [9, 144, 187, 255] // #0990bb
+        // "layer0.tint": [9, 144, 187, 255],
+        "layer0.tint": [255, 255, 255, 255],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight_blue.png"
     },
 
     // ! Tabs
@@ -191,9 +195,8 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255]
+        "color": [228, 228, 228]
     },
     {
         "class": "sidebar_label",
@@ -203,9 +206,8 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
-        "color": [255, 255, 255]
+        "color": [228, 228, 228]
     },
     {
         "class": "sidebar_label",
@@ -217,20 +219,20 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [221, 221, 221]
+        "color": [228, 228, 228]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [185, 185, 185]
+        "color": [228, 228, 228]
     },
     {
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [221, 221, 221]
+        "color": [228, 228, 228]
     },
 
     //
@@ -468,7 +470,7 @@
         "class": "close_button",
         "settings": ["highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue.png",
-        "layer0.opacity": 0.8
+        "layer0.opacity": 1.0
     },
     {
         "class": "close_button",

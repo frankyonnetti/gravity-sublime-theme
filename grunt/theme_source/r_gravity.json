@@ -12,13 +12,17 @@
         // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.tint": [206, 206, 206]
+        // "layer0.tint": [206, 206, 206],
+        "layer0.tint": [255, 255, 255, 255],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/row_highlight.png"
     },
     {
         "class": "tree_row",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        "layer0.tint": [9, 144, 187, 200]
+        // "layer0.tint": [9, 144, 187],
+        "layer0.tint": [255, 255, 255, 255],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/row_highlight_blue.png"
     },
 
     // ! Tabs
@@ -189,13 +193,13 @@
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255]
+        "color": [34, 34, 34]
     },
     {
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
-        "color": [255, 255, 255]
+        "color": [34, 34, 34]
     },
     {
         "class": "sidebar_label",
@@ -212,19 +216,19 @@
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
-        "color": [255, 255, 255]
+        "color": [34, 34, 34]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [51, 51, 51]
+        "color": [34, 34, 34]
     },
     {
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
-        "color": [255, 255, 255]
+        "color": [34, 34, 34]
     },
 
     //
