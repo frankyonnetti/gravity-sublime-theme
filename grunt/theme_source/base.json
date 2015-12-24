@@ -361,7 +361,6 @@
     },
     {
         "class": "table_row",
-        "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },

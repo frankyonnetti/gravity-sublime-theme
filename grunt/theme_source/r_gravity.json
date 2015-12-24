@@ -8,6 +8,11 @@
         "class": "label_control",
         "color": [88, 88, 88]
     },
+
+    {
+        "class": "table_row",
+        "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png"
+    },
     {
         // ! Sidebar background label color
         "class": "tree_row",

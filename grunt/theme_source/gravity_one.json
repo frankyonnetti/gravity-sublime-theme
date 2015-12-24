@@ -7,30 +7,26 @@
 
     {
         "class": "label_control",
-        "color": [170, 170, 170]
-        //"shadow_color": [200, 200, 200],
-        //"shadow_offset": [0, 1]
+        "color": [144, 152, 165]
     },
 
     {
         "class": "table_row",
-        "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png"
+        "layer0.tint": [107, 114, 125, 255]
     },
     {
         // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        // "layer0.tint": [93, 93, 93],
         "layer0.tint": [255, 255, 255, 255],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/row_highlight.png"
     },
     {
         "class": "tree_row",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        // "layer0.tint": [9, 144, 187, 255],
         "layer0.tint": [255, 255, 255, 255],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight_blue.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/row_highlight_blue.png"
     },
 
     // ! Tabs
@@ -47,37 +43,37 @@
     },
     {
         "class": "tabset_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tabset_background.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background.png"
     },
     {
         "class": "tab_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_inactive_scroll.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive_scroll.png"
     },
     {
         "class": "tab_control",
         "settings": ["!enable_tab_scrolling"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_inactive.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
     },
     // {
     //     "class": "tab_control",
     //     "attributes": ["hover"],
-    //     "layer0.texture": "Theme - Gravity/Gravity/assets/tab_hover.png"
+    //     "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_hover.png"
     // },
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_active.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_active.png"
     },
     {
         "class": "tab_control",
         "settings": ["highlight_color_blue"],
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_blue_active.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_blue_active.png"
     },
     {
         // ! Tab labels
         "class": "tab_label",
-        "fg": [133, 133, 133],
+        "fg": [107, 114, 125],
     },
     {
         "class": "tab_label",
@@ -187,15 +183,15 @@
     {
         "class": "sidebar_tree",
         "row_padding": [8, 6],
-        "layer0.tint": [37, 37, 37] //51
+        "layer0.tint": [33, 37, 43]
     },
     {
         "class": "sidebar_heading",
-        "color": [169, 169, 169]
+        "color": [107, 114, 125]
     },
     {
         "class": "sidebar_label",
-        "color": [185, 185, 185]
+        "color": [144, 152, 165]
     },
     {
         "class": "sidebar_label",
@@ -205,7 +201,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [185, 185, 185]
+        "color": [144, 152, 165]
         //"settings": ["bold_folder_labels"]
     },
     {
@@ -216,27 +212,27 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [185, 185, 185],
+        "color": [144, 152, 165],
         //"settings": ["bold_folder_labels"]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [228, 228, 228]
+        "color": [144, 152, 165]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [228, 228, 228]
+        "color": [144, 152, 165]
     },
     {
         "class": "sidebar_label",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
         //"settings": ["bold_folder_labels"],
-        "color": [228, 228, 228]
+        "color": [144, 152, 165]
     },
 
     //
@@ -246,8 +242,8 @@
     {
         "class": "button_control",
         "content_margin": [16, 9, 16, 10],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/full_button.png",
-        "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/full_button.png",
+        "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png"
     },
 
     //
@@ -256,22 +252,22 @@
 
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/middle_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/middle_button.png"
     },
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/left_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/left_button.png"
     },
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/right_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/right_button.png"
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/mini_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/mini_button.png"
     },
     {
         "class": "dropdown_button_control",
@@ -292,27 +288,30 @@
 
     {
         "class": "scroll_bar_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_vertical.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_bar_vertical.png"
     },
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_horizontal.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_bar_horizontal.png"
     },
     {
         "class": "scroll_corner_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_corner.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_bar_corner.png"
     },
+    // scrollbars
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_vertical.png"
+        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_vertical.png",
+        "layer0.opacity": 0.9
     },
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_horizontal.png"
+        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_horizontal.png",
+        "layer0.opacity": 0.9
     },
-    // overlay
+    // overlay scrollbars
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
@@ -343,7 +342,7 @@
 
     {
         "class": "text_line_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/input_field.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/input_field.png"
     },
 
     //
@@ -357,11 +356,11 @@
     // },
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/panel_control_bg.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/panel_control_bg.png"
     },
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/status_bar.png",
         "content_margin": [14, 5, 4, 4]
     },
 
@@ -371,32 +370,32 @@
 
     {
         "class": "overlay_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bg.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_bg.png",
         "content_margin": [16, 4, 16, 22]
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [55, 55, 55],
-        "layer1.tint": [50, 50, 50],
+        "layer0.tint": [44, 49, 58],
+        "layer1.tint": [33, 37, 43],
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight light
+        "layer0.tint": [58, 63, 75] // highlight light
     },
     {
         "class": "quick_panel_label",
-        "fg": [182, 182, 182, 255],
+        "fg": [144, 152, 165, 255],
         "match_fg": [59, 166, 219, 255], // highlight light
         "selected_fg": [255, 255, 255, 255],
         "selected_match_fg": [92, 195, 246, 255] // color change while typing
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [93, 93, 93, 100],
-        "match_fg": [255, 255, 255, 100],
-        "selected_fg": [170, 170, 170, 100],
-        "selected_match_fg": [255, 255, 255, 100]
+        "fg": [89, 97, 110, 255],
+        "match_fg": [89, 97, 110, 255],
+        "selected_fg": [170, 170, 170, 255],
+        "selected_match_fg": [255, 255, 255, 255]
     },
     {
         "class": "quick_panel_score_label",
@@ -408,12 +407,12 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [55, 55, 55]
+        "layer0.tint": [44, 49, 58]
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [93, 93, 93] // highlight
+        "layer0.tint": [58, 63, 75] // highlight
     },
 
     //
@@ -422,7 +421,7 @@
 
     {
         "class": "auto_complete",
-        "layer0.tint": [55, 55, 55],
+        "layer0.tint": [44, 49, 58],
         "layer0.opacity": 1.0
     },
     {
@@ -433,7 +432,7 @@
         // selected
         "selected_fg": [255, 255, 255], // selected type color
         "selected_match_fg": [101, 201, 251], // selected match type color
-        "selected_bg": [85, 85, 85]
+        "selected_bg": [58, 63, 75]
     },
 
     //
@@ -443,7 +442,7 @@
     {
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
-        "layer0.opacity": 0.4,
+        "layer0.opacity": 0.3,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
         "layer1.opacity": 0.0
     },
@@ -455,7 +454,7 @@
         ],
         // "attributes": ["hover"],
         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.4
+        "layer1.opacity": 0.3
     },
     {
         "class": "disclosure_button_control",
@@ -667,12 +666,12 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_file_type",
@@ -683,17 +682,17 @@
         "class": "icon_file_type",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.8
     },
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.4
     },
     {
         "class": "icon_folder",
@@ -704,7 +703,7 @@
         "class": "icon_folder",
         "settings": ["highlight_color_blue"],
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.7
     },
     {
         "class": "icon_folder",

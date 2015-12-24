@@ -20,6 +20,10 @@ module.exports = function(grunt) {
         src: ['theme_source/base.json', 'theme_source/r_gravity.json'],
         dest: '../Reverse Gravity/Reverse Gravity.sublime-theme',
       },
+      gravity_one: {
+        src: ['theme_source/base.json', 'theme_source/gravity_one.json'],
+        dest: '../Gravity One/Gravity One.sublime-theme',
+      },
     },
 
     watch: {
