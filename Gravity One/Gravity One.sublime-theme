@@ -1302,12 +1302,13 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.opacity": 0.4
+        "layer0.tint": [157, 165, 180, 255],
+        "layer0.opacity": 0.7
     },
     {
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.4
+        "layer0.opacity": 0.7
     },
     {
         "class": "icon_file_type",
@@ -1318,17 +1319,18 @@
         "class": "icon_file_type",
         "settings": ["highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.9
     },
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
-        "layer0.opacity": 0.4
+        "layer0.tint": [157, 165, 180, 255],
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 0.4
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_folder",
@@ -1344,6 +1346,7 @@
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        "layer0.tint": [157, 165, 180, 255],
         //"layer0.texture": "Theme - Gravity/Gravity/icons/folder_open.png",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
     },
