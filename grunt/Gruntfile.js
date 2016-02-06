@@ -7,10 +7,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    concat: { // npmjs.com/package/grunt-contrib-concat
+    concat: {
       options: {
         banner: '[\n',
         footer: ']',
+        stripBanners: true
       },
       gravity: {
         src: ['theme_source/base.json', 'theme_source/gravity.json'],

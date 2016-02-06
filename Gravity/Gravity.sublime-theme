@@ -355,12 +355,6 @@
         "color": [255, 255, 255, 255]
     },
     {
-        "class": "panel_button_control",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/panels.png",
-        "layer0.opacity": 0.7,
-        "content_margin": [12, 8]
-    },
-    {
         "class": "disclosure_button_control",
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
@@ -441,6 +435,10 @@
         "layer0.inner_margin": [2, 12, 2, 2],
         "content_margin": [5, 7, 10, 7],
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_button_control",
+        "content_margin": [12, 8]
     },
     {
         "class": "status_bar",
@@ -1000,6 +998,11 @@
     {
         "class": "panel_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/panel_control_bg.png"
+    },
+    {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/panels.png",
+        "layer0.opacity": 0.7
     },
     {
         "class": "status_bar",

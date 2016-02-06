@@ -436,6 +436,10 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "panel_button_control",
+        "content_margin": [12, 8]
+    },
+    {
         "class": "status_bar",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2]
