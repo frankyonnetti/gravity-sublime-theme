@@ -355,6 +355,12 @@
         "color": [255, 255, 255, 255]
     },
     {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/panels.png",
+        "layer0.opacity": 0.7,
+        "content_margin": [12, 8]
+    },
+    {
         "class": "disclosure_button_control",
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0,
