@@ -356,7 +356,7 @@
     },
     {
         "class": "panel_button_control",
-        "layer0.texture": "Theme - Default/panels.png",
+        "layer0.texture": "Theme - Gravity/Gravity/assets/panels.png",
         "layer0.opacity": 0.7,
         "content_margin": [12, 8]
     },
