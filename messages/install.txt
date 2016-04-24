@@ -44,6 +44,11 @@ To increase the file tab height use:
 "tab_height_tall": true
 
 
+To decrease the file tab height use:
+
+"tab_height_short": true
+
+
 For blue hightlight color option use:
 
 "highlight_color_blue": true

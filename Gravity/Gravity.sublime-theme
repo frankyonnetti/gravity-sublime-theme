@@ -682,6 +682,11 @@
     },
     {
         "class": "tabset_control",
+        "settings": ["tab_height_short"],
+        "tab_height": 32
+    },
+    {
+        "class": "tabset_control",
         "settings": ["tab_height_tall"],
         "tab_height": 47
     },
