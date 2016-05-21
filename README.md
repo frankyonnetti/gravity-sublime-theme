@@ -1,6 +1,6 @@
 # Gravity Theme
 
-### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme. 
+### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
 
 Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on OS X Yosemite & El Capitan.
 
@@ -63,9 +63,9 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 ## Activating the theme
 
 * Open your settings by using the menu `Preferences > Settings - User`
-* Add, or replace, the **"theme:"** settings with 
+* Add, or replace, the **"theme:"** settings with
 `"theme": "Gravity.sublime-theme"` or,
-`"theme": "Gravity One.sublime-theme"` or, 
+`"theme": "Gravity One.sublime-theme"` or,
 `"theme": "Reverse Gravity.sublime-theme"`
 
 
@@ -82,7 +82,7 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 
 ## Replacing the default "fold" icon
 
-Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like: 
+Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like:
 
 <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/fold%402x.png" width="16" height="16">
 
@@ -95,7 +95,7 @@ Currently the only way to override the default *code folding icon* with the one 
 The syntax color scheme in each screenshot is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
 
 * Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
-* The syntax color scheme I'm using for **Reverse Gravity** is one of the default themes called `Mac Classic` 
+* The syntax color scheme I'm using for **Reverse Gravity** is one of the default themes called `Mac Classic`
 * The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
 
 
@@ -106,7 +106,7 @@ Using the "[One Dark Sublime Text 3 Color Scheme](https://packagecontrol.io/pack
 
 ## App icon
 
-Download the [white and orange app icons](https://s3.amazonaws.com/yonnetti-sublime/gravity/Gravity-App-Icons-101.zip) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
+Download the [white and orange app icons](http://bit.ly/1s1CbKG) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
 
 * To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
 
