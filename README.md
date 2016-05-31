@@ -86,7 +86,7 @@ Currently the only way to override the default *code folding icon* with the one 
 
 <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/fold%402x.png" width="16" height="16">
 
-* Download the [directory with icon](https://s3.amazonaws.com/yonnetti-sublime/gravity/Theme-Default.zip) separately and place it in the **"Packages"** directory.
+* Download the [directory with icon](http://bit.ly/2812iC5) separately and place it in the **"Packages"** directory.
 * You can get there by using the menu item `Preferences > Browse Packages...`
 
 
