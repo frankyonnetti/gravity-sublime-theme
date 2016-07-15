@@ -182,13 +182,21 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [47, 47, 47],
-        "content_margin": [0, 0, 1, 0]
+        // "layer0.tint": [33, 37, 43],
+        "layer0.tint": [40, 44, 52],
+        // "layer0.opacity": 1.0,
+        "layer0.inner_margin": [0, 47, 0, 0],
+        "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head.png",
+        "layer1.opacity": 1.0,
+        "layer1.inner_margin": [140, 47, 14, 0],
+        "content_margin": [0, 47, 0, 0]
     },
+
     {
         "class": "sidebar_tree",
         "row_padding": [8, 6],
-        "layer0.tint": [33, 37, 43]
+        "layer0.tint": [40, 44, 52]
+        // "layer0.tint": [33, 37, 43]
     },
     {
         "class": "sidebar_heading",
