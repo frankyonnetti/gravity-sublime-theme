@@ -835,8 +835,8 @@
     {
         "class": "sidebar_tree",
         "row_padding": [8, 6],
-        "layer0.tint": [40, 44, 52]
-        // "layer0.tint": [33, 37, 43]
+        // "layer0.tint": [40, 44, 52]
+        "layer0.tint": [33, 37, 43]
     },
     {
         "class": "sidebar_heading",
@@ -865,7 +865,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [144, 152, 165],
+        "color": [144, 152, 165]
         //"settings": ["bold_folder_labels"]
     },
     {
