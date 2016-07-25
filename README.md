@@ -73,12 +73,12 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User`
 * And add:
-`"tab_height_tall": true`
+`"gravity_tab_height_tall": true` or `"gravity_tab_height_short": true`
 
 **Applying the blue hightlight color option:**
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
-`"highlight_color_blue": true`
+`"gravity_highlight_color_blue": true`
 
 ## Replacing the default "fold" icon
 
@@ -118,7 +118,7 @@ Download the [white and orange app icons](http://bit.ly/1s1CbKG) (v.1.0.1) desig
 **1) Font descenders are cut off in the file UI tabs**
 
 Apply this setting to your "Settings - User" file.
-`"tab_font_small": true`
+`"gravity_tab_font_small": true`
 
 **2) The "Find" feature appears to be hidden behind the status bar.**
 

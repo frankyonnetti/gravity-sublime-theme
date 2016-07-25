@@ -62,7 +62,7 @@
     {
         // ! Tab labels - font small
         "class": "tab_label",
-        "settings": ["tab_font_small"],
+        "settings": ["gravity_tab_font_small"],
         "font.size" : 11.3
     },
     {
@@ -663,7 +663,7 @@
     },
     {
         "class": "tree_row",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
         "layer0.tint": [255, 255, 255, 255],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/row_highlight_blue.png"
@@ -678,12 +678,12 @@
     },
     {
         "class": "tabset_control",
-        "settings": ["tab_height_short"],
+        "settings": ["gravity_tab_height_short"],
         "tab_height": 32
     },
     {
         "class": "tabset_control",
-        "settings": ["tab_height_tall"],
+        "settings": ["gravity_tab_height_tall"],
         "tab_height": 47
     },
     {
@@ -711,7 +711,7 @@
     },
     {
         "class": "tab_control",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_blue_active.png"
     },
@@ -755,7 +755,7 @@
     },
     {
         "class": "tab_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
     },
@@ -770,7 +770,7 @@
     },
     {
         "class": "tab_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
         "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
@@ -822,21 +822,44 @@
 
     {
         "class": "sidebar_container",
-        // "layer0.tint": [33, 37, 43],
-        "layer0.tint": [40, 44, 52],
-        // "layer0.opacity": 1.0,
-        "layer0.inner_margin": [0, 47, 0, 0],
+        "settings": ["gravity_sidebar_header"],
+        "layer0.inner_margin": [0, 41, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
+        "layer1.inner_margin": [140, 41, 14, 0],
+        "content_margin": [0, 41, 0, 0]
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
+        "layer0.inner_margin": [0, 32, 0, 0],
+        "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_short.png",
+        "layer1.inner_margin": [140, 32, 14, 0],
+        "content_margin": [0, 32, 0, 0]
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
+        "layer0.inner_margin": [0, 47, 0, 0],
+        "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_tall.png",
         "layer1.inner_margin": [140, 47, 14, 0],
         "content_margin": [0, 47, 0, 0]
     },
-
+    {
+        "class": "sidebar_container",
+        "settings": ["!gravity_sidebar_header"],
+        "layer0.tint": [47, 47, 47],
+        "content_margin": [0, 0, 1, 0]
+    },
     {
         "class": "sidebar_tree",
         "row_padding": [8, 6],
-        // "layer0.tint": [40, 44, 52]
         "layer0.tint": [33, 37, 43]
+    },
+    {
+        "class": "sidebar_tree",
+        "settings": ["gravity_sidebar_header"],
+        "layer0.tint": [40, 44, 52]
     },
     {
         "class": "sidebar_heading",
@@ -882,7 +905,7 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
         //"settings": ["bold_folder_labels"],
         "color": [144, 152, 165]
@@ -1129,7 +1152,7 @@
     },
     {
         "class": "close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue.png",
         "layer0.opacity": 1.0
     },
@@ -1142,7 +1165,7 @@
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
         "layer0.opacity": 1.0
     },
@@ -1155,7 +1178,7 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_blue_indicator.png",
         "layer0.opacity": 1.0
     },
@@ -1174,7 +1197,7 @@
     },
     {
         "class": "panel_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
         "attributes": ["hover"]
     },
@@ -1339,7 +1362,7 @@
     },
     {
         "class": "icon_file_type",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.opacity": 0.9
     },
@@ -1361,7 +1384,7 @@
     },
     {
         "class": "icon_folder",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
         "layer0.opacity": 0.7
     },

@@ -62,7 +62,7 @@
     {
         // ! Tab labels - font small
         "class": "tab_label",
-        "settings": ["tab_font_small"],
+        "settings": ["gravity_tab_font_small"],
         "font.size" : 11.3
     },
     {
@@ -663,7 +663,7 @@
     },
     {
         "class": "tree_row",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
         // "layer0.tint": [9, 144, 187],
         "layer0.tint": [255, 255, 255, 255],
@@ -679,12 +679,12 @@
     },
     {
         "class": "tabset_control",
-        "settings": ["tab_height_short"],
+        "settings": ["gravity_tab_height_short"],
         "tab_height": 30
     },
     {
         "class": "tabset_control",
-        "settings": ["tab_height_tall"],
+        "settings": ["gravity_tab_height_tall"],
         "tab_height": 45
     },
     {
@@ -708,7 +708,7 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active.png"
     },
     {
@@ -751,7 +751,7 @@
     },
     {
         "class": "tab_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
     },
@@ -767,7 +767,7 @@
     {
         // ! Tab dirty button hover
         "class": "tab_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
         "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
@@ -818,6 +818,32 @@
 
     {
         "class": "sidebar_container",
+        "settings": ["gravity_sidebar_header"],
+        "layer0.inner_margin": [0, 39, 0, 0],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head.png",
+        "layer1.opacity": 1.0,
+        "layer1.inner_margin": [140, 39, 14, 0],
+        "content_margin": [0, 39, 0, 0]
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
+        "layer0.inner_margin": [0, 30, 0, 0],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_short.png",
+        "layer1.inner_margin": [140, 30, 14, 0],
+        "content_margin": [0, 30, 0, 0]
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
+        "layer0.inner_margin": [0, 45, 0, 0],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_tall.png",
+        "layer1.inner_margin": [140, 45, 14, 0],
+        "content_margin": [0, 45, 0, 0]
+    },
+    {
+        "class": "sidebar_container",
+        "settings": ["!gravity_sidebar_header"],
         "layer0.tint": [232, 232, 232],
         "content_margin": [0, 0, 1, 0]
     },
@@ -841,13 +867,13 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [34, 34, 34]
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
         "color": [34, 34, 34]
     },
@@ -864,7 +890,7 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
         "color": [34, 34, 34]
     },
@@ -876,7 +902,7 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
         "color": [34, 34, 34]
     },
@@ -1039,7 +1065,7 @@
     {
         // super + p
         "class": "quick_panel_row",
-        "settings": ["highlight_color_blue"], // blue
+        "settings": ["gravity_highlight_color_blue"], // blue
         "attributes": ["selected"],
         "layer0.tint": [58, 164, 197] // highlight selected background color
     },
@@ -1058,7 +1084,7 @@
     },
     {
         "class": "mini_quick_panel_row",
-        "settings": ["highlight_color_blue"], // blue
+        "settings": ["gravity_highlight_color_blue"], // blue
         "attributes": ["selected"],
         "layer0.tint": [58, 164, 197] // highlight
     },
@@ -1073,7 +1099,7 @@
     },
     {
         "class": "quick_panel_label",
-        "settings": ["highlight_color_blue"], // blue
+        "settings": ["gravity_highlight_color_blue"], // blue
         "match_fg": [58, 164, 197, 255], // highlight
         "selected_fg": [188, 239, 255, 255],
         "selected_match_fg": [255, 255, 255, 255] // color change while typing
@@ -1087,7 +1113,7 @@
     },
     {
         "class": "quick_panel_path_label",
-        "settings": ["highlight_color_blue"], // blue
+        "settings": ["gravity_highlight_color_blue"], // blue
         "match_fg": [58, 164, 197, 255],
         "selected_fg": [27, 103, 138, 255],
         "selected_match_fg": [255, 255, 255, 255]
@@ -1120,7 +1146,7 @@
     },
     {
         "class": "auto_complete_label",
-        "settings": ["highlight_color_blue"], // blue
+        "settings": ["gravity_highlight_color_blue"], // blue
         "match_fg": [58, 164, 197]
     },
 
@@ -1159,7 +1185,7 @@
     },
     {
         "class": "close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue.png",
         "layer0.opacity": 1.0
     },
@@ -1172,7 +1198,7 @@
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue_hover.png",
         "layer0.opacity": 1.0
     },
@@ -1185,7 +1211,7 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/dirty_close_blue_indicator.png"
     },
 
@@ -1203,7 +1229,7 @@
     },
     {
         "class": "panel_close_button",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/close_x_blue_hover.png",
         "attributes": ["hover"]
     },
@@ -1372,7 +1398,7 @@
     },
     // {
     //     "class": "icon_folder",
-    //     "settings": ["highlight_color_blue"],
+    //     "settings": ["gravity_highlight_color_blue"],
     //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
     // },
     {
@@ -1387,7 +1413,7 @@
     },
     // {
     //     "class": "icon_folder",
-    //     "settings": ["highlight_color_blue"],
+    //     "settings": ["gravity_highlight_color_blue"],
     //     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
     //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
     // },
@@ -1398,13 +1424,13 @@
     },
     // {
     //     "class": "icon_folder",
-    //     "settings": ["highlight_color_blue"],
+    //     "settings": ["gravity_highlight_color_blue"],
     //     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
     //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
     // },
     // {
     //     "class": "icon_folder",
-    //     "settings": ["highlight_color_blue"],
+    //     "settings": ["gravity_highlight_color_blue"],
     //     "parents": [{ "class": "tree_row", "attributes": ["expanded", "selected"] }],
     //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
     // },
