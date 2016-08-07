@@ -1,8 +1,9 @@
 
 Thanks for using the Gravity theme!
-You "may" need to restart Sublime Text for it to display correctly.
 
-Feel free to contact me if you have any questions, or need to report any issues via:
+You may need to restart Sublime Text for it to display correctly. Also, if sidebar icons are missing,  disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report any issues:
 
 GitHub Issues
 https://github.com/frankyonnetti/gravity-sublime-theme/issues
@@ -13,27 +14,26 @@ or Twitter
 
 --------------------------------
 
+
+How to enable:
+
 To activate the theme for ST3, add or replace your current theme settings with the code below.
 
 For Gravity Theme:
 
-{
     "theme": "Gravity.sublime-theme",
     "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme"
-}
+
 
 For Reverse Gravity Theme:
 
-{
     "theme": "Reverse Gravity.sublime-theme",
     "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme"
-}
+
 
 For Gravity One Theme:
 
-{
     "theme": "Gravity One.sublime-theme"
-}
 
 Suggest using the "One Dark Sublime Text 3 Color Scheme" with Gravity One.
   - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme
@@ -41,14 +41,24 @@ Suggest using the "One Dark Sublime Text 3 Color Scheme" with Gravity One.
 
 To increase the file tab height use:
 
-"tab_height_tall": true
+    "gravity_tab_height_tall": true
 
 
 To decrease the file tab height use:
 
-"tab_height_short": true
+    "gravity_tab_height_short": true
 
 
-For blue hightlight color option use:
+To decrease the file tab font size use:
 
-"highlight_color_blue": true
+    "gravity_tab_font_small": true
+
+
+For the sidebar header option use:
+
+    "gravity_sidebar_header": true
+
+
+For blue highlight color option use:
+
+    "gravity_highlight_color_blue": true

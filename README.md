@@ -4,6 +4,7 @@
 
 Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on OS X Yosemite & El Capitan.
 
+* Version 3.0.x introduces Gravity One and sidebar header.
 * Version 2.5 introduces OS X blue highlight color and cleaned up UI.
 * Version 2.0 introduces the **Reverse Gravity** light theme.
 
@@ -11,27 +12,19 @@ Created this UI theme using a port of the Default theme that comes with ST3. The
 
 **Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_2.5.1.png">
-
-**Gravity Theme with Blue Highlight Color**
-
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_blue_2.5.1.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_3.0.2.png">
 
 ---
 
 **Gravity One Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_one_3.0.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_one_3.0.2.png">
 
 ---
 
 **Reverse Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_2.5.1.png">
-
-**Reverse Gravity Theme with Blue Highlight Color**
-
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_blue_2.5.1.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_3.0.2.png">
 
 
 _The Gravity theme only works with Sublime Text 3 and hasn't been tested on earlier versions._
@@ -73,12 +66,17 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User`
 * And add:
-`"tab_height_tall": true`
+`"gravity_tab_height_tall": true` or `"gravity_tab_height_short": true`
 
 **Applying the blue hightlight color option:**
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
-`"highlight_color_blue": true`
+`"gravity_highlight_color_blue": true`
+
+**Applying the sidebar header option:**
+
+* Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
+`"gravity_sidebar_header": true`
 
 ## Replacing the default "fold" icon
 
@@ -118,13 +116,17 @@ Download the [white and orange app icons](http://bit.ly/1s1CbKG) (v.1.0.1) desig
 **1) Font descenders are cut off in the file UI tabs**
 
 Apply this setting to your "Settings - User" file.
-`"tab_font_small": true`
+`"gravity_tab_font_small": true`
 
 **2) The "Find" feature appears to be hidden behind the status bar.**
 
 When switching themes in Sublime Text, it will retain the height for the Find bar set in the previous theme. Sometimes this will cause the bar to appear hidden behind the status bar.
 
 [To fix, simply grab the bar and pull-up.](https://github.com/frankyonnetti/gravity-sublime-theme/wiki/Theme-Trouble-Shooting)
+
+**3) Missing sidebar icons.**
+
+Installing and switching themes in Sublime Text may cause some sidebar icons to not show. Disabling installed/inactive themes via Package Control should fix the issue.
 
 
 ## Usage license
