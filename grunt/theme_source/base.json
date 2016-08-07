@@ -341,7 +341,7 @@
     },
     {
         "class": "tool_tip_control",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_blue.png"
     },
     {
@@ -350,7 +350,7 @@
     },
     {
         "class": "tool_tip_label_control",
-        "settings": ["highlight_color_blue"],
+        "settings": ["gravity_highlight_color_blue"],
         "color": [255, 255, 255, 255]
     },
     {
