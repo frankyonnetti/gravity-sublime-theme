@@ -35,8 +35,9 @@ For Gravity One Theme:
 
     "theme": "Gravity One.sublime-theme"
 
-Suggest using the "One Dark Sublime Text 3 Color Scheme" with Gravity One.
+Suggest using the "One Dark Sublime Text 3 Color Scheme" or "One Half Color Schemes" with Gravity One.
   - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme
+  - https://github.com/sonph/onehalf
 
 
 To increase the file tab height use:
