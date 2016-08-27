@@ -396,20 +396,6 @@
     },
 
     //
-    // ! Minimap
-    // ----------------------------------------------------------
-
-    {
-        "class": "minimap_control",
-        "viewport_color": [68, 68, 68, 50],
-    },
-    {
-        "class": "minimap_control",
-        "attributes": ["hover"],
-        "viewport_color": [68, 68, 68, 96],
-    },
-
-    //
     // ! Text field
     //   text color bg: Widget - Gravity.stTheme line: 13
     // ----------------------------------------------------------
