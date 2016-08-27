@@ -11,6 +11,14 @@ https://github.com/frankyonnetti/gravity-sublime-theme/issues
 or Twitter
 @dh_Frank
 
+-----------------------------------------
+
+3.0.3 Update
+
+- Worked on a few UI refinements and tweaks.
+
+-----------------------------------------
+
 
 NEW FEATURE: "Sidebar Header"
 Yup, I joined the band wagon and added a sidebar header.
@@ -84,7 +92,7 @@ For blue highlight color option use:
 
 Changes in 3.0.3
 
-- Worked on a few UI refining and tweaks.
+- Worked on a few UI refinements and tweaks.
 
 
 Changes in 3.0.2
