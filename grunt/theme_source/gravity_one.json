@@ -426,12 +426,12 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_bg.png",
-        "content_margin": [16, 4, 16, 22]
+        "content_margin": [17, 4, 16, 22]
     },
     {
         "class": "quick_panel_row",
         "layer0.tint": [44, 49, 58],
-        "layer1.tint": [33, 37, 43],
+        "layer1.tint": [33, 37, 43]
     },
     {
         "class": "quick_panel_row",
