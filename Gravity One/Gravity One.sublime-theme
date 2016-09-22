@@ -964,13 +964,13 @@
     // scrollbars
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_vertical.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_vertical.png",
         "layer0.opacity": 0.9
     },
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_horizontal.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_horizontal.png",
         "layer0.opacity": 0.9
     },
     // overlay scrollbars
