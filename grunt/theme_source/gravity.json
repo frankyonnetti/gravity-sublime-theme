@@ -430,6 +430,10 @@
         "content_margin": [16, 4, 16, 22]
     },
     {
+        "class": "quick_panel",
+        "layer0.tint": [34, 34, 34]
+    },
+    {
         "class": "quick_panel_row",
         "layer0.tint": [55, 55, 55],
         "layer1.tint": [50, 50, 50],

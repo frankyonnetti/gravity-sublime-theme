@@ -7,7 +7,8 @@
 
     {
         "class": "label_control",
-        "color": [144, 152, 165]
+        "color": [144, 152, 165],
+        "font.size": 10
     },
 
     {
@@ -338,13 +339,13 @@
     // scrollbars
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_vertical.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_vertical.png",
         "layer0.opacity": 0.9
     },
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Gravity/Gravity one/assets/normal_thumb_horizontal.png",
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_horizontal.png",
         "layer0.opacity": 0.9
     },
     // overlay scrollbars
@@ -379,6 +380,12 @@
     {
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/input_field.png"
+    },
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.draw_center": true,
+        "content_margin": [10, 15, 10, 10]
     },
 
     //
@@ -426,12 +433,17 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_bg.png",
-        "content_margin": [17, 4, 16, 22]
+        "content_margin": [12, 12, 12, 12]
+    },
+    {
+        "class": "quick_panel",
+        "layer0.tint": [50, 56, 65],
+        "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
-        "layer0.tint": [44, 49, 58],
-        "layer1.tint": [33, 37, 43]
+        "layer0.tint": [50, 56, 65],
+        "layer1.tint": [50, 56, 65] // [33, 37, 43]
     },
     {
         "class": "quick_panel_row",
@@ -462,7 +474,7 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [44, 49, 58]
+        "layer0.tint": [50, 56, 65]
     },
     {
         "class": "mini_quick_panel_row",
@@ -583,19 +595,19 @@
     {
         // ! Progress bar
         "class": "progress_bar_control",
-        "layer0.tint": [32, 32, 32],
+        "layer0.tint": [27, 29, 35],
         "layer0.opacity": 1.0,
     },
     {
         // ! Grid
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [45, 45, 45]
+        "border_color": [42, 47, 56]
     },
         {
         // ! Dialog
         "class": "dialog",
-        "layer0.tint": [42, 42, 42],
+        "layer0.tint": [37, 42, 49],
         "layer0.opacity": 1.0
     },
 

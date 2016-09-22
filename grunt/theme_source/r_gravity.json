@@ -424,6 +424,10 @@
         "content_margin": [15, 5, 15, 21]
     },
     {
+        "class": "quick_panel",
+        "layer0.tint": [252, 252, 252]
+    },
+    {
         // super + p
         // panel background and line color
         "class": "quick_panel_row",
