@@ -13,9 +13,10 @@ or Twitter
 
 -----------------------------------------
 
-3.0.3 Update
+Changes in 3.0.4
 
-- Worked on a few UI refinements and tweaks.
+- Fixed typo in path to scroll bar image.
+    - Thanks darthoctopus - https://github.com/darthoctopus
 
 -----------------------------------------
 
