@@ -804,27 +804,27 @@
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
-        "layer0.inner_margin": [0, 39, 0, 0],
+        "layer0.inner_margin": [0, 40, 0, 0],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
-        "layer1.inner_margin": [140, 39, 14, 0],
-        "content_margin": [0, 39, 0, 0]
+        "layer1.inner_margin": [140, 40, 14, 0],
+        "content_margin": [0, 40, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
-        "layer0.inner_margin": [0, 30, 0, 0],
+        "layer0.inner_margin": [0, 31, 0, 0],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_short.png",
-        "layer1.inner_margin": [140, 30, 14, 0],
-        "content_margin": [0, 30, 0, 0]
+        "layer1.inner_margin": [140, 31, 14, 0],
+        "content_margin": [0, 31, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
-        "layer0.inner_margin": [0, 45, 0, 0],
+        "layer0.inner_margin": [0, 46, 0, 0],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_tall.png",
-        "layer1.inner_margin": [140, 45, 14, 0],
-        "content_margin": [0, 45, 0, 0]
+        "layer1.inner_margin": [140, 46, 14, 0],
+        "content_margin": [0, 46, 0, 0]
     },
     {
         "class": "sidebar_container",
@@ -1000,6 +1000,13 @@
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field.png"
     },
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png",
+        "layer0.draw_center": true,
+        "content_margin": [10, 15, 10, 10]
+    },
 
     //
     // ! Minimap
@@ -1046,31 +1053,32 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bg.png",
-        "content_margin": [15, 5, 15, 21]
+        "content_margin": [12, 12]
     },
     {
         "class": "quick_panel",
-        "layer0.tint": [252, 252, 252]
+        "layer0.tint": [235, 235, 235],
+        "layer0.opacity": 1.0
     },
     {
         // super + p
         // panel background and line color
         "class": "quick_panel_row",
-        "layer0.tint": [252, 252, 252],
-        "layer1.tint": [252, 252, 252],
+        "layer0.tint": [235, 235, 235],
+        "layer1.tint": [235, 235, 235],
     },
     {
         // super + p
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [215, 215, 215] // highlight selected background color
+        "layer0.tint": [235, 235, 235] // highlight selected background color
     },
     {
         // super + p
         "class": "quick_panel_row",
         "settings": ["gravity_highlight_color_blue"], // blue
         "attributes": ["selected"],
-        "layer0.tint": [58, 164, 197] // highlight selected background color
+        "layer0.tint": [9, 144, 187] // highlight selected background color
     },
 
     // ! Mini quick panel
@@ -1078,7 +1086,7 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.tint": [252, 252, 252]
+        "layer0.tint": [235, 235, 235]
     },
     {
         "class": "mini_quick_panel_row",
@@ -1089,7 +1097,7 @@
         "class": "mini_quick_panel_row",
         "settings": ["gravity_highlight_color_blue"], // blue
         "attributes": ["selected"],
-        "layer0.tint": [58, 164, 197] // highlight
+        "layer0.tint": [9, 144, 187] // highlight
     },
 
      // ! Quick panel shared
@@ -1103,7 +1111,7 @@
     {
         "class": "quick_panel_label",
         "settings": ["gravity_highlight_color_blue"], // blue
-        "match_fg": [58, 164, 197, 255], // highlight
+        "match_fg": [9, 144, 187, 255], // highlight
         "selected_fg": [188, 239, 255, 255],
         "selected_match_fg": [255, 255, 255, 255] // color change while typing
     },
@@ -1117,8 +1125,8 @@
     {
         "class": "quick_panel_path_label",
         "settings": ["gravity_highlight_color_blue"], // blue
-        "match_fg": [58, 164, 197, 255],
-        "selected_fg": [27, 103, 138, 255],
+        "match_fg": [9, 144, 187, 255],
+        "selected_fg": [0, 30, 39, 255],
         "selected_match_fg": [255, 255, 255, 255]
     },
     {

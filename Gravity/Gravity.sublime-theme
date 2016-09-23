@@ -812,27 +812,27 @@
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
-        "layer0.inner_margin": [0, 41, 0, 0],
+        "layer0.inner_margin": [0, 42, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
-        "layer1.inner_margin": [140, 41, 14, 0],
-        "content_margin": [0, 41, 0, 0]
+        "layer1.inner_margin": [140, 42, 14, 0],
+        "content_margin": [0, 42, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
-        "layer0.inner_margin": [0, 32, 0, 0],
+        "layer0.inner_margin": [0, 33, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head_short.png",
-        "layer1.inner_margin": [140, 32, 14, 0],
-        "content_margin": [0, 32, 0, 0]
+        "layer1.inner_margin": [140, 33, 14, 0],
+        "content_margin": [0, 33, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
-        "layer0.inner_margin": [0, 47, 0, 0],
+        "layer0.inner_margin": [0, 48, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head_tall.png",
-        "layer1.inner_margin": [140, 47, 14, 0],
-        "content_margin": [0, 47, 0, 0]
+        "layer1.inner_margin": [140, 48, 14, 0],
+        "content_margin": [0, 48, 0, 0]
     },
     {
         "class": "sidebar_container",
@@ -845,11 +845,11 @@
         "row_padding": [8, 6],
         "layer0.tint": [37, 37, 37]
     },
-    {
-        "class": "sidebar_tree",
-        "settings": ["gravity_sidebar_header"],
-        "layer0.tint": [43, 43, 43]
-    },
+    // {
+    //     "class": "sidebar_tree",
+    //     "settings": ["gravity_sidebar_header"],
+    //     "layer0.tint": [43, 43, 43]
+    // },
     {
         "class": "sidebar_heading",
         "color": [169, 169, 169]
@@ -1052,7 +1052,7 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bg.png",
-        "content_margin": [16, 4, 16, 22]
+        "content_margin": [12, 12]
     },
     {
         "class": "quick_panel",

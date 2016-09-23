@@ -809,27 +809,27 @@
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
-        "layer0.inner_margin": [0, 41, 0, 0],
+        "layer0.inner_margin": [0, 42, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
-        "layer1.inner_margin": [140, 41, 14, 0],
-        "content_margin": [0, 41, 0, 0]
+        "layer1.inner_margin": [140, 42, 14, 0],
+        "content_margin": [0, 42, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
-        "layer0.inner_margin": [0, 32, 0, 0],
+        "layer0.inner_margin": [0, 33, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_short.png",
-        "layer1.inner_margin": [140, 32, 14, 0],
-        "content_margin": [0, 32, 0, 0]
+        "layer1.inner_margin": [140, 33, 14, 0],
+        "content_margin": [0, 33, 0, 0]
     },
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
-        "layer0.inner_margin": [0, 47, 0, 0],
+        "layer0.inner_margin": [0, 48, 0, 0],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_tall.png",
-        "layer1.inner_margin": [140, 47, 14, 0],
-        "content_margin": [0, 47, 0, 0]
+        "layer1.inner_margin": [140, 48, 14, 0],
+        "content_margin": [0, 48, 0, 0]
     },
     {
         "class": "sidebar_container",
@@ -842,11 +842,11 @@
         "row_padding": [8, 6],
         "layer0.tint": [33, 37, 43]
     },
-    {
-        "class": "sidebar_tree",
-        "settings": ["gravity_sidebar_header"],
-        "layer0.tint": [40, 44, 52]
-    },
+    // {
+    //     "class": "sidebar_tree",
+    //     "settings": ["gravity_sidebar_header"],
+    //     "layer0.tint": [40, 44, 52]
+    // },
     {
         "class": "sidebar_heading",
         "color": [107, 114, 125]
@@ -1036,6 +1036,8 @@
     //     "parents": [{"class": "status_bar"}],
     //     "color": [169, 169, 169]
     // },
+
+    // This is the Project panel and search & replace background color
     {
         "class": "panel_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/panel_control_bg.png"
@@ -1058,7 +1060,7 @@
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_bg.png",
-        "content_margin": [12, 12, 12, 12]
+        "content_margin": [12, 12]
     },
     {
         "class": "quick_panel",
