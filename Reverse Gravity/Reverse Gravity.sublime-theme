@@ -602,14 +602,14 @@
         {
             "keyframes":
             [
-                "Theme - Gravity/shared_assets/spinner7.png",
-                "Theme - Gravity/shared_assets/spinner6.png",
-                "Theme - Gravity/shared_assets/spinner5.png",
-                "Theme - Gravity/shared_assets/spinner4.png",
-                "Theme - Gravity/shared_assets/spinner3.png",
-                "Theme - Gravity/shared_assets/spinner2.png",
-                "Theme - Gravity/shared_assets/spinner1.png",
-                "Theme - Gravity/shared_assets/spinner.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
             ],
             "loop": true,
             "frame_time": 0.075,
@@ -1450,4 +1450,26 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_dup.png",
         "layer0.opacity": 1.0
     },
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "Theme - Gravity/shared_assets/dark_spinner/spinner7.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner6.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner5.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner4.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner3.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner2.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner1.png",
+                "Theme - Gravity/shared_assets/dark_spinner/spinner.png",
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    }
 ]
