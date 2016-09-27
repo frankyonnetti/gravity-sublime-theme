@@ -92,9 +92,9 @@ Currently the only way to override the default *code folding icon* with the one 
 
 ### Gravity
 
-The syntax color scheme in each screenshot is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
+The syntax color scheme is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
 
-* Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity (SL)`
+* Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity`
 * The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
 
 
@@ -105,6 +105,7 @@ The syntax color scheme in each screenshot is a port of the **Monokai-Sublime sc
 
 ### Gravity One
 
+* Use the included version of "One Dark Color Scheme" forked from [Timothy de Jongh's Github](https://github.com/IceTimux). Select the included scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > One Dark Gravity`
 * **[One Dark Color Scheme](https://packagecontrol.io/packages/One%20Dark%20Color%20Scheme)** created by [Timothy de Jongh](https://github.com/IceTimux).
 * Or, **[One Half Color Scheme](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph).
 
