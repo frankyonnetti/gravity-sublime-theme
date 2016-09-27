@@ -460,12 +460,11 @@
     {
         "class": "quick_panel",
         "row_padding": [10, 9],
-        "layer0.tint": [34, 34, 34],
         "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
-        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.inner_margin": [2, 2],
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 0, 0, 1],
         "layer1.draw_center": false,
@@ -481,7 +480,7 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.inner_margin": [2, 2, 2, 2],
+        "layer0.inner_margin": [2, 2],
         "layer0.opacity": 1.0
     },
 
@@ -602,14 +601,14 @@
         {
             "keyframes":
             [
-                "Theme - Gravity/shared_assets/spinner7.png",
-                "Theme - Gravity/shared_assets/spinner6.png",
-                "Theme - Gravity/shared_assets/spinner5.png",
-                "Theme - Gravity/shared_assets/spinner4.png",
-                "Theme - Gravity/shared_assets/spinner3.png",
-                "Theme - Gravity/shared_assets/spinner2.png",
-                "Theme - Gravity/shared_assets/spinner1.png",
-                "Theme - Gravity/shared_assets/spinner.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
             ],
             "loop": true,
             "frame_time": 0.075,

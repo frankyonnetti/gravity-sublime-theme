@@ -1,7 +1,13 @@
-//  Type `npm install` from this directory
+// npm install grunt grunt-contrib-concat grunt-contrib-watch grunt-notify load-grunt-tasks time-grunt --save-dev
 
 module.exports = function(grunt) {
   'use strict';
+
+  // Load tasks
+  require('load-grunt-tasks')(grunt);
+
+  // Display task timing
+  require('time-grunt')(grunt);
 
   // Project configuration
   grunt.initConfig({
@@ -46,11 +52,6 @@ module.exports = function(grunt) {
     }
 
   }); // end jSON
-
-  // Load plugins
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-notify');
 
   // Default task(s)
   grunt.registerTask('default', ['concat', 'watch']);
