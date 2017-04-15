@@ -1,5 +1,14 @@
     // Gravity UI
 
+    {
+        "class": "title_bar"
+    },
+    {
+        "class": "title_bar",
+        "settings": ["gravity_title_bar"],
+        "fg": [106, 112, 121],
+        "bg": [33, 37, 43]
+    },
 
     //
     // ! Global Label control
