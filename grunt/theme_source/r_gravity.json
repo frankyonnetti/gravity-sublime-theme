@@ -2,6 +2,7 @@
 
     {
         "class": "title_bar",
+        "settings": ["gravity_title_bar"],
         "fg": [153, 153, 153],
         "bg": [242, 242, 242]
     },
