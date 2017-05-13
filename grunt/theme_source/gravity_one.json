@@ -66,11 +66,6 @@
         "settings": ["!enable_tab_scrolling"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
     },
-    // {
-    //     "class": "tab_control",
-    //     "attributes": ["hover"],
-    //     "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_hover.png"
-    // },
     {
         "class": "tab_control",
         "attributes": ["selected"],
@@ -78,9 +73,21 @@
     },
     {
         "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["gravity_title_bar"],
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_active_titlebar.png"
+    },
+    {
+        "class": "tab_control",
         "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_blue_active.png"
+    },
+    {
+        "class": "tab_control",
+        "settings": ["gravity_highlight_color_blue", "gravity_title_bar"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_blue_active_titlebar.png"
     },
     {
         // ! Tab labels

@@ -75,8 +75,20 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
+        "settings": ["gravity_title_bar"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active_titlebar.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
         "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["gravity_highlight_color_blue", "gravity_title_bar"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active_titlebar.png"
     },
     {
         // ! Tab labels
