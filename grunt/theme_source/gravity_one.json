@@ -90,7 +90,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [221, 221, 221]
+        "fg": [107, 114, 125]
     },
     {
         "class": "tab_label",
