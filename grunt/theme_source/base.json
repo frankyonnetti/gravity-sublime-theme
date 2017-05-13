@@ -35,7 +35,7 @@
         // ! Tab close state / tab label margin
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [22, 0,   7, 0]
+        "content_margin": [22, 0, 7, 0]
     },
     {
         // ! Tab dirty state (close button hidden) / tab label margin
@@ -113,21 +113,21 @@
 
     {
         "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 8],
+        "content_margin": [9, 8],
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0
     },
     {
         "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 13, 8],
+        "content_margin": [11, 8],
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0
     },
     {
         "class": "show_tabs_dropdown_button",
-        "content_margin": [14, 7, 10, 8],
+        "content_margin": [10, 8],
         "layer0.inner_margin": 0,
-        "layer1.inner_margin": 0,
+        "layer1.inner_margin": 0
     },
 
     //

@@ -3,8 +3,8 @@
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
-        "fg": [106, 112, 121],
-        "bg": [33, 37, 43]
+        "fg": ["background", 110, 116, 127, 1.0],
+        "bg": ["background", 33, 37, 43, 1.0]
     },
 
     //
@@ -95,13 +95,13 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [221, 221, 221]
+        "fg": [215, 218, 224]
     },
     {
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.5,
+        "layer0.opacity": 0.7,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
@@ -151,12 +151,12 @@
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
         "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
-        "layer1.opacity": 0
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
@@ -168,7 +168,7 @@
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -180,7 +180,7 @@
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
 
     //
@@ -215,7 +215,7 @@
     {
         "class": "sidebar_container",
         "settings": ["!gravity_sidebar_header"],
-        "layer0.tint": [47, 47, 47],
+        "layer0.tint": [39, 41, 45],
         "content_margin": [0, 0, 1, 0]
     },
     {
@@ -239,7 +239,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [228, 228, 228]
+        "color": [215, 218, 224]
     },
     {
         "class": "sidebar_label",
@@ -431,7 +431,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/status_bar.png",
-        "content_margin": [14, 5, 4, 4]
+        "content_margin": [14, 6, 4, 5]
     },
 
     //

@@ -36,7 +36,7 @@
         // ! Tab close state / tab label margin
         "class": "tab_control",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [22, 0,   7, 0]
+        "content_margin": [22, 0, 7, 0]
     },
     {
         // ! Tab dirty state (close button hidden) / tab label margin
@@ -114,21 +114,21 @@
 
     {
         "class": "scroll_tabs_left_button",
-        "content_margin": [9, 7, 8, 8],
+        "content_margin": [9, 8],
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0
     },
     {
         "class": "scroll_tabs_right_button",
-        "content_margin": [9, 7, 13, 8],
+        "content_margin": [11, 8],
         "layer0.inner_margin": 0,
         "layer1.inner_margin": 0
     },
     {
         "class": "show_tabs_dropdown_button",
-        "content_margin": [14, 7, 10, 8],
+        "content_margin": [10, 8],
         "layer0.inner_margin": 0,
-        "layer1.inner_margin": 0,
+        "layer1.inner_margin": 0
     },
 
     //
@@ -628,8 +628,8 @@
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
-        "fg": [170, 170, 170],
-        "bg": [37, 37, 37]
+        "fg": ["background", 133, 133, 133, 1.0],
+        "bg": ["background", 37, 37, 37, 1.0]
     },
 
 
@@ -730,7 +730,7 @@
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.5,
+        "layer0.opacity": 0.7,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
@@ -785,7 +785,7 @@
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
@@ -797,7 +797,7 @@
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -809,7 +809,7 @@
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
 
     //
@@ -1049,7 +1049,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png",
-        "content_margin": [14, 5, 4, 4]
+        "content_margin": [14, 6, 4, 5]
     },
 
     //

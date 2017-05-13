@@ -3,8 +3,8 @@
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
-        "fg": [153, 153, 153],
-        "bg": [242, 242, 242]
+        "fg": ["background", 135, 135, 135, 1.0],
+        "bg": ["background", 242, 242, 242, 1.0]
     },
 
     //
@@ -145,38 +145,38 @@
     {
         "class": "scroll_tabs_left_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
-        "layer1.opacity": 0
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
 
     //
