@@ -394,12 +394,6 @@
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/Gravity One/assets/input_field.png"
     },
-    {
-        "class": "text_line_control",
-        "parents": [{"class": "overlay_control"}],
-        "layer0.draw_center": true,
-        "content_margin": [10, 15, 10, 10]
-    },
 
     //
     // ! Minimap

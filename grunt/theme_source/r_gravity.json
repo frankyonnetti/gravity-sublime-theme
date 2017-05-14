@@ -397,9 +397,7 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png",
-        "layer0.draw_center": true,
-        "content_margin": [10, 15, 10, 10]
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png"
     },
 
     //
