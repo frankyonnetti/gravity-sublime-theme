@@ -1,9 +1,10 @@
 
 Thanks for using the Gravity theme!
 
-You may need to restart Sublime Text for it to display correctly. Also, if sidebar icons are missing,  disabling installed/inactive themes will typically fix it.
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
 
-Feel free to contact me if you have any questions, or need to report any issues:
+Feel free to contact me if you have any questions, or need to report an issues:
 
 GitHub Issues
 https://github.com/frankyonnetti/gravity-sublime-theme/issues
@@ -12,7 +13,7 @@ or Twitter
 @dh_Frank
 
 
---------------------------------
+*************************************************************************
 
 
 How to enable:
@@ -63,3 +64,8 @@ For the sidebar header option use:
 For blue highlight color option use:
 
     "gravity_highlight_color_blue": true
+
+To enable the macOS title bar use (dev build 3127 or newer):
+
+    "gravity_title_bar": true
+
