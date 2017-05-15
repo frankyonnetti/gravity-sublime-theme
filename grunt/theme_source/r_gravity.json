@@ -1,5 +1,12 @@
     // Reverse Gravity UI
 
+    {
+        "class": "title_bar",
+        "settings": ["gravity_title_bar"],
+        "fg": ["background", 135, 135, 135, 1.0],
+        "bg": ["background", 242, 242, 242, 1.0]
+    },
+
     //
     // ! Global Label control
     // ----------------------------------------------------------
@@ -68,8 +75,20 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
+        "settings": ["gravity_title_bar"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_active_titlebar.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
         "settings": ["gravity_highlight_color_blue"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active.png"
+    },
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "settings": ["gravity_highlight_color_blue", "gravity_title_bar"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/tab_blue_active_titlebar.png"
     },
     {
         // ! Tab labels
@@ -79,7 +98,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [51, 51, 51]
+        "fg": [102, 102, 102]
     },
     {
         "class": "tab_label",
@@ -138,38 +157,38 @@
     {
         "class": "scroll_tabs_left_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
-        "layer1.opacity": 0
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_right.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.4,
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_down.png",
         "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.0
     },
 
     //
@@ -378,9 +397,7 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png",
-        "layer0.draw_center": true,
-        "content_margin": [10, 15, 10, 10]
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png"
     },
 
     //

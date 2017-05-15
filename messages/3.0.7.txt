@@ -1,0 +1,25 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.0.7
+
+If you're using dev build 3127 (release date: 12 April 2017) or newer,
+you can now use the new macOS title bar in Gravity by using:
+
+    "gravity_title_bar": true
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+or Twitter
+@dh_Frank

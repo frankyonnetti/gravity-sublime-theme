@@ -1,5 +1,12 @@
     // Gravity UI
 
+    {
+        "class": "title_bar",
+        "settings": ["gravity_title_bar"],
+        "fg": ["background", 133, 133, 133, 1.0],
+        "bg": ["background", 37, 37, 37, 1.0]
+    },
+
 
     //
     // ! Global Label control
@@ -63,11 +70,6 @@
         "settings": ["!enable_tab_scrolling"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_inactive.png"
     },
-    // {
-    //     "class": "tab_control",
-    //     "attributes": ["hover"],
-    //     "layer0.texture": "Theme - Gravity/Gravity/assets/tab_hover.png"
-    // },
     {
         "class": "tab_control",
         "attributes": ["selected"],
@@ -75,9 +77,21 @@
     },
     {
         "class": "tab_control",
+        "settings": ["gravity_title_bar"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_active_titlebar.png"
+    },
+    {
+        "class": "tab_control",
         "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_blue_active.png"
+    },
+    {
+        "class": "tab_control",
+        "settings": ["gravity_highlight_color_blue", "gravity_title_bar"],
+        "attributes": ["selected"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_blue_active_titlebar.png"
     },
     {
         // ! Tab labels
@@ -87,7 +101,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [221, 221, 221]
+        "fg": [133, 133, 133]
     },
     {
         "class": "tab_label",
@@ -98,7 +112,7 @@
         // ! Tab close button
         "class": "tab_close_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.5,
+        "layer0.opacity": 0.7,
         "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
         "layer1.opacity": 0
     },
@@ -153,7 +167,7 @@
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "scroll_tabs_right_button",
@@ -165,7 +179,7 @@
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -177,7 +191,7 @@
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.0
     },
 
     //
@@ -417,7 +431,7 @@
     {
         "class": "status_bar",
         "layer0.texture": "Theme - Gravity/Gravity/assets/status_bar.png",
-        "content_margin": [14, 5, 4, 4]
+        "content_margin": [14, 6, 4, 5]
     },
 
     //
