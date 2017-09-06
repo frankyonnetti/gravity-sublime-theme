@@ -9,7 +9,7 @@
         "layer0.opacity": 1.0,
         "content_margin": [0, 0, 0, 0],
         "tab_overlap": 1,
-        "tab_width": 300,
+        // "tab_width": 300,
         "tab_min_width": 70,
         // "tab_height": 35,
         "mouse_wheel_switch": false
@@ -671,7 +671,8 @@
 
     {
         "class": "tabset_control",
-        "tab_height": 41
+        "tab_height": 41,
+        "tab_width": 300
     },
     {
         "class": "tabset_control",
@@ -682,6 +683,11 @@
         "class": "tabset_control",
         "settings": ["gravity_tab_height_tall"],
         "tab_height": 47
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["gravity_tab_width_narrow"],
+        "tab_width": 220
     },
     {
         "class": "tabset_control",

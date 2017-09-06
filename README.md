@@ -68,6 +68,11 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 * And add:
 `"gravity_tab_height_tall": true` or `"gravity_tab_height_short": true`
 
+**Applying the file Tab width option:**
+
+* Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
+`"gravity_tab_width_narrow": true`
+
 **Applying the blue hightlight color option:**
 
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
