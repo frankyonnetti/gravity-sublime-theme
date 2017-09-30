@@ -2,8 +2,9 @@
 
 ### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
 
-Created this UI theme using a port of the Default theme that comes with ST3. The goal was to make a dark and light theme that feels at home on OS X Yosemite & El Capitan.
+The goal of this Sublime Text UI was to make a dark and light theme that feels at home on macOS.
 
+* Version 3.0.7 Added color titlebar option.
 * Version 3.0.x introduces Gravity One and sidebar header.
 * Version 2.5 introduces OS X blue highlight color and cleaned up UI.
 * Version 2.0 introduces the **Reverse Gravity** light theme.
@@ -12,22 +13,22 @@ Created this UI theme using a port of the Default theme that comes with ST3. The
 
 **Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_3.0.2.png">
+<img src="https://yonnetti.net/sublime/images/gravity-307.png">
 
 ---
 
 **Gravity One Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity_one_3.0.2.png">
+<img src="https://yonnetti.net/sublime/images/gravity-one-307.png">
 
 ---
 
 **Reverse Gravity Theme**
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse_gravity_3.0.2.png">
+<img src="https://yonnetti.net/sublime/images/reverse-gravity-307.png">
 
 
-_The Gravity theme only works with Sublime Text 3 and hasn't been tested on earlier versions._
+_The Gravity theme has only been tested with Sublime Text 3._
 
 ## Install using Package Control
 
@@ -61,6 +62,11 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 `"theme": "Gravity One.sublime-theme"` or,
 `"theme": "Reverse Gravity.sublime-theme"`
 
+**Applying the new macOS title bar in Gravity**:
+
+* Open your settings (if not already open) by using the menu `Preferences > Settings - User`
+* And add:
+`"gravity_title_bar": true`
 
 **Applying the file Tab height option:**
 
