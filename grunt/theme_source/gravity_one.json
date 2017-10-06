@@ -3,7 +3,7 @@
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
-        "fg": ["background", 110, 116, 127, 1.0],
+        "fg": ["background", 255, 255, 255, 0.7],
         "bg": ["background", 33, 37, 43, 1.0]
     },
 
