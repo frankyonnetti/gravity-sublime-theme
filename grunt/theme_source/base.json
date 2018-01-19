@@ -1,7 +1,5 @@
 
     // ! Tabs
-    // ----------------------------------------------------------
-
     {
         "class": "tabset_control",
         "layer0.inner_margin": [10, 0],
@@ -10,7 +8,6 @@
         "tab_overlap": 1,
         "tab_width": 300,
         "tab_min_width": 70,
-        // "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -130,10 +127,7 @@
         "layer1.inner_margin": 0
     },
 
-    //
     // ! Sidebar
-    // ----------------------------------------------------------
-
     {
         "class": "sidebar_container",
         "layer0.opacity": 1.0,
@@ -142,7 +136,6 @@
     },
     {
         "class": "sidebar_tree",
-        // "row_padding": [8, 5],
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
@@ -151,28 +144,21 @@
     {
         "class": "sidebar_heading",
         "font.bold": true
-        //"shadow_color": [0, 0, 0],
-        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}]
-        //"shadow_color": [160, 174, 192]
     },
     {
         "class": "sidebar_label",
         "font.bold": false,
         "font.italic": false,
         "font.size": 12.0 // 11.0 is default
-        //"shadow_color": [0, 0, 0],
-        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255]
-        //"shadow_color": [60, 60, 60],
-        //"shadow_offset": [0, 1]
     },
     {
         "class": "sidebar_label",
@@ -180,13 +166,9 @@
         "font.italic": true
     },
 
-    //
     // ! Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "button_control",
-        // "content_margin": [16, 9, 16, 10],
         "min_size": [70, 0],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
@@ -212,10 +194,7 @@
     //     "layer2.opacity": 0.0
     // },
 
-    //
     // ! Small Find Icon Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_button_control",
         "layer0.inner_margin": [6, 6],
@@ -245,10 +224,7 @@
         "layer1.inner_margin": [4, 4]
     },
 
-    //
     // ! Scrollbars
-    // ----------------------------------------------------------
-
     {
         "class": "scroll_bar_control",
         "layer0.opacity": 1.0,
@@ -321,10 +297,7 @@
         "blur": true
     },
 
-    //
     // ! Popup Control
-    // ----------------------------------------------------------
-
     {
         "class": "popup_control",
         "layer0.tint": [64, 64, 64],
@@ -380,10 +353,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Close button
-    // ----------------------------------------------------------
-
     {
         "class": "close_button",
         "layer0.inner_margin": 0,
@@ -394,11 +364,8 @@
         "content_margin": [8, 8]
     },
 
-    //
     // ! Text field
     //   text color bg: Widget - Gravity.stTheme line: 13
-    // ----------------------------------------------------------
-
     {
         "class": "text_line_control",
         "layer0.opacity": 1.0,
@@ -417,10 +384,7 @@
         "content_margin": [4, 7, 15, 3]
     },
 
-    //
     // ! Status bar
-    // ----------------------------------------------------------
-
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
@@ -450,10 +414,7 @@
         "min_size": [75, 0]
     },
 
-    //
     // ! Quick Panel
-    // ----------------------------------------------------------
-
     {
         "class": "overlay_control",
         "layer0.inner_margin": [30, 30],
@@ -482,17 +443,13 @@
     },
 
     // ! Mini quick panel
-
     {
         "class": "mini_quick_panel_row",
         "layer0.inner_margin": [2, 2],
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Auto complete
-    // ----------------------------------------------------------
-
     {
         "class": "auto_complete",
         "row_padding": [5, 5]
@@ -504,10 +461,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Fold button
-    // ----------------------------------------------------------
-
     {
         "class": "fold_button_control",
         "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
@@ -531,10 +485,7 @@
         "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
     },
 
-    //
     // ! misc
-    // ----------------------------------------------------------
-
     {
         "class": "progress_gauge_control",
         "layer0.tint": [43, 102, 201],
@@ -542,10 +493,7 @@
         "content_margin": [0, 6]
     },
 
-    //
     // ! icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_regex",
         "content_margin": [8, 8]
@@ -587,10 +535,7 @@
         "content_margin": [8, 8]
     },
 
-    //
     // ! file and folder icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
@@ -598,28 +543,6 @@
     },
     {
         "class": "icon_folder",
-        "content_margin": [8, 8]
-    },
-    {
-        "class": "icon_folder_loading",
-        "layer0.texture":
-        {
-            "keyframes":
-            [
-                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
-            ],
-            "loop": true,
-            "frame_time": 0.075,
-        },
-
-        "layer0.opacity": 1.0,
         "content_margin": [8, 8]
     },
     {

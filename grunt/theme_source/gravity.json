@@ -1,5 +1,3 @@
-    // Gravity UI
-
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
@@ -7,18 +5,11 @@
         "bg": ["background", 37, 37, 37, 1.0]
     },
 
-
-    //
     // ! Global Label control
-    // ----------------------------------------------------------
-
     {
         "class": "label_control",
         "color": [170, 170, 170]
-        //"shadow_color": [200, 200, 200],
-        //"shadow_offset": [0, 1]
     },
-
     {
         "class": "table_row",
         "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png"
@@ -27,7 +18,6 @@
         // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        // "layer0.tint": [93, 93, 93],
         "layer0.tint": [255, 255, 255, 255],
         "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight.png"
     },
@@ -35,14 +25,11 @@
         "class": "tree_row",
         "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
-        // "layer0.tint": [9, 144, 187, 255],
         "layer0.tint": [255, 255, 255, 255],
         "layer0.texture": "Theme - Gravity/Gravity/assets/row_highlight_blue.png"
     },
 
     // ! Tabs
-    // ----------------------------------------------------------
-
     {
         "class": "tabset_control",
         "tab_height": 41
@@ -154,9 +141,7 @@
         "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
     },
 
-
     // ! Tab set scroll left scroll right
-
     {
         "class": "scroll_tabs_left_button",
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
@@ -194,14 +179,12 @@
         "layer1.opacity": 0.0
     },
 
-    //
     // ! Sidebar
-    // ----------------------------------------------------------
-
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
         "layer0.inner_margin": [0, 42, 0, 0],
+        "layer0.tint": [37, 37, 37],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
         "layer1.inner_margin": [140, 42, 14, 0],
@@ -211,6 +194,7 @@
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
         "layer0.inner_margin": [0, 33, 0, 0],
+        "layer0.tint": [37, 37, 37],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head_short.png",
         "layer1.inner_margin": [140, 33, 14, 0],
         "content_margin": [0, 33, 0, 0]
@@ -219,6 +203,7 @@
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
         "layer0.inner_margin": [0, 48, 0, 0],
+        "layer0.tint": [37, 37, 37],
         "layer1.texture": "Theme - Gravity/Gravity/assets/sidebar_head_tall.png",
         "layer1.inner_margin": [140, 48, 14, 0],
         "content_margin": [0, 48, 0, 0]
@@ -234,11 +219,6 @@
         "row_padding": [8, 6],
         "layer0.tint": [37, 37, 37]
     },
-    // {
-    //     "class": "sidebar_tree",
-    //     "settings": ["gravity_sidebar_header"],
-    //     "layer0.tint": [43, 43, 43]
-    // },
     {
         "class": "sidebar_heading",
         "color": [169, 169, 169]
@@ -256,7 +236,6 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "color": [185, 185, 185]
-        //"settings": ["bold_folder_labels"]
     },
     {
         "class": "sidebar_label",
@@ -267,32 +246,25 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "color": [185, 185, 185],
-        //"settings": ["bold_folder_labels"]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
-        //"settings": ["bold_folder_labels"],
         "color": [185, 185, 185]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        //"settings": ["bold_folder_labels"],
         "color": [185, 185, 185]
     },
     {
         "class": "sidebar_label",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
-        //"settings": ["bold_folder_labels"],
         "color": [185, 185, 185]
     },
 
-    //
     // ! Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "button_control",
         "content_margin": [16, 9, 16, 10],
@@ -300,10 +272,7 @@
         "layer1.texture": "Theme - Gravity/Gravity/assets/full_button_indented.png"
     },
 
-    //
     // ! Small Find Icon Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/middle_button.png"
@@ -336,10 +305,7 @@
         "layer1.opacity": 0.4
     },
 
-    //
     // ! Scrollbars
-    // ----------------------------------------------------------
-
     {
         "class": "scroll_bar_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/normal_bar_vertical.png"
@@ -362,8 +328,8 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/normal_thumb_horizontal.png"
     },
-    // overlay
     {
+        // overlay
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bar_vertical.png"
@@ -386,20 +352,14 @@
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_thumb_horizontal.png"
     },
 
-    //
     // ! Text field
     //   text color bg: Widget - Gravity.stTheme line: 13
-    // ----------------------------------------------------------
-
     {
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/input_field.png"
     },
 
-    //
     // ! Minimap
-    // ----------------------------------------------------------
-
     {
         "class": "minimap_control",
         "viewport_color": [68, 68, 68, 50],
@@ -410,9 +370,7 @@
         "viewport_color": [68, 68, 68, 96],
     },
 
-    //
     // ! Status bar
-    // ----------------------------------------------------------
 
     // {
     //     "class": "label_control",
@@ -434,10 +392,7 @@
         "content_margin": [14, 6, 4, 5]
     },
 
-    //
     // ! Quick Panel
-    // ----------------------------------------------------------
-
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/overlay_bg.png",
@@ -478,7 +433,6 @@
     },
 
     // ! Mini quick panel
-
     {
         "class": "mini_quick_panel_row",
         "layer0.tint": [55, 55, 55]
@@ -489,10 +443,7 @@
         "layer0.tint": [93, 93, 93] // highlight
     },
 
-    //
     // ! Auto complete
-    // ----------------------------------------------------------
-
     {
         "class": "auto_complete",
         "layer0.tint": [55, 55, 55],
@@ -509,10 +460,7 @@
         "selected_bg": [85, 85, 85]
     },
 
-    //
     // ! Close button
-    // ----------------------------------------------------------
-
     {
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
@@ -595,10 +543,7 @@
         "attributes": ["hover"]
     },
 
-    //
     // ! misc
-    // ----------------------------------------------------------
-
     {
         // ! Progress bar
         "class": "progress_bar_control",
@@ -618,10 +563,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Gravity/Gravity/icons/find_regex.png",
@@ -733,10 +675,7 @@
         "layer0.opacity": 0.8
     },
 
-    //
     // ! file and folder icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
@@ -758,6 +697,7 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.opacity": 1.0
     },
+    // Sidebar folders
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
@@ -765,9 +705,35 @@
     },
     {
         "class": "icon_folder",
+        "settings": ["gravity_highlight_sidebar_color"],
+        "layer0.texture": "Theme - Gravity/shared_assets/folder_blue.png",
+        "layer0.opacity": 0.7
+    },
+    // folder hover
+    {
+        "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.opacity": 0.4
     },
+    {
+        "class": "icon_folder",
+        "settings": ["gravity_highlight_sidebar_color"],
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "layer0.opacity": 0.7
+    },
+    // folder expanded
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
+    },
+    {
+        "class": "icon_folder",
+        "settings": ["gravity_highlight_sidebar_color"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        "layer0.texture": "Theme - Gravity/shared_assets/folder_blue.png",
+    },
+    // folder selected
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
@@ -777,16 +743,33 @@
         "class": "icon_folder",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-        "layer0.opacity": 0.4
-    },
-    {
-        "class": "icon_folder",
-        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-        //"layer0.texture": "Theme - Gravity/Gravity/icons/folder_open.png",
-        "layer0.texture": "Theme - Gravity/Gravity/icons/folder.png",
+        "layer0.opacity": 0.7
     },
     {
         "class": "icon_folder_dup",
         "layer0.texture": "Theme - Gravity/Gravity/icons/folder_dup.png",
         "layer0.opacity": 0.5
+    },
+    {
+        "class": "icon_folder_loading",
+        "layer0.tint": [37, 37, 37],
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
+                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
     },

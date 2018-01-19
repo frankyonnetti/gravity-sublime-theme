@@ -1,0 +1,22 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.0.9
+
+Fixed a few sidebar glitchs.
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank

@@ -1,8 +1,6 @@
 [
 
     // ! Tabs
-    // ----------------------------------------------------------
-
     {
         "class": "tabset_control",
         "layer0.inner_margin": [10, 0],
@@ -11,7 +9,6 @@
         "tab_overlap": 1,
         "tab_width": 300,
         "tab_min_width": 70,
-        // "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -131,10 +128,7 @@
         "layer1.inner_margin": 0
     },
 
-    //
     // ! Sidebar
-    // ----------------------------------------------------------
-
     {
         "class": "sidebar_container",
         "layer0.opacity": 1.0,
@@ -143,7 +137,6 @@
     },
     {
         "class": "sidebar_tree",
-        // "row_padding": [8, 5],
         "indent": 12,
         "indent_offset": 17,
         "indent_top_level": false,
@@ -152,28 +145,21 @@
     {
         "class": "sidebar_heading",
         "font.bold": true
-        //"shadow_color": [0, 0, 0],
-        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}]
-        //"shadow_color": [160, 174, 192]
     },
     {
         "class": "sidebar_label",
         "font.bold": false,
         "font.italic": false,
         "font.size": 12.0 // 11.0 is default
-        //"shadow_color": [0, 0, 0],
-        //"shadow_offset": [0, -1]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255]
-        //"shadow_color": [60, 60, 60],
-        //"shadow_offset": [0, 1]
     },
     {
         "class": "sidebar_label",
@@ -181,13 +167,9 @@
         "font.italic": true
     },
 
-    //
     // ! Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "button_control",
-        // "content_margin": [16, 9, 16, 10],
         "min_size": [70, 0],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
@@ -213,10 +195,7 @@
     //     "layer2.opacity": 0.0
     // },
 
-    //
     // ! Small Find Icon Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_button_control",
         "layer0.inner_margin": [6, 6],
@@ -246,10 +225,7 @@
         "layer1.inner_margin": [4, 4]
     },
 
-    //
     // ! Scrollbars
-    // ----------------------------------------------------------
-
     {
         "class": "scroll_bar_control",
         "layer0.opacity": 1.0,
@@ -322,10 +298,7 @@
         "blur": true
     },
 
-    //
     // ! Popup Control
-    // ----------------------------------------------------------
-
     {
         "class": "popup_control",
         "layer0.tint": [64, 64, 64],
@@ -381,10 +354,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Close button
-    // ----------------------------------------------------------
-
     {
         "class": "close_button",
         "layer0.inner_margin": 0,
@@ -395,11 +365,8 @@
         "content_margin": [8, 8]
     },
 
-    //
     // ! Text field
     //   text color bg: Widget - Gravity.stTheme line: 13
-    // ----------------------------------------------------------
-
     {
         "class": "text_line_control",
         "layer0.opacity": 1.0,
@@ -418,10 +385,7 @@
         "content_margin": [4, 7, 15, 3]
     },
 
-    //
     // ! Status bar
-    // ----------------------------------------------------------
-
     {
         "class": "panel_control",
         "layer0.inner_margin": [2, 12, 2, 2],
@@ -451,10 +415,7 @@
         "min_size": [75, 0]
     },
 
-    //
     // ! Quick Panel
-    // ----------------------------------------------------------
-
     {
         "class": "overlay_control",
         "layer0.inner_margin": [30, 30],
@@ -483,17 +444,13 @@
     },
 
     // ! Mini quick panel
-
     {
         "class": "mini_quick_panel_row",
         "layer0.inner_margin": [2, 2],
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Auto complete
-    // ----------------------------------------------------------
-
     {
         "class": "auto_complete",
         "row_padding": [5, 5]
@@ -505,10 +462,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! Fold button
-    // ----------------------------------------------------------
-
     {
         "class": "fold_button_control",
         "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
@@ -532,10 +486,7 @@
         "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
     },
 
-    //
     // ! misc
-    // ----------------------------------------------------------
-
     {
         "class": "progress_gauge_control",
         "layer0.tint": [43, 102, 201],
@@ -543,10 +494,7 @@
         "content_margin": [0, 6]
     },
 
-    //
     // ! icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_regex",
         "content_margin": [8, 8]
@@ -588,10 +536,7 @@
         "content_margin": [8, 8]
     },
 
-    //
     // ! file and folder icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
@@ -602,33 +547,9 @@
         "content_margin": [8, 8]
     },
     {
-        "class": "icon_folder_loading",
-        "layer0.texture":
-        {
-            "keyframes":
-            [
-                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
-            ],
-            "loop": true,
-            "frame_time": 0.075,
-        },
-
-        "layer0.opacity": 1.0,
-        "content_margin": [8, 8]
-    },
-    {
         "class": "icon_folder_dup",
         "content_margin": [8, 8]
     },
-
-    // Reverse Gravity UI
 
     {
         "class": "title_bar",
@@ -637,15 +558,11 @@
         "bg": ["background", 242, 242, 242, 1.0]
     },
 
-    //
     // ! Global Label control
-    // ----------------------------------------------------------
-
     {
         "class": "label_control",
         "color": [88, 88, 88]
     },
-
     {
         "class": "table_row",
         "layer0.texture": "Theme - Gravity/shared_assets/row_highlight_wide.png"
@@ -654,7 +571,6 @@
         // ! Sidebar background label color
         "class": "tree_row",
         "attributes": ["selected"],
-        // "layer0.tint": [206, 206, 206],
         "layer0.tint": [255, 255, 255, 255],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/row_highlight.png"
     },
@@ -662,14 +578,11 @@
         "class": "tree_row",
         "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
-        // "layer0.tint": [9, 144, 187],
         "layer0.tint": [255, 255, 255, 255],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/row_highlight_blue.png"
     },
 
     // ! Tabs
-    // ----------------------------------------------------------
-
     {
         "class": "tabset_control",
         "tab_height": 39
@@ -783,7 +696,6 @@
     },
 
     // ! -- Tab set scroll left scroll right
-
     {
         "class": "scroll_tabs_left_button",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_left.png",
@@ -821,14 +733,12 @@
         "layer1.opacity": 0.0
     },
 
-    //
     // ! Sidebar
-    // ----------------------------------------------------------
-
     {
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
         "layer0.inner_margin": [0, 40, 0, 0],
+        "layer0.tint": [242, 242, 242],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
         "layer1.inner_margin": [140, 40, 14, 0],
@@ -838,6 +748,7 @@
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
         "layer0.inner_margin": [0, 31, 0, 0],
+        "layer0.tint": [242, 242, 242],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_short.png",
         "layer1.inner_margin": [140, 31, 14, 0],
         "content_margin": [0, 31, 0, 0]
@@ -846,6 +757,7 @@
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
         "layer0.inner_margin": [0, 46, 0, 0],
+        "layer0.tint": [242, 242, 242],
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/sidebar_head_tall.png",
         "layer1.inner_margin": [140, 46, 14, 0],
         "content_margin": [0, 46, 0, 0]
@@ -894,7 +806,6 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
-        //"settings": ["bold_folder_labels"],
         "color": [51, 51, 51]
     },
     {
@@ -906,7 +817,6 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        //"settings": ["bold_folder_labels"],
         "color": [34, 34, 34]
     },
     {
@@ -916,10 +826,7 @@
         "color": [34, 34, 34]
     },
 
-    //
     // ! Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "button_control",
         "content_margin": [16, 10, 16, 9],
@@ -927,10 +834,7 @@
         "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/full_button_indented.png"
     },
 
-    //
     // ! Small Find Icon Buttons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/middle_button.png"
@@ -963,10 +867,7 @@
         "layer1.opacity": 1.0
     },
 
-    //
     // ! Scrollbars
-    // ----------------------------------------------------------
-
     {
         "class": "scroll_bar_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_bar_vertical.png"
@@ -991,8 +892,8 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/normal_thumb_horizontal.png",
         "layer0.opacity": 1.0
     },
-    // overlay
     {
+        // overlay
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bar_vertical.png"
@@ -1015,11 +916,8 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_thumb_horizontal.png"
     },
 
-    //
     // ! Text field
     //   text color bg: Widget - Gravity.stTheme line: 13
-    // ----------------------------------------------------------
-
     {
         "class": "text_line_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field.png"
@@ -1030,10 +928,7 @@
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/input_field_overlay.png"
     },
 
-    //
     // ! Minimap
-    // ----------------------------------------------------------
-
     {
         "class": "minimap_control",
         "viewport_color": [68, 68, 68, 50],
@@ -1044,9 +939,7 @@
         "viewport_color": [68, 68, 68, 96],
     },
 
-    //
     // ! Status bar
-    // ----------------------------------------------------------
 
     // {
     //     "class": "label_control",
@@ -1068,10 +961,7 @@
         "content_margin": [14, 5, 4, 4]
     },
 
-    //
     // ! Quick Panel
-    // ----------------------------------------------------------
-
     {
         "class": "overlay_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/overlay_bg.png",
@@ -1105,7 +995,6 @@
 
     // ! Mini quick panel
     // super + shift + p
-
     {
         "class": "mini_quick_panel_row",
         "layer0.tint": [235, 235, 235]
@@ -1157,10 +1046,7 @@
         "selected_fg": [255, 255, 255, 255] // highlight light
     },
 
-    //
     // ! Auto complete
-    // ----------------------------------------------------------
-
     {
         "class": "auto_complete",
         "layer0.tint": [242, 242, 242],
@@ -1183,10 +1069,7 @@
         "match_fg": [58, 164, 197]
     },
 
-    //
     // ! Close button
-    // ----------------------------------------------------------
-
     {
         "class": "disclosure_button_control",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/arrow_disclosure_right.png",
@@ -1267,10 +1150,7 @@
         "attributes": ["hover"]
     },
 
-    //
     // ! misc
-    // ----------------------------------------------------------
-
     {
         // ! Progress bar
         "class": "progress_bar_control",
@@ -1290,10 +1170,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
     // ! icons
-    // ----------------------------------------------------------
-
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/find_regex.png",
@@ -1405,10 +1282,7 @@
         "layer0.opacity": 1.0
     },
 
-    //
-    // ! file and folder icons
-    // ----------------------------------------------------------
-
+    // ! Sidebar file and folder icons
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
@@ -1424,49 +1298,43 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.opacity": 1.0
     },
+    // Sidebar folders
     {
         "class": "icon_folder",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png",
         "layer0.opacity": 1.0
     },
-    // {
-    //     "class": "icon_folder",
-    //     "settings": ["gravity_highlight_color_blue"],
-    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
-    // },
+    {
+        "class": "icon_folder",
+        "settings": ["gravity_highlight_sidebar_color"],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png",
+        "layer0.opacity": 1.0
+    },
+    // folder hover
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.opacity": 1.0
     },
-    {
-        "class": "icon_folder",
-        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-        "layer0.opacity": 1.0
-    },
-    // {
-    //     "class": "icon_folder",
-    //     "settings": ["gravity_highlight_color_blue"],
-    //     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
-    // },
+    // folder expanded
     {
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder.png"
     },
-    // {
-    //     "class": "icon_folder",
-    //     "settings": ["gravity_highlight_color_blue"],
-    //     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png"
-    // },
-    // {
-    //     "class": "icon_folder",
-    //     "settings": ["gravity_highlight_color_blue"],
-    //     "parents": [{ "class": "tree_row", "attributes": ["expanded", "selected"] }],
-    //     "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue_selected.png"
-    // },
+    {
+        "class": "icon_folder",
+        "settings": ["gravity_highlight_sidebar_color"],
+        "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_blue.png",
+    },
+    // folder selected
+    {
+        "class": "icon_folder",
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
+        "layer0.opacity": 1.0
+    },
+    // symlink icon
     {
         "class": "icon_folder_dup",
         "layer0.texture": "Theme - Gravity/Reverse Gravity/icons/folder_dup.png",
@@ -1474,6 +1342,7 @@
     },
     {
         "class": "icon_folder_loading",
+        "layer0.tint": [242, 242, 242],
         "layer0.texture":
         {
             "keyframes":
