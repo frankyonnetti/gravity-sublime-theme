@@ -24,7 +24,7 @@
     {
         // side bar container
         "class": "sidebar_container",
-        "content_margin": [0, 0, 1, 0],
+        "content_margin": [0, 1, 1, 0],
         "layer0.tint": [31, 32, 34],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
@@ -33,29 +33,29 @@
         // side bar - header tab
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header"],
-        "content_margin": [0, 41, 1, 0],
+        "content_margin": [0, 42, 1, 0],
         "layer0.tint": [33, 37, 43],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head.png",
         "layer1.opacity": 1.0,
-        "layer1.inner_margin": [0, 41]
+        "layer1.inner_margin": [0, 42, 0, 0]
     },
     {
         // side bar - short tabs w/ sidebar header tab
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
-        "content_margin": [0, 32, 0, 0],
+        "content_margin": [0, 33, 1, 0],
         "layer0.tint": [33, 37, 43],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_short.png",
-        "layer1.inner_margin": [0, 32]
+        "layer1.inner_margin": [0, 33, 0, 0]
     },
     {
         // sode bar - tall tabs w/ sidebar header tab
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
-        "content_margin": [0, 47, 0, 0],
+        "content_margin": [0, 48, 1, 0],
         "layer0.tint": [33, 37, 43],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/sidebar_head_tall.png",
-        "layer1.inner_margin": [0, 47]
+        "layer1.inner_margin": [0, 48, 0, 0]
     },
     {
         // side bar tree
@@ -77,9 +77,15 @@
         // side bar - tree row
         // background label color
         "class": "tree_row",
+        "layer0.opacity": 0.0,
+        "layer0.inner_margin": 1
+    },
+    {
+        "class": "tree_row",
         "attributes": ["selected"],
         "layer0.tint": [255, 255, 255, 255],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/row_highlight.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/row_highlight.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "tree_row",
@@ -91,17 +97,16 @@
     {
         // side bar - heading
         "class": "sidebar_heading",
-        // "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [107, 114, 125],
+        "color": [107, 114, 125, 0.7],
         "font.bold": true
     },
     {
         // side bar label
         "class": "sidebar_label",
         "color": [144, 152, 165],
+        "font.size": 12.0, // 11.0 is default
         "font.bold": false,
         "font.italic": false,
-        "font.size": 12.0 // 11.0 is default
     },
     {
         "class": "sidebar_label",
@@ -153,8 +158,8 @@
     {
         // side bar - close button
         "class": "close_button",
-        "layer0.inner_margin": 0,
-        "content_margin": [8, 8]
+        "content_margin": [8, 8],
+        "layer0.inner_margin": 0
     },
     {
         "class": "close_button",
@@ -333,15 +338,25 @@
     // ! Tabs - tabset control
     {
         "class": "tabset_control",
-        "content_margin": 0,
-        "layer0.inner_margin": [10, 0],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background.png",
-        "layer0.opacity": 1.0,
+        "content_margin": [-1, 1, 2, 0],
         "tab_overlap": 1,
         "tab_width": 300,
         "tab_min_width": 70,
         "tab_height": 41,
+        "layer0.inner_margin": 0,
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background.png",
+        "layer0.opacity": 1.0,
         "mouse_wheel_switch": false
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": [5, 1, 2, 0]
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["gravity_sidebar_header"],
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background_sidebar_head.png",
     },
     {
         // tabs - height short
@@ -357,23 +372,19 @@
     },
     {
         "class": "tabset_control",
-        "settings": ["enable_tab_scrolling"],
-        "content_margin": [5, 0, 3, 0]
-    },
-    {
-        "class": "tabset_control",
         "settings": ["mouse_wheel_switches_tabs"],
         "mouse_wheel_switch": true
     },
+
     // ! Tabs - tab control
     {
         "class": "tab_control",
         "content_margin": [12, 3, 12, 3],
         "max_margin_trim": 0,
-        "hit_test_level": 0.0,
+        "hit_test_level": 0,
         "layer0.inner_margin": [5, 5, 5, 5],
         "layer0.opacity": 1.0,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive_scroll.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
     },
     {
         "class": "tab_control",
@@ -404,7 +415,7 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "settings": ["gravity_title_bar"],
+        "settings": ["gravity_title_bar", "gravity_sidebar_header"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_active_titlebar.png"
     },
     {
@@ -415,7 +426,7 @@
     },
     {
         "class": "tab_control",
-        "settings": ["gravity_highlight_color_blue", "gravity_title_bar"],
+        "settings": ["gravity_highlight_color_blue", "gravity_title_bar", "gravity_sidebar_header"],
         "attributes": ["selected"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_blue_active_titlebar.png"
     },
@@ -516,8 +527,8 @@
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
-        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_dirty_hover.png",
         "layer0.opacity": 0,
+        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_dirty_hover.png",
         "layer1.opacity": 1.0
     },
     {
@@ -604,8 +615,8 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 0, 0, 1],
         "layer1.tint": [50, 56, 65], // [33, 37, 43]
-        "layer1.draw_center": false,
-        "layer1.opacity": 1.0
+        "layer1.opacity": 1.0,
+        "layer1.draw_center": false
     },
     {
         "class": "quick_panel_row",
@@ -668,13 +679,13 @@
     // ! Views - Fold button control
     {
         "class": "fold_button_control",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.inner_margin": 0,
         "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
         "layer0.opacity": 0.5,
-        "layer0.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
-        "layer1.opacity": 0.0,
         "layer1.inner_margin": 0,
-        "content_margin": [9, 7, 8, 6]
+        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
+        "layer1.opacity": 0.0
     },
     {
         "class": "fold_button_control",
@@ -693,15 +704,15 @@
     {
         // dropdown
         "class": "popup_control",
+        "content_margin": 0,
         "layer0.tint": [64, 64, 64],
-        "layer0.opacity": 0,
-        "content_margin": [0, 0]
+        "layer0.opacity": 0
     },
 
     // ! Views - auto complete
     {
         "class": "auto_complete",
-        "row_padding": [5, 5],
+        "row_padding": 5,
         "layer0.tint": [44, 49, 58],
         "layer0.opacity": 1.0
     },
@@ -727,16 +738,6 @@
         "attributes": ["selected"],
         "layer0.opacity": 1.0
     },
-    {
-        "class": "tree_row",
-        "layer0.opacity": 0.0,
-        "layer0.inner_margin": [1, 1]
-    },
-    {
-        "class": "tree_row",
-        "attributes": ["selected"],
-        "layer0.opacity": 1.0
-    },
 
     // ============================================================
     // ! Panels
@@ -758,15 +759,15 @@
     },
     {
         "class": "panel_close_button",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
         "attributes": ["hover"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "panel_close_button",
         "settings": ["gravity_highlight_color_blue"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
-        "attributes": ["hover"]
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png"
     },
 
     // ============================================================
@@ -801,12 +802,12 @@
     {
         // status button
         "class": "status_button",
+        "content_margin": [10, 2, 10, 3],
+        "min_size": [75, 0],
+        "layer0.inner_margin": [1, 0, 0, 0],
         "layer0.tint": [125, 125, 125],
         "layer0.opacity": 0,
-        "layer0.draw_center": false,
-        "layer0.inner_margin": [1, 0, 0, 0],
-        "content_margin": [10, 2, 10, 3],
-        "min_size": [75, 0]
+        "layer0.draw_center": false
     },
 
     // ============================================================
@@ -828,9 +829,9 @@
     {
         // dialog - progress gauge control
         "class": "progress_gauge_control",
+        "content_margin": [0, 6],
         "layer0.tint": [43, 102, 201],
-        "layer0.opacity": 1.0,
-        "content_margin": [0, 6]
+        "layer0.opacity": 1.0
     },
 
     // ============================================================
@@ -926,7 +927,7 @@
     // ============================================================
     // ! Inputs
     //
-    //   text color bg: Widget - Gravity.stTheme line: 13
+    //  text color bg: Widget - Gravity.stTheme line: 13
     // ============================================================
 
     {
@@ -939,14 +940,14 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "layer0.draw_center": true,
-        "content_margin": [7, 15, 7, 11]
+        "content_margin": [7, 15, 7, 11],
+        "layer0.draw_center": true
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        "layer0.draw_center": true,
-        "content_margin": [4, 7, 15, 3]
+        "content_margin": [4, 7, 15, 3],
+        "layer0.draw_center": true
     },
     {
         // inputs - dropdown button control
@@ -980,8 +981,8 @@
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [10, 10],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png"
-        // "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
-        // "layer2.inner_margin": [10, 10]
+        // "layer2.inner_margin": [10, 10],
+        // "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" }
     },
     {
         "class": "button_control",
@@ -1004,26 +1005,26 @@
         "class": "icon_button_control",
         "content_margin": [8, 7, 8, 9],
         "layer0.inner_margin": [6, 6],
-        "layer0.opacity": 1.0,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/middle_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/middle_button.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.opacity": 1.0,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/left_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/left_button.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.opacity": 1.0,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/right_button.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/right_button.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.opacity": 1.0,
         "layer0.texture": "Theme - Gravity/Gravity One/assets/mini_button.png",
+        "layer0.opacity": 1.0,
         "layer0.draw_center": true
     },
     {
@@ -1160,10 +1161,10 @@
 
     {
         "class": "tool_tip_control",
+        "content_margin": [10, 5],
         "layer0.inner_margin": [2, 2],
         "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_background_gray.png",
-        "layer0.opacity": 1.0,
-        "content_margin": [10, 5]
+        "layer0.opacity": 1.0
     },
     {
         "class": "tool_tip_control",
