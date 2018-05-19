@@ -212,7 +212,6 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        // "attributes": ["hover"],
         "layer0.opacity": 0.0,
         "layer1.opacity": 0.3
     },
@@ -873,6 +872,14 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "scroll_track_control",
+        "parents": [{"class": "sidebar_container"}],
+        "settings": ["gravity_sidebar_header"],
+        "layer0.opacity": 0,
+        "layer1.tint": [33, 37, 43],
+        "layer1.opacity": 1.0
+    },
+    {
         // scroll track control - horizontal
         "class": "scroll_track_control",
         "attributes": ["horizontal"],
@@ -887,10 +894,15 @@
         "layer0.opacity": 1.0
     },
     {
+        "class": "scroll_corner_control",
+        "settings": ["gravity_sidebar_header"],
+        "layer0.opacity": 0
+    },
+    {
         // puck control - thumb vertical
         "class": "puck_control",
         "content_margin": [8, 0],
-        "layer0.inner_margin": [0, 5],
+        "layer0.inner_margin": [0, 8],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_vertical.png",
         "layer0.opacity": 0.85
     },
@@ -899,7 +911,7 @@
         "class": "puck_control",
         "attributes": ["horizontal"],
         "content_margin": [0, 8],
-        "layer0.inner_margin": [5, 0],
+        "layer0.inner_margin": [8, 0],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_horizontal.png"
     },
         // --------------------------------------------------------
@@ -915,7 +927,7 @@
         // scroll track control - overlay background vertical
         "class": "scroll_track_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.inner_margin": [0, 5],
+        "layer0.inner_margin": [0, 8],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_thumb_vertical_bg.png",
         "layer0.opacity": 0.7
     },
@@ -924,14 +936,14 @@
         "class": "scroll_track_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.inner_margin": [5, 0],
+        "layer0.inner_margin": [8, 0],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_thumb_horizontal_bg.png"
     },
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_thumb_vertical.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 1.0
     },
     {
         "class": "puck_control",
