@@ -282,21 +282,29 @@
         {
             "keyframes":
             [
-                "Theme - Gravity/shared_assets/light_spinner/spinner7.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner6.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner5.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner4.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner3.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner2.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner1.png",
-                "Theme - Gravity/shared_assets/light_spinner/spinner.png",
+                "Theme - Gravity/Gravity One/loader/01.png",
+                "Theme - Gravity/Gravity One/loader/02.png",
+                "Theme - Gravity/Gravity One/loader/03.png",
+                "Theme - Gravity/Gravity One/loader/04.png",
+                "Theme - Gravity/Gravity One/loader/05.png",
+                "Theme - Gravity/Gravity One/loader/06.png",
+                "Theme - Gravity/Gravity One/loader/07.png",
+                "Theme - Gravity/Gravity One/loader/08.png",
+                "Theme - Gravity/Gravity One/loader/09.png",
+                "Theme - Gravity/Gravity One/loader/10.png",
+                "Theme - Gravity/Gravity One/loader/11.png",
+                "Theme - Gravity/Gravity One/loader/12.png",
             ],
             "loop": true,
-            "frame_time": 0.075,
+            "frame_time": 0.08,
         },
-
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder_loading",
+        "settings": ["gravity_sidebar_header"],
+        "layer0.tint": [40, 44, 52]
     },
     {
         // side bar - symlink icon
