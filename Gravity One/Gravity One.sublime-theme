@@ -207,7 +207,7 @@
         "layer0.opacity": 0.3,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "disclosure_button_control",
@@ -546,12 +546,12 @@
         "layer0.opacity": 0.4,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_left.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "scroll_tabs_right_button",
@@ -561,12 +561,12 @@
         "layer0.opacity": 0.4,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_right.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -576,12 +576,12 @@
         "layer0.opacity": 0.4,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_down.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
 
     // ============================================================
@@ -591,37 +591,31 @@
     {
         // quick panel - overlay control
         "class": "overlay_control",
-        "content_margin": [12, 12],
-        "layer0.inner_margin": [30, 30],
+        "content_margin": [25, 24, 25, 25],
+        "layer0.inner_margin": 0,
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_bg.png",
-        "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Gravity/shared_assets/quick_panel_bg.png",
-        "layer1.inner_margin": [30, 0, 20, 20],
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0
     },
     {
         // quick panel
         "class": "quick_panel",
-        "row_padding": [10, 9],
-        "layer0.tint": [50, 56, 65],
-        "layer0.opacity": 1.0
+        "row_padding": [18, 10]
     },
     {
         // quick panel row
         "class": "quick_panel_row",
-        "layer0.inner_margin": [2, 2],
-        "layer0.tint": [50, 56, 65],
-        "layer0.opacity": 1.0,
-        "layer1.inner_margin": [0, 0, 0, 1],
-        "layer1.tint": [50, 56, 65], // [33, 37, 43]
-        "layer1.opacity": 1.0,
-        "layer1.draw_center": false
+        "layer0.inner_margin": 0,
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 0,
+        "layer1.inner_margin": 0,
+        "layer1.tint": [27, 29, 35],
+        "layer1.opacity": 0
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
         "layer0.tint": [58, 63, 75], // highlight light
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0.3
     },
     {
         // quick panel - labels
@@ -636,21 +630,22 @@
         "class": "quick_panel_path_label",
         "fg": [89, 97, 110, 255],
         "match_fg": [89, 97, 110, 255],
-        "selected_fg": [170, 170, 170, 255],
+        "selected_fg": [144, 152, 165, 255],
         "selected_match_fg": [255, 255, 255, 255]
     },
 
     // ! Quick Panel - mini quick panel
     {
         "class": "mini_quick_panel_row",
-        "layer0.inner_margin": [2, 2],
-        "layer0.tint": [50, 56, 65],
-        "layer0.opacity": 1.0
+        "layer0.inner_margin": 0,
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [58, 63, 75] // highlight
+        "layer0.tint": [58, 63, 75], // highlight
+        "layer0.opacity": 0.3
     },
 
     // ============================================================
@@ -684,7 +679,7 @@
         "layer0.opacity": 0.5,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "fold_button_control",
@@ -739,7 +734,7 @@
     },
 
     // ============================================================
-    // ! Panels
+    // ! Panels - find panel & switch project window
     // ============================================================
 
     {
@@ -748,6 +743,12 @@
         "layer0.inner_margin": [2, 12, 2, 2],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/panel_control_bg.png",
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_control",
+        "parents": [{"class": "switch_project_window"}],
+        "layer1.tint": ["background", 27, 29, 35, 1.0],
+        "layer1.opacity": 1.0
     },
     {
         // panel close button
@@ -880,6 +881,13 @@
         "layer1.opacity": 1.0
     },
     {
+        "class": "scroll_track_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.opacity": 0,
+        "layer1.tint": [27, 29, 35],
+        "layer1.opacity": 1.0
+    },
+    {
         // scroll track control - horizontal
         "class": "scroll_track_control",
         "attributes": ["horizontal"],
@@ -913,6 +921,11 @@
         "content_margin": [0, 8],
         "layer0.inner_margin": [8, 0],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_horizontal.png"
+    },
+    {
+        "class": "puck_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.inner_margin": [0, 6]
     },
         // --------------------------------------------------------
         // scroll bar - overlay
@@ -951,6 +964,12 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/overlay_thumb_horizontal.png"
     },
+    {
+        "class": "puck_control",
+        "parents": [{"class": "overlay_control"}],
+        "settings": ["overlay_scroll_bars"],
+        "layer0.inner_margin": [0, 4]
+    },
 
     // ============================================================
     // ! Inputs
@@ -962,20 +981,21 @@
         // inputs - text line control
         "class": "text_line_control",
         "content_margin": [4, 7, 15, 3],
-        "layer0.opacity": 1.0,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/input_field.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/input_field.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "content_margin": [7, 15, 7, 11],
-        "layer0.draw_center": true
+        "content_margin": [18, 14],
+        "layer0.opacity": 0,
+        "layer1.opacity": 0
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        "content_margin": [4, 7, 15, 3],
-        "layer0.draw_center": true
+        "content_margin": [4, 7, 15, 3]
+        // "layer0.draw_center": true
     },
     {
         // inputs - dropdown button control
@@ -986,7 +1006,7 @@
         "layer0.opacity": 0.3,
         "layer1.inner_margin": [4, 4],
         "layer1.texture": "Theme - Gravity/Gravity/assets/down_arrow_inv.png",
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0
     },
     {
         "class": "dropdown_button_control",
@@ -1006,7 +1026,7 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 10],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/full_button.png",
-        "layer1.opacity": 0.0,
+        "layer1.opacity": 0,
         "layer1.inner_margin": [10, 10],
         "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png"
         // "layer2.inner_margin": [10, 10],
