@@ -14,7 +14,7 @@
         "class": "title_bar",
         "settings": ["gravity_title_bar", "gravity_sidebar_header"],
         "fg": ["background", 170, 176, 185, 1.0],
-        "bg": ["background", 33, 37, 43, 1.0]
+        "bg": ["background", 34, 38, 45, 1.0]
     },
 
     // ============================================================
@@ -357,13 +357,13 @@
     },
     {
         "class": "tabset_control",
-        "settings": ["enable_tab_scrolling"],
-        "content_margin": [5, 1, 2, 0]
+        "settings": ["gravity_sidebar_header"],
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background_sidebar_head.png",
     },
     {
         "class": "tabset_control",
-        "settings": ["gravity_sidebar_header"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/tabset_background_sidebar_head.png",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": [5, 1, 2, 0]
     },
     {
         // tabs - height short
@@ -395,9 +395,14 @@
     },
     {
         "class": "tab_control",
-        "settings": ["!enable_tab_scrolling"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
+        "settings": ["gravity_sidebar_header"],
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive_sidebar_head.png"
     },
+    // {
+    //     "class": "tab_control",
+    //     "settings": ["!enable_tab_scrolling"],
+    //     "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
+    // },
     {
         // tabs - close state / tab label margin
         "class": "tab_control",
@@ -670,12 +675,12 @@
     // ! Views - minimap control
     {
         "class": "minimap_control",
-        "viewport_color": [48, 56, 65, 50],
+        "viewport_color": [48, 56, 65, 0.4]
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
-        "viewport_color": [48, 56, 65, 96],
+        "viewport_color": [48, 56, 65, 0.6]
     },
 
     // ! Views - Fold button control
@@ -920,7 +925,7 @@
         "content_margin": [8, 0],
         "layer0.inner_margin": [0, 8],
         "layer0.texture": "Theme - Gravity/Gravity One/assets/normal_thumb_vertical.png",
-        "layer0.opacity": 0.85
+        "layer0.opacity": 0.9
     },
     {
         // puck control - thumb horizontal
@@ -1031,15 +1036,20 @@
         "class": "button_control",
         "min_size": [70, 0],
         "content_margin": [16, 9, 16, 10],
-        "layer0.opacity": 1.0,
-        "layer0.inner_margin": [10, 10],
+        "layer0.inner_margin": 10,
         "layer0.texture": "Theme - Gravity/Gravity One/assets/full_button.png",
+        "layer0.opacity": 1.0,
+        "layer1.inner_margin": 10,
+        "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png",
         "layer1.opacity": 0,
-        "layer1.inner_margin": [10, 10],
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png"
-        // "layer2.inner_margin": [10, 10],
+        // "layer2.inner_margin": 10,
         // "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" }
     },
+    // {
+    //     "class": "button_control",
+    //     "attributes": ["hover"],
+    //     "layer2.opacity": 0
+    // },
     {
         "class": "button_control",
         "attributes": ["pressed"],
@@ -1049,12 +1059,7 @@
     // {
     //     "class": "button_control",
     //     "attributes": ["pressed", "hover"],
-    //     "layer2.opacity": 0.0
-    // },
-    // {
-    //     "class": "button_control",
-    //     "attributes": ["hover"],
-    //     "layer2.opacity": 0.0
+    //     "layer2.opacity": 0
     // },
     {
         // icon button control - small find icon buttons
