@@ -14,7 +14,7 @@
         "class": "title_bar",
         "settings": ["gravity_title_bar", "gravity_sidebar_header"],
         "fg": ["background", 170, 176, 185, 1.0],
-        "bg": ["background", 34, 38, 45, 1.0]
+        "bg": ["background", 33, 37, 43, 1.0]
     },
 
     // ============================================================
@@ -615,23 +615,37 @@
         "row_padding": [18, 10]
     },
     {
+        "class": "quick_panel",
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 1.0
+    },
+    {
         // quick panel row
         "class": "quick_panel_row",
         "layer0.inner_margin": 0,
         "layer0.tint": [27, 29, 35],
-        "layer0.opacity": 0,
+        "layer0.opacity": 0.5,
         "layer1.inner_margin": 0,
         "layer1.tint": [27, 29, 35],
         "layer1.opacity": 0
     },
     {
         "class": "quick_panel_row",
-        "attributes": ["selected"],
-        "layer0.tint": [58, 63, 75], // highlight light
-        "layer1.opacity": 0.3
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.tint": [33, 37, 43],
+        "layer0.opacity": 1.0,
+        "layer1.tint": [33, 37, 43],
+        "layer1.opacity": 0
     },
     {
-        // quick panel - labels
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.tint": [49, 56, 64], // highlight light
+        "layer0.opacity": 1.0
+    },
+    {
+        // quick panel - label (text)
         "class": "quick_panel_label",
         "fg": [144, 152, 165, 255],
         "match_fg": [59, 166, 219, 255], // highlight light
@@ -639,7 +653,7 @@
         "selected_match_fg": [92, 195, 246, 255] // color change while typing
     },
     {
-        // quick panel - path label
+        // quick panel - path label (text)
         "class": "quick_panel_path_label",
         "fg": [89, 97, 110, 255],
         "match_fg": [89, 97, 110, 255],
@@ -657,8 +671,8 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [58, 63, 75], // highlight
-        "layer0.opacity": 0.3
+        "layer0.tint": [49, 56, 64], // highlight
+        "layer0.opacity": 1.0
     },
 
     // ============================================================
@@ -669,18 +683,18 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [42, 47, 56]
+        "border_color": [27, 30, 34]
     },
 
     // ! Views - minimap control
     {
         "class": "minimap_control",
-        "viewport_color": [48, 56, 65, 0.4]
+        "viewport_color": [48, 56, 65, 0.35]
     },
     {
         "class": "minimap_control",
         "attributes": ["hover"],
-        "viewport_color": [48, 56, 65, 0.6]
+        "viewport_color": [48, 56, 65, 0.7]
     },
 
     // ! Views - Fold button control
@@ -901,6 +915,13 @@
         "layer1.opacity": 1.0
     },
     {
+        "class": "scroll_track_control",
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.opacity": 0,
+        "layer1.tint": [33, 37, 43],
+        "layer1.opacity": 1.0
+    },
+    {
         // scroll track control - horizontal
         "class": "scroll_track_control",
         "attributes": ["horizontal"],
@@ -986,8 +1007,6 @@
 
     // ============================================================
     // ! Inputs
-    //
-    //  text color bg: Widget - Gravity.stTheme line: 13
     // ============================================================
 
     {
@@ -1007,8 +1026,7 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        "content_margin": [4, 7, 15, 3]
-        // "layer0.draw_center": true
+        "content_margin": [4, 7]
     },
     {
         // inputs - dropdown button control
