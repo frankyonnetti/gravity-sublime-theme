@@ -396,7 +396,7 @@
     {
         "class": "tab_control",
         "settings": ["gravity_sidebar_header"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive_sidebar_head.png"
+        "layer0.texture": "Theme - Gravity/Gravity One/assets/tab_inactive.png"
     },
     // {
     //     "class": "tab_control",
@@ -1026,7 +1026,7 @@
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
-        "content_margin": [4, 7]
+        "content_margin": [4, 6, 15, 4]
     },
     {
         // inputs - dropdown button control
