@@ -47,7 +47,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 42, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/sidebar_head.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_head.png",
         "layer1.opacity": 1.0
     },
     {
@@ -56,7 +56,7 @@
         "settings": ["gravity_sidebar_header", "gravity_tab_height_short"],
         "content_margin": [0, 33, 1, 0],
         "layer1.inner_margin": [0, 33, 0, 0],
-        "layer1.texture": "Theme - Gravity/shared_assets/sidebar_head_short.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_head_short.png"
     },
     {
         // sode bar - tall tabs w/ sidebar header tab
@@ -64,7 +64,7 @@
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
         "content_margin": [0, 48, 1, 0],
         "layer1.inner_margin": [0, 48, 0, 0],
-        "layer1.texture": "Theme - Gravity/shared_assets/sidebar_head_tall.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_head_tall.png"
     },
     {
         // side bar tree
@@ -207,10 +207,10 @@
         "class": "disclosure_button_control",
         "content_margin": [9, 7, 8, 6],
         "layer0.inner_margin": 0,
-        "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_right.png",
         "layer0.opacity": 0.3,
         "layer1.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_right.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_right.png",
         "layer1.opacity": 0
     },
     {
@@ -222,14 +222,14 @@
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png",
-        "layer1.texture": "Theme - Gravity/Gravity/assets/arrow_disclosure_down.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_down.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_down.png"
     },
     {
         // side bar - icon folders
         "class": "icon_folder",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/folder.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/folder.png",
         "layer0.tint": [158, 161, 179],
         "layer0.opacity": 0.7
     },
@@ -325,7 +325,7 @@
         "layer0.tint": [27, 30, 34],
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 1],
-        "layer1.texture": "Theme - Gravity/shared_assets/tabset_bg.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tabset_bg.png",
         "layer1.tint": [33, 37, 43],
         "layer1.opacity": 1.0,
         "tab_overlap": 1,
@@ -338,7 +338,7 @@
         "class": "tabset_control",
         "settings": ["gravity_sidebar_header"],
         "layer1.inner_margin": [0, 0, 0, 1],
-        "layer1.texture": "Theme - Gravity/shared_assets/tabset_bg_sidebar_head.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tabset_bg_sidebar_head.png",
     },
     {
         "class": "tabset_control",
@@ -374,14 +374,14 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [1, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_inactive.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_inactive.png",
         "layer1.opacity": 1.0,
         "layer2.opacity": 0
     },
     {
         "class": "tab_control",
         "settings": ["gravity_sidebar_header"],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_inactive_sidebar_head.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_inactive_sidebar_head.png"
     },
     {
         // tab active label margin
@@ -507,9 +507,9 @@
         "class": "scroll_tabs_left_button",
         "content_margin": [14, 20],
         "layer0.inner_margin": 0,
-        "layer0.tint": [110, 113, 127],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_left.png",
-        "layer0.opacity": 1.0
+        "layer0.tint": [200, 215, 223],
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_left.png",
+        "layer0.opacity": 0.65
     },
     {
         "class": "scroll_tabs_left_button",
@@ -520,9 +520,9 @@
         "class": "scroll_tabs_right_button",
         "content_margin": [16, 20],
         "layer0.inner_margin": 0,
-        "layer0.tint": [110, 113, 127],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_right.png",
-        "layer0.opacity": 1.0
+        "layer0.tint": [200, 215, 223],
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_right.png",
+        "layer0.opacity": 0.65
     },
     {
         "class": "scroll_tabs_right_button",
@@ -533,9 +533,9 @@
         "class": "show_tabs_dropdown_button",
         "content_margin": [16, 20],
         "layer0.inner_margin": 0,
-        "layer0.tint": [110, 113, 127],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_down.png",
-        "layer0.opacity": 1.0,
+        "layer0.tint": [200, 215, 223],
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_down.png",
+        "layer0.opacity": 0.65
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -552,15 +552,15 @@
         "content_margin": [24, 35, 24, 24],
         "layer0.inner_margin": [29, 35, 29, 29],
         "layer0.tint": [0, 0, 0],
-        "layer0.texture": "Theme - Gravity/shared_assets/overlay_shadow.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_shadow.png",
         "layer0.opacity": 0.15,
         "layer1.inner_margin": [29, 35, 29, 29],
         "layer1.tint": [27, 29, 35],
-        "layer1.texture": "Theme - Gravity/shared_assets/overlay_border.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_border.png",
         "layer1.opacity": 0.3,
         "layer2.inner_margin": [29, 35, 29, 29],
         "layer2.tint": [27, 29, 35],
-        "layer2.texture": "Theme - Gravity/shared_assets/overlay_bg.png",
+        "layer2.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_bg.png",
         "layer2.opacity": 1.0
     },
     {
@@ -656,23 +656,23 @@
         "class": "fold_button_control",
         "content_margin": [9, 7, 8, 6],
         "layer0.inner_margin": 0,
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
-        "layer0.opacity": 0.5,
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_right.png",
+        "layer0.opacity": 0.4,
         "layer1.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_right.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_right.png",
         "layer1.opacity": 0
     },
     {
         "class": "fold_button_control",
         "attributes": ["hover"],
         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.5
+        "layer1.opacity": 0.4
     },
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/arrow_fold_down.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_down.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_down.png"
     },
 
     // ! Views - popup control
@@ -726,7 +726,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 1, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/status_bar.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/misc/status_bar.png",
         "layer1.opacity": 1.0
     },
     {
@@ -767,7 +767,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 1, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/status_bar.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/misc/status_bar.png",
         "layer1.opacity": 1.0
     },
     {
@@ -780,7 +780,7 @@
         // search panel - panel button control
         "class": "panel_button_control",
         "content_margin": [12, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/panels.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/panels.png",
         "layer0.opacity": 0.7
     },
     {
@@ -863,7 +863,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [1, 0, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar_bg_vertical.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_bar_bg_vertical.png",
         "layer1.opacity": 1.0
     },
     {
@@ -873,7 +873,7 @@
         "layer1.tint": [27, 29, 35],
         "layer2.inner_margin": [0, 8],
         "layer2.tint": [19, 21, 24],
-        "layer2.texture": "Theme - Gravity/shared_assets/scroll_thumb_vertical_bg.png",
+        "layer2.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
         "layer2.opacity": 1.0
     },
     {
@@ -883,7 +883,7 @@
         "layer1.opacity": 0,
         "layer2.inner_margin": [0, 8],
         "layer2.tint": [19, 21, 24],
-        "layer2.texture": "Theme - Gravity/shared_assets/scroll_thumb_vertical_bg.png",
+        "layer2.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
         "layer2.opacity": 0.5
     },
     {
@@ -891,7 +891,7 @@
         "class": "scroll_track_control",
         "attributes": ["horizontal"],
         "layer1.inner_margin": [0, 1, 0, 0],
-        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar_bg_horizontal.png"
+        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_bar_bg_horizontal.png"
     },
     {
         // scroll corner control
@@ -902,7 +902,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [1, 1, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar_bg_corner.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_bar_bg_corner.png",
         "layer1.opacity": 1.0
     },
     {
@@ -911,7 +911,7 @@
         "content_margin": [8, 0],
         "layer0.inner_margin": [0, 8],
         "layer0.tint": [53, 59, 69],
-        "layer0.texture": "Theme - Gravity/shared_assets/scroll_thumb_vertical.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical.png",
         "layer0.opacity": 1.0
     },
     {
@@ -920,7 +920,7 @@
         "attributes": ["horizontal"],
         "content_margin": [0, 8],
         "layer0.inner_margin": [8, 0],
-        "layer0.texture": "Theme - Gravity/shared_assets/scroll_thumb_horizontal.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_horizontal.png"
     },
     {
         "class": "puck_control",
@@ -942,7 +942,7 @@
         "settings": ["overlay_scroll_bars"],
         "layer0.inner_margin": [0, 8],
         "layer0.tint": [19, 21, 24],
-        "layer0.texture": "Theme - Gravity/shared_assets/scroll_thumb_vertical_bg.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
         "layer0.opacity": 0.7
     },
     {
@@ -951,7 +951,7 @@
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
         "layer0.inner_margin": [8, 0],
-        "layer0.texture": "Theme - Gravity/shared_assets/scroll_thumb_horizontal_bg.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_horizontal_bg.png"
     },
     {
         "class": "puck_control",
@@ -992,9 +992,9 @@
         "class": "dropdown_button_control",
         "content_margin": [8, 9],
         "layer0.inner_margin": [4, 4],
-        "layer0.texture": "Theme - Gravity/shared_assets/dropdown_arrow.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/dropdown_arrow.png",
         "layer0.opacity": 0.4
-        // "layer1.texture": "Theme - Gravity/shared_assets/dropdown_arrow.png",
+        // "layer1.texture": "Theme - Gravity/shared_assets/arrows/dropdown_arrow.png",
         // "layer1.opacity": 0
     },
     // {
@@ -1011,202 +1011,173 @@
         // button control
         "class": "button_control",
         "min_size": [70, 0],
-        "content_margin": [16, 9, 16, 10],
-        "layer0.inner_margin": 10,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/full_button.png",
-        "layer0.opacity": 1.0,
-        "layer1.inner_margin": 10,
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/full_button_indented.png",
-        "layer1.opacity": 0,
+        "content_margin": [6, 8, 6, 9],
+        "layer0.inner_margin": 6,
+        "layer0.tint": [27, 30, 35],
+        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_full_shadow.png",
+        "layer0.opacity": 0.8,
+        "layer1.inner_margin": 6,
+        "layer1.tint": [63, 66, 80],
+        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_full.png",
+        "layer1.opacity": 1.0,
         // "layer1.opacity": { "target": 0.0, "speed": 1, "interpolation": "smoothstep" }
     },
-    // {
-    //     "class": "button_control",
-    //     "attributes": ["hover"],
-    //     "layer2.opacity": 0
-    // },
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "layer1.opacity": 0.8
     },
-    // {
-    //     "class": "button_control",
-    //     "attributes": ["pressed", "hover"],
-    //     "layer2.opacity": 0
-    // },
     {
         // icon button control - small find icon buttons
         // middle button
         "class": "icon_button_control",
         "content_margin": [8, 7, 8, 9],
         "layer0.inner_margin": 6,
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/middle_button.png",
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0
+        "layer0.tint": [27, 30, 35],
+        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_middle_shadow.png",
+        "layer0.opacity": 0.8,
+        "layer1.opacity": 0,
+        "layer1.inner_margin": 6,
+        "layer1.tint": [63, 66, 80],
+        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_middle.png",
+        "layer1.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer0.opacity": 0,
-        "layer1.tint": [55, 55, 55, 70],
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/middle_button.png",
-        "layer1.opacity": 1.0
+        // "layer0.tint": [14, 15, 18],
+        "layer1.tint": [85, 89, 108],
+        // "layer1.opacity": 0.9
     },
     {
         // left button
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/left_button.png",
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "selected"],
-        "layer0.opacity": 0,
-        "layer1.tint": [55, 55, 55, 70],
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/left_button.png",
-        "layer1.opacity": 1.0
+        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_left_shadow.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_left.png"
     },
     {
         // right button
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/right_button.png",
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0,
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["right", "selected"],
-        "layer0.opacity": 0,
-        "layer1.tint": [55, 55, 55, 70],
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/right_button.png",
-        "layer1.opacity": 1.0
+        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_right_shadow.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_right.png"
     },
     {
         // mini button
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Gravity/Gravity One/assets/mini_button.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "icon_button_control",
-        "attributes": ["left", "right", "selected"],
-        "layer0.opacity": 0,
-        "layer1.texture": "Theme - Gravity/Gravity One/assets/mini_button.png",
-        "layer1.opacity": 1.0
+        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_mini_shadow.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_mini.png"
     },
     {
         // buttons - icon regex
         "class": "icon_regex",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_regex.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_regex.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon case
         "class": "icon_case",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_case.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_case.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons- icon whole word
         "class": "icon_whole_word",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_wholeword.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_wholeword.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon wrap
         "class": "icon_wrap",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_wrap.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_wrap.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon in selection
         "class": "icon_in_selection",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_inselection.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_inselection.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon highlight
         "class": "icon_highlight",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/find_highlight.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_highlight.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon preserve case
         "class": "icon_preserve_case",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/replace_preserve_case.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/replace_preserve_case.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon context
         "class": "icon_context",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/context.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/context.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.95
+        "layer0.opacity": 0.9
     },
     {
         // buttons - icon use buffer
         "class": "icon_use_buffer",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/dark_bg_icons/use_buffer.png",
-        "layer0.opacity": 0.4
+        "layer0.texture": "Theme - Gravity/shared_assets/icons/use_buffer.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.9
     },
 
     // ============================================================
@@ -1217,7 +1188,7 @@
         "class": "tool_tip_control",
         "content_margin": [12, 8],
         "layer0.inner_margin": 4,
-        "layer0.texture": "Theme - Gravity/shared_assets/tool_tip_bg.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/misc/tool_tip_bg.png",
         "layer0.tint": [228, 233, 237],
         "layer0.opacity": 1.0
     },
