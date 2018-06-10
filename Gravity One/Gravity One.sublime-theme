@@ -162,45 +162,47 @@
     {
         // side bar - close button
         "class": "close_button",
-        "content_margin": [8, 8],
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "close_button",
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.9
-    },
-    {
-        "class": "close_button",
-        "settings": ["gravity_highlight_color_blue"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue.png",
-        "layer0.opacity": 1.0
+        "content_margin": [8, 6],
+        "layer0.inner_margin": 0,
+        "layer0.tint": [158, 161, 179],
+        "layer0.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_close_icon_bg.png",
+        "layer0.opacity": 0,
+        "layer1.tint": [110, 113, 128],
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_close_icon.png",
+        "layer1.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "close_button",
-        "attributes": ["hover"],
-        "settings": ["gravity_highlight_color_blue"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png",
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.2,
+        "layer1.tint": [158, 161, 179],
+        "layer1.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_indicator.png",
-        "layer0.opacity": 1.0
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_dirty_icon.png",
+        "layer1.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "settings": ["gravity_highlight_color_blue"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/dirty_close_blue_indicator.png",
-        "layer0.opacity": 1.0
+        "layer1.tint": [9, 144, 187]
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty", "hover"],
+        "layer0.tint": [158, 161, 179],
+        "layer0.opacity": 1.0,
+        "layer1.tint": [33, 37, 43],
+        "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_close_icon.png",
+    },
+    {
+        "class": "close_button",
+        "attributes": ["dirty", "hover"],
+        "settings": ["gravity_highlight_color_blue"],
+        "layer0.tint": [9, 144, 187]
     },
     {
         // buttons - disclosure button control
@@ -444,17 +446,20 @@
         "class": "tab_close_button",
         "content_margin": 8,
         "layer0.inner_margin": 0,
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_close.png",
-        "layer0.opacity": 0.7,
-        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_close_hover.png",
-        "layer1.opacity": 0
+        "layer0.tint": [110, 113, 128],
+        "layer0.texture": "Theme - Gravity/shared_assets/tabs/tab_close_icon_bg.png",
+        "layer0.opacity": 0,
+        "layer1.tint": [110, 113, 128],
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_close_icon.png",
+        "layer1.opacity": 1.0
     },
     {
         // tab close button hover
         "class": "tab_close_button",
         "attributes": ["hover"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 1.0
+        "layer0.opacity": 0.3,
+        "layer1.tint": [214, 215, 223],
+        "layer1.opacity": 0.8
     },
     {
         // tab close button hide
@@ -465,42 +470,38 @@
         "layer1.opacity": 0
     },
     {
-        // tab dirty close button active
-        "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "attributes": ["selected"],
-        "layer0.opacity": 0,
-        "layer1.opacity": 0
-    },
-    {
         // tab dirty button
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/tab_dirty.png",
-        "layer0.opacity": 1.0,
-        "layer1.opacity": 0
-    },
-    {
-        "class": "tab_close_button",
-        "settings": ["gravity_highlight_color_blue"],
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Gravity/shared_assets/tab_dirty_blue.png"
-    },
-    {
-        // tab dirty button hover
-        "class": "tab_close_button",
-        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "attributes": ["hover"],
-        "layer0.opacity": 0,
-        "layer1.texture": "Theme - Gravity/Gravity/assets/tab_dirty_hover.png",
+        "layer1.tint": [214, 215, 223],
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_dirty_icon.png",
         "layer1.opacity": 1.0
     },
     {
         "class": "tab_close_button",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "layer1.tint": [9, 144, 187]
+    },
+    {
+        // tab dirty button hover
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
-        "layer1.texture": "Theme - Gravity/shared_assets/tab_dirty_blue_hover.png"
+        "layer0.tint": [214, 215, 223],
+        "layer0.opacity": 0.8,
+        "layer1.tint": [33, 37, 43],
+        "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_close_icon.png",
+        "layer1.opacity": 0.8
+    },
+    {
+        // tab dirty button hover
+        "class": "tab_close_button",
+        "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+        "attributes": ["hover"],
+        "settings": ["gravity_highlight_color_blue"],
+        "layer0.tint": [9, 144, 187],
+        "layer0.opacity": 1.0
     },
     {
         // tabs - set scroll left / scroll right
@@ -509,7 +510,7 @@
         "layer0.inner_margin": 0,
         "layer0.tint": [200, 215, 223],
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_left.png",
-        "layer0.opacity": 0.65
+        "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_left_button",
@@ -522,7 +523,7 @@
         "layer0.inner_margin": 0,
         "layer0.tint": [200, 215, 223],
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_right.png",
-        "layer0.opacity": 0.65
+        "layer0.opacity": 0.5
     },
     {
         "class": "scroll_tabs_right_button",
@@ -535,7 +536,7 @@
         "layer0.inner_margin": 0,
         "layer0.tint": [200, 215, 223],
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_down.png",
-        "layer0.opacity": 0.65
+        "layer0.opacity": 0.5
     },
     {
         "class": "show_tabs_dropdown_button",
@@ -552,15 +553,15 @@
         "content_margin": [24, 35, 24, 24],
         "layer0.inner_margin": [29, 35, 29, 29],
         "layer0.tint": [0, 0, 0],
-        "layer0.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_shadow.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/overlay_shadow.png",
         "layer0.opacity": 0.15,
         "layer1.inner_margin": [29, 35, 29, 29],
         "layer1.tint": [27, 29, 35],
-        "layer1.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_border.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/overlay_border.png",
         "layer1.opacity": 0.3,
         "layer2.inner_margin": [29, 35, 29, 29],
         "layer2.tint": [27, 29, 35],
-        "layer2.texture": "Theme - Gravity/shared_assets/quick_panel/overlay_bg.png",
+        "layer2.texture": "Theme - Gravity/shared_assets/panels/overlay_bg.png",
         "layer2.opacity": 1.0
     },
     {
@@ -595,16 +596,16 @@
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [49, 56, 64], // highlight light
+        "layer0.tint": [49, 56, 64], // highlight
         "layer0.opacity": 1.0
     },
     {
         // quick panel - label (text)
         "class": "quick_panel_label",
         "fg": [144, 152, 165],
-        "match_fg": [59, 166, 219], // highlight light
+        "match_fg": [59, 166, 219], // highlight
         "selected_fg": [255, 255, 255],
-        "selected_match_fg": [92, 195, 246] // color c∏hange while typing
+        "selected_match_fg": [92, 195, 246] // color change while typing
     },
     {
         // quick panel - path label (text)
@@ -625,7 +626,7 @@
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.tint": [49, 56, 64], // highlight
+        "layer0.tint": [53, 59, 69], // highlight
         "layer0.opacity": 1.0
     },
 
@@ -680,15 +681,15 @@
         // dropdown
         "class": "popup_control",
         "content_margin": 0,
-        "layer0.tint": [33, 37, 43],
-        "layer0.opacity": 0
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 1.0
     },
 
     // ! Views - auto complete
     {
         "class": "auto_complete",
         "row_padding": 5,
-        "layer0.tint": [44, 49, 58],
+        "layer0.tint": [27, 29, 35],
         "layer0.opacity": 1.0
     },
     {
@@ -705,13 +706,13 @@
         // views - autocomplete table rows
         "class": "table_row",
         "layer0.inner_margin": [1, 1],
-        "layer0.tint": [107, 114, 125, 255],
+        "layer0.tint": [53, 59, 69],
         "layer0.opacity": 0.0
     },
     {
         "class": "table_row",
         "attributes": ["selected"],
-        "layer0.opacity": 0.3
+        "layer0.opacity": 0.5
     },
 
     // ============================================================
@@ -726,7 +727,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 1, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/misc/status_bar.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/status_bar.png",
         "layer1.opacity": 1.0
     },
     {
@@ -738,21 +739,21 @@
     {
         // panel close button
         "class": "panel_close_button",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x.png",
-        "layer0.opacity": 0.7
+        "content_margin": [8, 6],
+        "layer0.inner_margin": 0,
+        "layer0.tint": [158, 161, 179],
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/panel_close_icon_bg.png",
+        "layer0.opacity": 0,
+        "layer1.tint": [110, 113, 128],
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/panel_close_icon.png",
+        "layer1.opacity": 1.0
     },
     {
         "class": "panel_close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_hover.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "panel_close_button",
-        "settings": ["gravity_highlight_color_blue"],
-        "attributes": ["hover"],
-        "layer0.texture": "Theme - Gravity/Gravity/assets/close_x_blue_hover.png"
+        "layer0.opacity": 0.2,
+        "layer1.tint": [214, 215, 223],
+        "layer1.opacity": 0.8
     },
 
     // ============================================================
@@ -767,7 +768,7 @@
         "layer0.opacity": 1.0,
         "layer1.inner_margin": [0, 1, 0, 0],
         "layer1.tint": [33, 37, 43],
-        "layer1.texture": "Theme - Gravity/shared_assets/misc/status_bar.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/status_bar.png",
         "layer1.opacity": 1.0
     },
     {
@@ -849,6 +850,12 @@
         "layer0.opacity": 1.0
     },
     {
+        // scroll bar control - AUTO_COMPLETE
+        "class": "scroll_bar_control",
+        "parents": [{"class": "popup_control"}],
+        "layer0.tint": [27, 29, 35]
+    },
+    {
         // scroll bar control - horizontal
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
@@ -867,6 +874,7 @@
         "layer1.opacity": 1.0
     },
     {
+        // scroll track control - OVERLAY_CONTROL
         "class": "scroll_track_control",
         "parents": [{"class": "overlay_control"}],
         "layer1.inner_margin": 0,
@@ -877,6 +885,7 @@
         "layer2.opacity": 1.0
     },
     {
+        // scroll track control - SWITCH_PROJECT_WINDOW
         "class": "scroll_track_control",
         "parents": [{"class": "switch_project_window"}],
         "layer0.opacity": 0,
@@ -885,6 +894,17 @@
         "layer2.tint": [19, 21, 24],
         "layer2.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
         "layer2.opacity": 0.5
+    },
+    {
+        // scroll track control - AUTO_COMPLETE
+        "class": "scroll_track_control",
+        "parents": [{"class": "popup_control"}],
+        "layer0.opacity": 0,
+        "layer1.opacity": 0,
+        "layer2.inner_margin": [0, 8],
+        "layer2.tint": [19, 21, 24],
+        "layer2.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
+        "layer2.opacity": 1.0
     },
     {
         // scroll track control - horizontal
@@ -993,15 +1013,8 @@
         "content_margin": [8, 9],
         "layer0.inner_margin": [4, 4],
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/dropdown_arrow.png",
-        "layer0.opacity": 0.4
-        // "layer1.texture": "Theme - Gravity/shared_assets/arrows/dropdown_arrow.png",
-        // "layer1.opacity": 0
+        "layer0.opacity": 0.5
     },
-    // {
-    //     "class": "dropdown_button_control",
-    //     "attributes": ["hover"],
-    //     "layer1.opacity": 0.4
-    // },
 
     // ============================================================
     // ! Buttons
@@ -1046,9 +1059,7 @@
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        // "layer0.tint": [14, 15, 18],
-        "layer1.tint": [85, 89, 108],
-        // "layer1.opacity": 0.9
+        "layer1.tint": [85, 89, 108]
     },
     {
         // left button
@@ -1186,7 +1197,7 @@
 
     {
         "class": "tool_tip_control",
-        "content_margin": [12, 8],
+        "content_margin": [14, 7],
         "layer0.inner_margin": 4,
         "layer0.texture": "Theme - Gravity/shared_assets/misc/tool_tip_bg.png",
         "layer0.tint": [228, 233, 237],
