@@ -231,23 +231,23 @@
         // side bar - icon folders
         "class": "icon_folder",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/folder.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder hover
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder expanded
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder selected
@@ -287,7 +287,7 @@
         // side bar - symlink icon
         "class": "icon_folder_dup",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Gravity/Gravity/icons/folder_dup.png",
+        "layer0.texture": "Theme - Gravity/button_icons/folder_symlink.png",
         "layer0.opacity": 0.5
     },
     {
@@ -781,7 +781,7 @@
         // search panel - panel button control
         "class": "panel_button_control",
         "content_margin": [12, 8],
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/panels.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png",
         "layer0.opacity": 0.7
     },
     {
@@ -1086,7 +1086,7 @@
         // buttons - icon regex
         "class": "icon_regex",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_regex.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_regex.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1098,7 +1098,7 @@
         // buttons - icon case
         "class": "icon_case",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_case.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_case.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1110,7 +1110,7 @@
         // buttons- icon whole word
         "class": "icon_whole_word",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_wholeword.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_wholeword.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1122,7 +1122,7 @@
         // buttons - icon wrap
         "class": "icon_wrap",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_wrap.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_wrap.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1134,7 +1134,7 @@
         // buttons - icon in selection
         "class": "icon_in_selection",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_inselection.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_inselection.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1146,7 +1146,7 @@
         // buttons - icon highlight
         "class": "icon_highlight",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/find_highlight.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_highlight.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1158,7 +1158,7 @@
         // buttons - icon preserve case
         "class": "icon_preserve_case",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/replace_preserve_case.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/replace_preserve_case.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1170,7 +1170,7 @@
         // buttons - icon context
         "class": "icon_context",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/context.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/context.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1182,7 +1182,7 @@
         // buttons - icon use buffer
         "class": "icon_use_buffer",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/icons/use_buffer.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/use_buffer.png",
         "layer0.opacity": 0.6
     },
     {
