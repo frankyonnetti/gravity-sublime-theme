@@ -287,7 +287,7 @@
         // side bar - symlink icon
         "class": "icon_folder_dup",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Gravity/button_icons/folder_symlink.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder_symlink.png",
         "layer0.opacity": 0.5
     },
     {
