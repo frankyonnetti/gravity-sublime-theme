@@ -218,7 +218,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-        "layer0.opacity": 0.0,
+        "layer0.opacity": 0,
         "layer1.opacity": 0.3
     },
     {
@@ -565,10 +565,18 @@
         "class": "quick_panel_row",
         "layer0.inner_margin": 0,
         "layer0.tint": [27, 29, 35],
-        "layer0.opacity": 0.5,
-        "layer1.inner_margin": 0,
+        "layer0.opacity": 1.0,
+        "layer1.inner_margin": 6,
         "layer1.tint": [27, 29, 35],
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/control_overlay_selected.png",
         "layer1.opacity": 0
+    },
+    {
+        "class": "quick_panel_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 0,
+        "layer1.tint": [53, 59, 69], // highlight
+        "layer1.opacity": 1.0
     },
     {
         "class": "quick_panel_row",
@@ -580,9 +588,12 @@
     },
     {
         "class": "quick_panel_row",
+        "parents": [{"class": "switch_project_window"}],
         "attributes": ["selected"],
-        "layer0.tint": [49, 56, 64], // highlight
-        "layer0.opacity": 1.0
+        "layer0.tint": [53, 59, 69], // highlight
+        "layer0.opacity": 1.0,
+        "layer1.tint": [53, 59, 69], // highlight
+        "layer1.opacity": 1.0
     },
     {
         // quick panel - label (text)
@@ -604,8 +615,9 @@
     // ! Quick Panel - mini quick panel
     {
         "class": "mini_quick_panel_row",
-        "layer0.inner_margin": 0,
+        "layer0.inner_margin": 6,
         "layer0.tint": [27, 29, 35],
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/control_overlay_selected.png",
         "layer0.opacity": 0
     },
     {
@@ -643,61 +655,60 @@
         "content_margin": 8,
         "layer0.inner_margin": 0,
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_code_right.png",
-        "layer0.opacity": 1.0,
-        "layer1.inner_margin": 0,
-        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_code_right.png",
-        "layer1.opacity": 0
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.0,
-        "layer1.opacity": 0.4
+        "layer0.opacity": 0.7
     },
     {
         "class": "fold_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_code_down.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_code_down.png"
+        "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_fold_code_down.png"
     },
 
     // ! Views - popup control
     {
         // dropdown
         "class": "popup_control",
-        "content_margin": 0,
-        "layer0.tint": [27, 29, 35],
-        "layer0.opacity": 1.0
+        "content_margin": 1,
+        "layer0.inner_margin": 5,
+        "layer0.tint": [31, 31, 31],
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/popup_control_overlay_border.png",
+        "layer0.opacity": 0.3,
+        "layer1.inner_margin": 5,
+        "layer1.tint": [27, 29, 35],
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/popup_control_overlay_bg.png",
+        "layer1.opacity": 1.0
     },
 
     // ! Views - auto complete
     {
         "class": "auto_complete",
-        "row_padding": 5,
+        "row_padding": [5, 5, 5, 3],
         "layer0.tint": [27, 29, 35],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0
     },
     {
         "class": "auto_complete_label",
-        "fg": [182, 182, 182], // unselected type color
-        "match_fg": [59, 166, 219], // unselected match type color
+        // unselected text color
+        "fg": [182, 182, 182],
+        "match_fg": [59, 166, 219],
         "bg": [26, 26, 26],
-        // selected
-        "selected_fg": [255, 255, 255], // selected type color
-        "selected_match_fg": [101, 201, 251], // selected match type color
+        // selected text color
+        "selected_fg": [255, 255, 255],
+        "selected_match_fg": [101, 201, 251],
         "selected_bg": [58, 63, 75]
     },
     {
         // views - autocomplete table rows
         "class": "table_row",
-        "layer0.inner_margin": [1, 1],
-        "layer0.tint": [53, 59, 69],
-        "layer0.opacity": 0.0
+        "layer0.inner_margin": 6,
+        "layer0.tint": [27, 29, 35],
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/control_overlay_selected.png",
+        "layer0.opacity": 0
     },
     {
         "class": "table_row",
         "attributes": ["selected"],
-        "layer0.opacity": 0.5
+        "layer0.tint": [53, 59, 69], // highlight
+        "layer0.opacity": 1.0
     },
 
     // ============================================================
@@ -835,10 +846,18 @@
         "layer0.opacity": 1.0
     },
     {
+        // scroll bar control - OVERLAY_CONTROL
+        "class": "scroll_bar_control",
+        "parents": [{"class": "overlay_control"}],
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 0
+    },
+    {
         // scroll bar control - AUTO_COMPLETE
         "class": "scroll_bar_control",
         "parents": [{"class": "popup_control"}],
-        "layer0.tint": [27, 29, 35]
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 0
     },
     {
         // scroll bar control - horizontal
@@ -862,8 +881,9 @@
         // scroll track control - OVERLAY_CONTROL
         "class": "scroll_track_control",
         "parents": [{"class": "overlay_control"}],
+        "layer0.opacity": 0,
         "layer1.inner_margin": 0,
-        "layer1.tint": [27, 29, 35],
+        "layer1.opacity": 0,
         "layer2.inner_margin": [0, 8],
         "layer2.tint": [19, 21, 24],
         "layer2.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical_bg.png",
@@ -977,6 +997,7 @@
 
     {
         // inputs - text line control
+        // text color bg: Widget - Gravity.stTheme line: 13
         "class": "text_line_control",
         "content_margin": [4, 7, 15, 3],
         "layer0.tint": [27, 29, 35],
