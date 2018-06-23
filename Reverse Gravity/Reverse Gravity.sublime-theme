@@ -149,9 +149,8 @@
     },
     {
         "class": "sidebar_label",
-        "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
-        "color": [34, 34, 34]
+        "color": [28, 28, 28]
     },
     {
         // When preview in enabled.
@@ -188,7 +187,7 @@
         "class": "close_button",
         "attributes": ["dirty"],
         "settings": ["gravity_highlight_color_blue"],
-        "layer1.tint": [79, 163, 217]
+        "layer1.tint": [22, 110, 215]
     },
     {
         "class": "close_button",
@@ -202,7 +201,7 @@
         "class": "close_button",
         "attributes": ["dirty", "hover"],
         "settings": ["gravity_highlight_color_blue"],
-        "layer0.tint": [79, 163, 217]
+        "layer0.tint": [22, 110, 215]
     },
     {
         // buttons - disclosure button control
@@ -469,7 +468,7 @@
         "class": "tab_close_button",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer1.tint": [79, 163, 217]
+        "layer1.tint": [22, 110, 215]
     },
     {
         // tab dirty button hover
@@ -488,7 +487,7 @@
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
         "attributes": ["hover"],
         "settings": ["gravity_highlight_color_blue"],
-        "layer0.tint": [79, 163, 217],
+        "layer0.tint": [22, 110, 215],
         "layer0.opacity": 1.0
     },
     {
@@ -569,33 +568,33 @@
     {
         "class": "quick_panel_row",
         "parents": [{"class": "switch_project_window"}],
-        "layer0.tint": [255, 255, 255],
+        "layer0.tint": [246, 246, 246],
         "layer0.opacity": 1.0,
-        "layer1.tint": [255, 255, 255],
+        "layer1.tint": [246, 246, 246],
         "layer1.opacity": 0
     },
     {
         "class": "quick_panel_row",
         "parents": [{"class": "switch_project_window"}],
         "attributes": ["selected"],
-        "layer0.tint": [235, 235, 235], // highlight
+        "layer0.tint": [228, 228, 228], // highlight
         "layer0.opacity": 1.0,
-        "layer1.tint": [235, 235, 235], // highlight
+        "layer1.tint": [228, 228, 228], // highlight
         "layer1.opacity": 1.0
     },
     {
         // quick panel - label (text)
         "class": "quick_panel_label",
         "fg": [112, 112, 112],
-        "match_fg": [59, 166, 219], // highlight
+        "match_fg": [22, 110, 215], // highlight
         "selected_fg": [77, 77, 77],
-        "selected_match_fg": [92, 195, 246] // color change while typing
+        "selected_match_fg": [22, 110, 215] // color change while typing
     },
     {
         // quick panel - path label (text)
         "class": "quick_panel_path_label",
         "fg": [112, 112, 112],
-        "match_fg": [89, 97, 110],
+        "match_fg": [96, 96, 96],
         "selected_fg": [112, 112, 112],
         "selected_match_fg": [255, 255, 255]
     },
@@ -677,11 +676,11 @@
         "class": "auto_complete_label",
         // unselected text colors
         "fg": [112, 112, 112],
-        "match_fg": [59, 166, 219],
+        "match_fg": [22, 110, 215],
         "bg": [26, 26, 26],
         // selected text colors
         "selected_fg": [77, 77, 77],
-        "selected_match_fg": [101, 201, 251],
+        "selected_match_fg": [22, 110, 215],
         "selected_bg": [58, 63, 75]
     },
     {
@@ -717,7 +716,7 @@
     {
         "class": "panel_control",
         "parents": [{"class": "switch_project_window"}],
-        "layer1.tint": ["background", 246, 246, 246, 1.0],
+        "layer1.tint": ["background", 255, 255, 255, 1.0],
         "layer1.opacity": 1.0
     },
     {
@@ -988,18 +987,30 @@
         // text color bg: Widget - Gravity.stTheme line: 13
         "class": "text_line_control",
         "content_margin": [4, 7, 15, 3],
-        "layer0.tint": [255, 255, 255],
-        "layer0.opacity": 1.0
+        "layer0.inner_margin": 6,
+        "layer0.tint": [207, 207, 207],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/panels/input_shadow.png",
+        "layer0.opacity": 0.3,
+        "layer1.inner_margin": 6,
+        "layer1.tint": [255, 255, 255],
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/panels/input.png",
+        "layer1.opacity": 1.0,
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "content_margin": [18, 14]
+        "content_margin": [18, 14],
+        "layer0.opacity": 0
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
         "content_margin": [4, 6, 5, 4]
+    },
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.opacity": 0
     },
     {
         // inputs - dropdown button control
@@ -1040,48 +1051,49 @@
         // icon button control - small find icon buttons
         // middle button
         "class": "icon_button_control",
-        "content_margin": [8, 7, 8, 9],
+        "content_margin": 8,
         "layer0.inner_margin": 6,
-        "layer0.tint": [188, 188, 188],
-        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_middle_shadow.png",
-        "layer0.opacity": 0.8,
-        "layer1.opacity": 0,
+        "layer0.tint": [207, 207, 207],
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_middle_shadow.png",
+        "layer0.opacity": 0.3,
         "layer1.inner_margin": 6,
         "layer1.tint": [255, 255, 255],
-        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_middle.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_middle.png",
         "layer1.opacity": 1.0
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer1.tint": [85, 89, 108]
+        "layer1.tint": [124, 124, 124]
     },
     {
         "class": "icon_button_control",
         "settings": ["gravity_highlight_color_blue"],
         "attributes": ["selected"],
-        "layer1.tint": [79, 163, 217]
+        "layer0.tint": [17, 93, 208],
+        "layer0.opacity": 0.9,
+        "layer1.tint": [22, 110, 215]
     },
     {
         // left button
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_left_shadow.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_left.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_left_shadow.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_left.png"
     },
     {
         // right button
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_right_shadow.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_right.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_right_shadow.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_right.png"
     },
     {
         // mini button
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Gravity/shared_assets/buttons/button_mini_shadow.png",
-        "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_mini.png"
+        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_mini_shadow.png",
+        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/buttons/button_mini.png"
     },
     {
         // buttons - icon regex
@@ -1219,13 +1231,13 @@
         "content_margin": [14, 7],
         "layer0.inner_margin": 4,
         "layer0.texture": "Theme - Gravity/shared_assets/misc/tool_tip_bg.png",
-        "layer0.tint": [228, 233, 237],
+        "layer0.tint": [235, 235, 235],
         "layer0.opacity": 1.0
     },
     {
         "class": "tool_tip_control",
         "settings": ["gravity_highlight_color_blue"],
-        "layer0.tint": [79, 163, 217],
+        "layer0.tint": [22, 110, 215],
     },
     {
         // tool tip label control
