@@ -230,7 +230,7 @@
     {
         // side bar - icon folders
         "class": "icon_folder",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
         "layer0.tint": [162, 162, 162],
         "layer0.opacity": 0.6
@@ -259,41 +259,41 @@
     {
         // side bar - folder loading
         "class": "icon_folder_loading",
-        "layer0.tint": [162, 162, 162],
+        "content_margin": 8,
+        "layer0.tint": [159, 159, 159],
         "layer0.texture":
         {
             "keyframes":
             [
-                "Theme - Gravity/Gravity/assets/loader/01.png",
-                "Theme - Gravity/Gravity/assets/loader/02.png",
-                "Theme - Gravity/Gravity/assets/loader/03.png",
-                "Theme - Gravity/Gravity/assets/loader/04.png",
-                "Theme - Gravity/Gravity/assets/loader/05.png",
-                "Theme - Gravity/Gravity/assets/loader/06.png",
-                "Theme - Gravity/Gravity/assets/loader/07.png",
-                "Theme - Gravity/Gravity/assets/loader/08.png",
-                "Theme - Gravity/Gravity/assets/loader/09.png",
-                "Theme - Gravity/Gravity/assets/loader/10.png",
-                "Theme - Gravity/Gravity/assets/loader/11.png",
-                "Theme - Gravity/Gravity/assets/loader/12.png",
+                "Theme - Gravity/shared_assets/loader/01.png",
+                "Theme - Gravity/shared_assets/loader/02.png",
+                "Theme - Gravity/shared_assets/loader/03.png",
+                "Theme - Gravity/shared_assets/loader/04.png",
+                "Theme - Gravity/shared_assets/loader/05.png",
+                "Theme - Gravity/shared_assets/loader/06.png",
+                "Theme - Gravity/shared_assets/loader/07.png",
+                "Theme - Gravity/shared_assets/loader/08.png",
+                "Theme - Gravity/shared_assets/loader/09.png",
+                "Theme - Gravity/shared_assets/loader/10.png",
+                "Theme - Gravity/shared_assets/loader/11.png",
+                "Theme - Gravity/shared_assets/loader/12.png",
             ],
             "loop": true,
             "frame_time": 0.08,
         },
-        "layer0.opacity": 0.7,
-        "content_margin": [8, 8]
+        "layer0.opacity": 0.7
     },
     {
         // side bar - symlink icon
         "class": "icon_folder_dup",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder_symlink.png",
         "layer0.opacity": 0.5
     },
     {
         // sidebar - icon file type
         "class": "icon_file_type",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         // layer0.texture is filled in by code with the relevant icon name
         "layer0.tint": [159, 159, 159],
         "layer0.opacity": 0.7
@@ -1000,18 +1000,30 @@
         // text color bg: Widget - Gravity.stTheme line: 13
         "class": "text_line_control",
         "content_margin": [4, 7, 15, 3],
-        "layer0.tint": [29, 29, 29],
-        "layer0.opacity": 1.0
+        "layer0.inner_margin": 6,
+        "layer0.tint": [21, 21, 21],
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/input_shadow.png",
+        "layer0.opacity": 0.5,
+        "layer1.inner_margin": 6,
+        "layer1.tint": [29, 29, 29],
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/input.png",
+        "layer1.opacity": 1.0,
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "content_margin": [18, 14]
+        "content_margin": [18, 14],
+        "layer0.opacity": 0
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "panel_control"}],
         "content_margin": [4, 6, 5, 4]
+    },
+    {
+        "class": "text_line_control",
+        "parents": [{"class": "switch_project_window"}],
+        "layer0.opacity": 0
     },
     {
         // inputs - dropdown button control

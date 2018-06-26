@@ -231,7 +231,7 @@
     {
         // side bar - icon folders
         "class": "icon_folder",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
         "layer0.tint": [119, 119, 119],
         "layer0.opacity": 0.9
@@ -260,41 +260,41 @@
     {
         // side bar - folder loading
         "class": "icon_folder_loading",
+        "content_margin": 8,
         "layer0.tint": [119, 119, 119],
         "layer0.texture":
         {
             "keyframes":
             [
-                "Theme - Gravity/Reverse Gravity/assets/loader/01.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/02.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/03.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/04.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/05.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/06.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/07.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/08.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/09.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/10.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/11.png",
-                "Theme - Gravity/Reverse Gravity/assets/loader/12.png",
+                "Theme - Gravity/shared_assets/loader/01.png",
+                "Theme - Gravity/shared_assets/loader/02.png",
+                "Theme - Gravity/shared_assets/loader/03.png",
+                "Theme - Gravity/shared_assets/loader/04.png",
+                "Theme - Gravity/shared_assets/loader/05.png",
+                "Theme - Gravity/shared_assets/loader/06.png",
+                "Theme - Gravity/shared_assets/loader/07.png",
+                "Theme - Gravity/shared_assets/loader/08.png",
+                "Theme - Gravity/shared_assets/loader/09.png",
+                "Theme - Gravity/shared_assets/loader/10.png",
+                "Theme - Gravity/shared_assets/loader/11.png",
+                "Theme - Gravity/shared_assets/loader/12.png",
             ],
             "loop": true,
             "frame_time": 0.08,
         },
-        "layer0.opacity": 0.9,
-        "content_margin": [8, 8]
+        "layer0.opacity": 0.9
     },
     {
         // side bar - symlink icon
         "class": "icon_folder_dup",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder_symlink.png",
         "layer0.opacity": 0.5
     },
     {
         // sidebar - icon file type
         "class": "icon_file_type",
-        "content_margin": [8, 8],
+        "content_margin": 8,
         // layer0.texture is filled in by code with the relevant icon name
         "layer0.tint": [119, 119, 119],
         "layer0.opacity": 0.9
@@ -989,11 +989,11 @@
         "content_margin": [4, 7, 15, 3],
         "layer0.inner_margin": 6,
         "layer0.tint": [207, 207, 207],
-        "layer0.texture": "Theme - Gravity/Reverse Gravity/assets/panels/input_shadow.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/panels/input_shadow.png",
         "layer0.opacity": 0.3,
         "layer1.inner_margin": 6,
         "layer1.tint": [255, 255, 255],
-        "layer1.texture": "Theme - Gravity/Reverse Gravity/assets/panels/input.png",
+        "layer1.texture": "Theme - Gravity/shared_assets/panels/input.png",
         "layer1.opacity": 1.0,
     },
     {
