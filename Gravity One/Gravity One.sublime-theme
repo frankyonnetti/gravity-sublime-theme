@@ -5,7 +5,7 @@
 
     {
         "class": "label_control",
-        "color": [214, 215, 223, 0.7],
+        "color": [214, 215, 223, 0.8],
         "font.size": 11
     },
 
@@ -17,13 +17,13 @@
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar"],
-        "fg": ["background", 197, 198, 200, 1.0],
+        "fg": ["background", 214, 215, 223, 0.9],
         "bg": ["background", 40, 44, 52, 1.0]
     },
     {
         "class": "title_bar",
         "settings": ["gravity_title_bar", "gravity_sidebar_header"],
-        "fg": ["background", 170, 176, 185, 1.0],
+        "fg": ["background", 214, 215, 223, 0.9],
         "bg": ["background", 33, 37, 43, 1.0]
     },
 
@@ -125,12 +125,12 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [215, 216, 224]
+        "color": [232, 235, 243, 0.9]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected", "hover"]}],
-        "color": [215, 216, 224]
+        "color": [232, 235, 243, 0.9]
     },
     {
         "class": "sidebar_label",
@@ -145,13 +145,13 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected"]}],
-        "color": [215, 216, 224]
+        "color": [232, 235, 243, 0.9]
     },
     {
         "class": "sidebar_label",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["expandable", "selected", "hover"]}],
-        "color": [215, 216, 224]
+        "color": [232, 235, 243, 0.9]
     },
     {
         // When preview in enabled.
@@ -233,34 +233,34 @@
         "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.55
     },
     {
         // side bar - folder hover
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.55
     },
     {
         // side bar - folder expanded
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.55
     },
     {
         // side bar - folder selected
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["selected"]}],
-        "layer0.tint": [215, 216, 224],
-        "layer0.opacity": 0.7
+        "layer0.tint": [158, 161, 179],
+        "layer0.opacity": 0.55
     },
     {
         // side bar - folder loading
         "class": "icon_folder_loading",
         "content_margin": 8,
-        "layer0.tint": [157, 165, 180],
+        "layer0.tint": [158, 161, 179],
         "layer0.texture":
         {
             "keyframes":
@@ -281,38 +281,39 @@
             "loop": true,
             "frame_time": 0.08,
         },
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.55
     },
     {
         // side bar - symlink icon
         "class": "icon_folder_dup",
         "content_margin": 8,
+        "layer0.tint": [158, 161, 179],
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder_symlink.png",
-        "layer0.opacity": 0.5
+        "layer0.opacity": 0.6
     },
     {
         // sidebar - icon file type
         "class": "icon_file_type",
         "content_margin": 8,
         // layer0.texture is filled in by code with the relevant icon name
-        "layer0.tint": [157, 165, 180],
-        "layer0.opacity": 0.7
+        "layer0.tint": [158, 161, 179],
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.opacity": 0.9
+        "layer0.opacity": 1.0
     },
     {
         "class": "icon_file_type",
         "settings": ["gravity_highlight_color_blue"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.opacity": 0.9
+        "layer0.opacity": 1.0
     },
 
     // ============================================================
@@ -418,12 +419,12 @@
         "fade": false,
         "font.bold": false,
         "font.size": 12,
-        "fg": [110, 113, 128]
+        "fg": [158, 161, 179, 0.9]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [110, 113, 128]
+        "fg": [158, 161, 179, 0.9]
     },
     {
         "class": "tab_label",
@@ -593,12 +594,12 @@
         "layer0.tint": [53, 59, 69], // highlight
         "layer0.opacity": 1.0,
         "layer1.tint": [53, 59, 69], // highlight
-        "layer1.opacity": 1.0
+        "layer1.opacity": 0.7
     },
     {
         // quick panel - label (text)
         "class": "quick_panel_label",
-        "fg": [144, 152, 165],
+        "fg": [158, 161, 179],
         "match_fg": [59, 166, 219], // highlight
         "selected_fg": [255, 255, 255],
         "selected_match_fg": [92, 195, 246] // color change while typing
@@ -624,7 +625,7 @@
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
         "layer0.tint": [53, 59, 69], // highlight
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.7
     },
 
     // ============================================================
@@ -687,8 +688,10 @@
     },
     {
         "class": "auto_complete_label",
+        "font.size": 11,
+        // "font.italic": false, <- doesn't work
         // unselected text color
-        "fg": [182, 182, 182],
+        "fg": [158, 161, 179],
         "match_fg": [59, 166, 219],
         "bg": [26, 26, 26],
         // selected text color
@@ -708,7 +711,7 @@
         "class": "table_row",
         "attributes": ["selected"],
         "layer0.tint": [53, 59, 69], // highlight
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.5
     },
 
     // ============================================================

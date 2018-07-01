@@ -1,57 +1,41 @@
-# Gravity Theme
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/gravity-logo%402x.png" width="145" height="146">
 
-### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
+### Gravity - a [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
 
-The goal of this Sublime Text UI was to make a dark and light theme that feels at home on macOS.
+The goal of this Sublime Text UI is to make a theme that feels at home on macOS.
 
-* Version 3.0.7 Added color titlebar option.
-* Version 3.0.x introduces Gravity One and sidebar header.
-* Version 2.5 introduces OS X blue highlight color and cleaned up UI.
-* Version 2.0 introduces the **Reverse Gravity** light theme.
+* Version 3.5: code / assets clean up and polish.
 
 ---
 
 **Gravity Theme**
 
-<img src="https://yonnetti.net/sublime/images/gravity-307.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-3.5.png">
 
 ---
 
 **Gravity One Theme**
 
-<img src="https://yonnetti.net/sublime/images/gravity-one-307.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-one-3.5.png">
 
 ---
 
 **Reverse Gravity Theme**
 
-<img src="https://yonnetti.net/sublime/images/reverse-gravity-307.png">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse-gravity-3.5.png">
 
 
 _The Gravity theme has only been tested with Sublime Text 3._
 
 ## Install using Package Control
 
-If you're using [Package Control](https://sublime.wbond.net), you can easily install the Gravity theme by using the **Command Palette**:
+[<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/package-control-horizontal%402x.png" width="190" height="48">](https://packagecontrol.io/packages/Theme%20-%20Gravity)
+
+You can easily install the Gravity theme by using the **Command Palette**:
 
 * Go to `Tools > Command Palette...`
 * Type `Package Control: Install Package`
 * Search for `Theme - Gravity`
-
-
-## Install using GIT
-
-* Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
-* Load up that directory in Terminal app; for example: `cd /Users/Library/Application Support/Sublime Text 3/Packages`
-* Next, run this GIT command: `git clone git@github.com:frankyonnetti/gravity-sublime-theme.git"`
-* Rename the folder to `Theme - Gravity`
-
-
-## Install manually
-
-* Use the [Download ZIP](https://github.com/frankyonnetti/gravity-sublime-theme/archive/master.zip) button from GitHub.
-* Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
-* Unzip the archive and rename the folder `Theme - Gravity` and place it in the **"Packages"** directory.
 
 
 ## Activating the theme
@@ -84,45 +68,35 @@ If you're using [Package Control](https://sublime.wbond.net), you can easily ins
 * Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
 `"gravity_sidebar_header": true`
 
-## Replacing the default "fold" icon
-
-Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like:
-
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/fold%402x.png" width="16" height="16">
-
-* Download the [directory with icon](http://bit.ly/2812iC5) separately and place it in the **"Packages"** directory.
-* You can get there by using the menu item `Preferences > Browse Packages...`
-
 
 ## Syntax color schemes
 
 ### Gravity
 
-The syntax color scheme is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
-
-* Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity`
-* The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
-
-
-### Reverse Gravity
-
-* Using one of the default color schemes called `Dawn`.
+* Use the included version of **Monokai Gravity** color scheme by using the Command Palette. Search for "UI: Select Color Scheme" and select _Monokai Gravity_. Or add the following to your prefence file: `"color_scheme": "Packages/Theme - Gravity/One Dark Gravity.tmTheme",`
 
 
 ### Gravity One
 
-* Use the included version of "One Dark Color Scheme" forked from [Timothy de Jongh's Github](https://github.com/IceTimux). Select the included scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > One Dark Gravity`
-* **[One Dark Color Scheme](https://packagecontrol.io/packages/One%20Dark%20Color%20Scheme)** created by [Timothy de Jongh](https://github.com/IceTimux).
-* Or, **[One Half Color Scheme](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph).
+* Use the included version of **One Dark Gravity** color scheme by using the Command Palette. Search for "UI: Select Color Scheme" and select _One Dark Gravity_. The scheme was forked from [Timothy de Jongh's Github](https://github.com/IceTimux).
+
+
+### Reverse Gravity
+
+* Using the **[One Half Light Color Scheme](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph)
 
 
 ## App icon
 
-Download the [white and orange app icons](http://bit.ly/1s1CbKG) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
+Download the Sublime Text 3 [orange app icon](http://bit.ly/2MEfvu3) or [white app icon](http://bit.ly/2MCcwCy) replacement. Designed to fit perfectly in the macOS dock.
 
-* To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
+* :bulb: To install the orange or white app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="128" height="128">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white.png" width="128" height="128">
+
+You can also download the [Sublime Text 2 versions](http://bit.ly/1s1CbKG).
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="64" height="64"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="64" height="64">
 
 
 ## Trouble shooting
