@@ -1057,13 +1057,14 @@ main {
       -webkit-box-shadow: 0 33.7px 56.4px 3.6px rgba(0, 0, 0, 0.12), 0 13px 79.4px 1.6px rgba(0, 0, 0, 0.1);
               box-shadow: 0 33.7px 56.4px 3.6px rgba(0, 0, 0, 0.12), 0 13px 79.4px 1.6px rgba(0, 0, 0, 0.1);
       margin-top: 30px;
-      max-width: 1024px; }
+      max-width: 100%; }
       @media only screen and (min-width: 993px) {
         main .theme-img img {
           position: absolute;
           top: 60px;
           left: 0;
-          margin-top: 0; } }
+          margin-top: 0;
+          max-width: 1024px; } }
   main .gravity .theme-txt .code {
     color: #757575; }
   main .gravity .theme-txt a {
