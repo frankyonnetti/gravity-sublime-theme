@@ -233,28 +233,28 @@
         "content_margin": 8,
         "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.55
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder hover
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.55
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder expanded
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.55
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder selected
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["selected"]}],
         "layer0.tint": [158, 161, 179],
-        "layer0.opacity": 0.55
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder loading
