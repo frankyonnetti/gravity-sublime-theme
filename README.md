@@ -1,136 +1,141 @@
-# Gravity Theme
+<center>
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/gravity-logo%402x.png" width="145" height="146">
 
-### A [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
+## Gravity - a [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
 
-The goal of this Sublime Text UI was to make a dark and light theme that feels at home on macOS.
+The goal of this Sublime Text UI is to make a theme that feels right at home on macOS.
 
-* Version 3.0.7 Added color titlebar option.
-* Version 3.0.x introduces Gravity One and sidebar header.
-* Version 2.5 introduces OS X blue highlight color and cleaned up UI.
-* Version 2.0 introduces the **Reverse Gravity** light theme.
+`Version 3.5 - Theme code and assets clean up and a little polish`
 
----
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
-**Gravity Theme**
-
-<img src="https://yonnetti.net/sublime/images/gravity-307.png">
-
----
-
-**Gravity One Theme**
-
-<img src="https://yonnetti.net/sublime/images/gravity-one-307.png">
-
----
-
-**Reverse Gravity Theme**
-
-<img src="https://yonnetti.net/sublime/images/reverse-gravity-307.png">
-
-
-_The Gravity theme has only been tested with Sublime Text 3._
-
-## Install using Package Control
-
-If you're using [Package Control](https://sublime.wbond.net), you can easily install the Gravity theme by using the **Command Palette**:
-
-* Go to `Tools > Command Palette...`
-* Type `Package Control: Install Package`
-* Search for `Theme - Gravity`
-
-
-## Install using GIT
-
-* Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
-* Load up that directory in Terminal app; for example: `cd /Users/Library/Application Support/Sublime Text 3/Packages`
-* Next, run this GIT command: `git clone git@github.com:frankyonnetti/gravity-sublime-theme.git"`
-* Rename the folder to `Theme - Gravity`
-
-
-## Install manually
-
-* Use the [Download ZIP](https://github.com/frankyonnetti/gravity-sublime-theme/archive/master.zip) button from GitHub.
-* Locate your Sublime Text **"Packages"** directory by using the menu item `Preferences > Browse Packages...`
-* Unzip the archive and rename the folder `Theme - Gravity` and place it in the **"Packages"** directory.
-
-
-## Activating the theme
-
-* Open your settings by using the menu `Preferences > Settings - User`
-* Add, or replace, the **"theme:"** settings with
-`"theme": "Gravity.sublime-theme"` or,
-`"theme": "Gravity One.sublime-theme"` or,
-`"theme": "Reverse Gravity.sublime-theme"`
-
-**Applying the new macOS title bar in Gravity**:
-
-* Open your settings (if not already open) by using the menu `Preferences > Settings - User`
-* And add:
-`"gravity_title_bar": true`
-
-**Applying the file Tab height option:**
-
-* Open your settings (if not already open) by using the menu `Preferences > Settings - User`
-* And add:
-`"gravity_tab_height_tall": true` or `"gravity_tab_height_short": true`
-
-**Applying the blue hightlight color option:**
-
-* Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
-`"gravity_highlight_color_blue": true`
-
-**Applying the sidebar header option:**
-
-* Open your settings (if not already open) by using the menu `Preferences > Settings - User` and add:
-`"gravity_sidebar_header": true`
-
-## Replacing the default "fold" icon
-
-Currently the only way to override the default *code folding icon* with the one for Gravity, you have to place the `Theme - Default` directory in the **"Packages"** directory. The Gravity fold icon looks like:
-
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/fold%402x.png" width="16" height="16">
-
-* Download the [directory with icon](http://bit.ly/2812iC5) separately and place it in the **"Packages"** directory.
-* You can get there by using the menu item `Preferences > Browse Packages...`
-
-
-## Syntax color schemes
 
 ### Gravity
 
-The syntax color scheme is a port of the **Monokai-Sublime scheme** created for Gravity. Used the [TmTheme scheme editor](http://tmtheme-editor.herokuapp.com) to create it.
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-3.5.jpg">
 
-* Once you have **Gravity** installed, you can select the scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > Monokai Gravity`
-* The font used for the syntax shown in the screenshot is `"font_face": "Monaco"` and `"font_size": 14`
-
-
-### Reverse Gravity
-
-* Using one of the default color schemes called `Dawn`.
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 
 ### Gravity One
 
-* Use the included version of "One Dark Color Scheme" forked from [Timothy de Jongh's Github](https://github.com/IceTimux). Select the included scheme by using the menu item `Preferences > Color Scheme > Theme - Gravity > One Dark Gravity`
-* **[One Dark Color Scheme](https://packagecontrol.io/packages/One%20Dark%20Color%20Scheme)** created by [Timothy de Jongh](https://github.com/IceTimux).
-* Or, **[One Half Color Scheme](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph).
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-one-3.5.jpg">
 
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
+
+
+### Reverse Gravity
+
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse-gravity-3.5.jpg">
+
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
+</center>
+
+
+## Install using Package Control
+
+[<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/package-control-horizontal%402x.png" width="190" height="48">](https://packagecontrol.io/packages/Theme%20-%20Gravity)
+
+You can easily install the Gravity theme by using **Package Control** from the **Command Palette**:
+
+1. Enter `Package Control: Install Package`
+2. Search for `Theme - Gravity`
+
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
+
+## Appling Gravity theme
+
+
+**Activating the theme**
+
+Using the Command Palette, search for **UI: Select Theme** and select one of the following:
+
+- **Gravity**.sublime-theme
+- **Gravity One**.sublime-theme
+- **Reverse Gravity**.sublime-theme
+
+To use any of the following, open your settings from the menu `Preferences > Settings - User`
+
+**Apply the macOS title bar** _(new featured added to Sublime Text 3)_:
+
+```
+"gravity_title_bar": true
+```
+
+**Apply one of the two UI Tab height options:**
+
+```
+"gravity_tab_height_tall": true
+"gravity_tab_height_short": true
+```
+
+**Apply the blue hightlight color:**
+
+```
+"gravity_highlight_color_blue": true
+```
+
+**Apply the sidebar header (padding):**
+
+```
+"gravity_sidebar_header": true
+```
+
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
+
+## Syntax color schemes
+
+### Monokai Gravity
+
+Shown in the **Gravity** screen-shot above.
+
+1. To apply, search for `UI: Select Color Scheme` using the **Command Palette**
+2. Select `Monokai Gravity`
+
+
+### One Dark Gravity
+
+This scheme was forked from [Timothy de Jongh's Github](https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme) and is shown in the **Gravity One** screen-shot above.
+
+1. To apply, search for `UI: Select Color Scheme` using the **Command Palette**
+2. Select `One Dark Gravity`
+
+
+### OneHalfLight
+
+Shown in the **Reverse Gravity** screen-shot above, it is one of the **[One Half Color Schemes](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph)
+
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 ## App icon
 
-Download the [white and orange app icons](http://bit.ly/1s1CbKG) (v.1.0.1) designed to fit in Yosemite's dock along with the other OSX (10.10) icons.
+Download the Sublime Text 3 [orange app icon](http://bit.ly/2MEfvu3) or [white app icon](http://bit.ly/2MCcwCy) replacement. Designed to fit perfectly in the macOS dock.
 
-* To install the white or orange app icon, select **Sublime Text** in your **Applications** folder. From the Finder menu, select `File > Get Info` and drag the .icns file on top of the default Sublime Text icon in the *Get Info window*.
+To install the orange or white app icon:
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="128" height="128"> <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="128" height="128">
+1. Select **Sublime Text** in your **Applications** folder.
+2. From the Finder menu, select `File > Get Info`
+3. Drag the .icns file on top of the default Sublime Text icon in the _Get Info_ window.
 
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange.png" width="128" height="128">](http://bit.ly/2MEfvu3)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white.png" width="128" height="128">](http://bit.ly/2MCcwCy)
+
+You can also download the [Sublime Text 2 versions](http://bit.ly/1s1CbKG).
+
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="64" height="64">](http://bit.ly/1s1CbKG)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="64" height="64">](http://bit.ly/1s1CbKG)
+
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 ## Trouble shooting
 
 **1) Font descenders are cut off in the file UI tabs**
 
-Apply this setting to your "Settings - User" file.
-`"gravity_tab_font_small": true`
+Apply this setting to your `Settings - User` file.
+
+```
+"gravity_tab_font_small": true
+```
 
 **2) The "Find" feature appears to be hidden behind the status bar.**
 
@@ -142,6 +147,7 @@ When switching themes in Sublime Text, it will retain the height for the Find ba
 
 Installing and switching themes in Sublime Text may cause some sidebar icons to not show. Disabling installed/inactive themes via Package Control should fix the issue.
 
+<img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 ## Usage license
 
