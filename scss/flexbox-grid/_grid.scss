@@ -1,0 +1,109 @@
+// stylelint-disable at-rule-no-unknown, block-closing-brace-newline-after
+
+// Creds to https://github.com/kristoferjoseph/flexboxgrid
+// No gutters
+// No text alignment with justified container classes (center-xs, for example)
+
+.row {
+  @include row();
+}
+
+.row.reverse {
+  @include row-reverse();
+}
+
+.row.eq-height {
+  @include row-eq-height();
+}
+
+.row.auto-height {
+  @include row-auto-height();
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col.reverse {
+  @include col-reverse();
+}
+
+.first {
+  order: -1;
+}
+.last {
+  order: 1;
+}
+
+// Mixin to run inside of for loop - creates col/breakpoint classes * Not for developer use *
+@mixin col-factory($thisPrefix) {
+  .col-#{$thisPrefix} {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-#{$thisPrefix}-#{$i} {
+      flex-basis: 100% / $grid-columns * $i;
+      max-width: 100% / $grid-columns * $i;
+    }
+    .col-#{$thisPrefix}-offset-#{$i} {
+      margin-left: 100% / $grid-columns * $i;
+    }
+  }
+  .start-#{$thisPrefix} {
+    justify-content: flex-start;
+  }
+  .center-#{$thisPrefix} {
+    justify-content: center;
+  }
+  .end-#{$thisPrefix} {
+    justify-content: flex-end;
+  }
+  .top-#{$thisPrefix} {
+    align-items: flex-start;
+  }
+  .middle-#{$thisPrefix} {
+    align-items: center;
+  }
+  .bottom-#{$thisPrefix} {
+    align-items: flex-end;
+  }
+  .around-#{$thisPrefix} {
+    justify-content: space-around;
+  }
+  .between-#{$thisPrefix} {
+    justify-content: space-between;
+  }
+  .first-#{$thisPrefix} {
+    order: -1;
+  }
+  .last-#{$thisPrefix} {
+    order: 1;
+  }
+} // Mixin to run inside of for loop - creates col/breakpoint classes
+
+@for $i from 1 through length($breakpoint-up-prefixes) {
+  $thisPrefix: nth($breakpoint-up-prefixes, $i);
+  @if $thisPrefix == "xs" {
+    @include col-factory($thisPrefix);
+  } @else if $thisPrefix == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include col-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "md" {
+    @media #{$breakpoint-md-up} {
+      @include col-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include col-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include col-factory($thisPrefix);
+    }
+  }
+}

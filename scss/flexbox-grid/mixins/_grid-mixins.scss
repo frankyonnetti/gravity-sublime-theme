@@ -1,0 +1,360 @@
+// stylelint-disable at-rule-no-unknown, block-closing-brace-newline-after
+@mixin row() {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // Overrides flexbox's default behavior of making all children equal height
+  align-items: flex-start; // If this was not in place it would require two classes to make a row full of unequal height columns aligned top, middle, bottom
+  @if type-of($content-well-max-width) == number and $content-well-max-width != 0 {
+    max-width: $content-well-max-width;
+  }
+}
+
+@mixin row-reverse() {
+  flex-direction: row-reverse;
+}
+
+@mixin row-eq-height() {
+  align-items: stretch;
+}
+
+// For use when row align-item flex-start has been overridden
+@mixin row-auto-height() {
+  align-items: flex-start;
+}
+
+@mixin col-reverse() {
+  flex-direction: column-reverse;
+}
+
+// Condition to run inside of the col mixin * not for developer use *
+@mixin col-condition($col-number) {
+  @if type-of($col-number) == number {
+    @if $col-number > $grid-columns or $col-number == 0 {
+      @warn "Column number must be greater than 0 and less than or equal to total number of columns in the grid (#{$grid-columns})";
+    } @else {
+      flex-basis: 100% / $grid-columns * $col-number;
+      max-width: 100% / $grid-columns * $col-number;
+    }
+    // If no col number is passed then arg is set to "auto" by default
+    // "auto" mode fills the horizontal space with evenly sized containers
+  } @else if $col-number == "auto" {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  } @else {
+    @warn "Column number argument must either be the string 'auto' or a number greater than 0 and less than or equal to total number of columns in the grid (#{$grid-columns})";
+  }
+} // Condition to run inside of the col mixin * not for developer use *
+
+@mixin col($breakpoint: "xs", $col-number: "auto") {
+  // If no breakpoint is passed and a col number is just use the first arg as the col number and act like xs
+  @if type-of($breakpoint) == number {
+    $col-number: $breakpoint;
+    @include col-condition($col-number);
+  } @else if $breakpoint == "xs" {
+    @include col-condition($col-number);
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include col-condition($col-number);
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      @include col-condition($col-number);
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include col-condition($col-number);
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include col-condition($col-number);
+    }
+  } @else {
+    @warn "col mixin requires one of the existing breakpoint prefixes (#{$breakpoint-up-prefixes})";
+  }
+}
+
+// Condition to run inside of the col-offset mixin * not for developer use *
+@mixin col-offset-condition($offset-number) {
+  @if type-of($offset-number) != number {
+    @warn "Column offset number must be a number (only arg or second arg in the col mixin)";
+  } @else if $offset-number == 0 {
+    @warn "Column offset number must be greater than 0 and less than or equal to total number of columns in the grid (#{$grid-columns})";
+  } @else if $offset-number > $grid-columns {
+    @warn "Column offset number must be greater than 0 and less than or equal to total number of columns in the grid (#{$grid-columns})";
+  } @else {
+    margin-left: 100% / $grid-columns * $offset-number;
+  }
+} // Condition to run inside of the col-offset mixin * not for developer use *
+
+@mixin col-offset($breakpoint: "xs", $offset-number: 0) {
+  // If no breakpoint is passed and a col number is just use the first arg as the col number and act like xs
+  @if type-of($breakpoint) == number {
+    $offset-number: $breakpoint;
+    @include col-offset-condition($offset-number);
+  } @else if $breakpoint == "xs" {
+    @include col-offset-condition($offset-number);
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include col-offset-condition($offset-number);
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      @include col-offset-condition($offset-number);
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include col-offset-condition($offset-number);
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include col-offset-condition($offset-number);
+    }
+  } @else {
+    @warn "col mixin requires one of the existing breakpoint prefixes (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin start($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    justify-content: flex-start;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      justify-content: flex-start;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      justify-content: flex-start;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      justify-content: flex-start;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      justify-content: flex-start;
+    }
+  } @else {
+    @warn "start mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin center($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    justify-content: center;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      justify-content: center;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      justify-content: center;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      justify-content: center;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      justify-content: center;
+    }
+  } @else {
+    @warn "center mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin end($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    justify-content: flex-end;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      justify-content: flex-end;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      justify-content: flex-end;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      justify-content: flex-end;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      justify-content: flex-end;
+    }
+  } @else {
+    @warn "end mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin top($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    align-items: flex-start;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      align-items: flex-start;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      align-items: flex-start;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      align-items: flex-start;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      align-items: flex-start;
+    }
+  } @else {
+    @warn "top mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin middle($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    align-items: center;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      align-items: center;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      align-items: center;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      align-items: center;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      align-items: center;
+    }
+  } @else {
+    @warn "middle mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin bottom($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    align-items: flex-end;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      align-items: flex-end;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      align-items: flex-end;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      align-items: flex-end;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      align-items: flex-end;
+    }
+  } @else {
+    @warn "bottom mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin around($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    justify-content: space-around;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      justify-content: space-around;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      justify-content: space-around;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      justify-content: space-around;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      justify-content: space-around;
+    }
+  } @else {
+    @warn "around mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin between($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    justify-content: space-between;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      justify-content: space-between;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      justify-content: space-between;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      justify-content: space-between;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      justify-content: space-between;
+    }
+  } @else {
+    @warn "between mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin first($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    order: -1;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      order: -1;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      order: -1;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      order: -1;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      order: -1;
+    }
+  } @else {
+    @warn "first mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}
+
+@mixin last($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    order: 1;
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      order: 1;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      order: 1;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      order: 1;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      order: 1;
+    }
+  } @else {
+    @warn "last mixin arg must be one of the existing breakpoints (#{$breakpoint-up-prefixes})";
+  }
+}

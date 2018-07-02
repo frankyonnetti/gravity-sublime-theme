@@ -1,0 +1,37 @@
+// Grid
+$grid-columns: 12; // Set number of columns in the grid
+
+// $xs-max: 640px; // Set xs breakpoint's max width
+// $sm-max: 1024px; // Set sm breakpoint's max width
+// $md-max: 1440px; // Set md breakpoint's max width
+// $lg-max: 1920px; // Set lg breakpoint's max width
+
+$xs-max: 480px; // Set xs breakpoint's max width
+$sm-max: 768px; // Set sm breakpoint's max width
+$md-max: 992px; // Set md breakpoint's max width
+$lg-max: 1200px; // Set lg breakpoint's max width
+
+$xs-start: ($xs-max + 1);
+$sm-start: ($xs-max + 1); // Set sm breakpoint's min width
+$md-start: ($sm-max + 1); // Set md breakpoint's min width
+$lg-start: ($md-max + 1); // Set lg breakpoint's min width
+$xl-start: ($lg-max + 1); // Set xl breakpoint's min width
+
+$content-well-max-width: 100%; // Set the max-width of the content well
+
+// Breakpoints
+// Create breakpoint range statements to be used in media queries
+$breakpoint-xs-up: "only screen and (min-width: #{$xs-start})";
+$breakpoint-xs-only: "only screen and (max-width: #{$xs-max})"; // 0 -> xs-max range
+$breakpoint-sm-up: "only screen and (min-width: #{$sm-start})"; // sm-start -> up range
+$breakpoint-sm-only: "only screen and (min-width: #{$sm-start}) and (max-width: #{$sm-max})"; // sm-start -> sm-max range
+$breakpoint-md-up: "only screen and (min-width: #{$md-start})"; // md-start -> up range
+$breakpoint-md-only: "only screen and (min-width: #{$md-start}) and (max-width: #{$md-max})"; // md-start -> md-max range
+$breakpoint-lg-up: "only screen and (min-width: #{$lg-start})"; // lg-start -> up range
+$breakpoint-lg-only: "only screen and (min-width: #{$lg-start}) and (max-width: #{$lg-max})"; // lg-start -> lg-max range
+$breakpoint-xl-up: "only screen and (min-width: #{$xl-start})"; // xl-start -> up range
+
+$breakpoints-all: ($breakpoint-xs-only, $breakpoint-sm-up, $breakpoint-sm-only, $breakpoint-md-up, $breakpoint-md-only, $breakpoint-lg-up, $breakpoint-lg-only, $breakpoint-xl-up);
+$breakpoint-ups: ($breakpoint-sm-up, $breakpoint-md-up, $breakpoint-lg-up, $breakpoint-xl-up);
+$breakpoint-all-prefixes: ("xs", "xs-only", "sm", "sm-only", "md", "md-only", "lg", "lg-only", "xl");
+$breakpoint-up-prefixes: ("xs", "sm", "md", "lg", "xl");

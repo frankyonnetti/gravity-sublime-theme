@@ -1,0 +1,57 @@
+// stylelint-disable at-rule-no-unknown, block-closing-brace-newline-after
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+// Mixin to run inside of for loop - creates visibility classes * Not for developer use *
+@mixin vis-factory($thisPrefix) {
+  .show-#{$thisPrefix} {
+    display: block;
+  }
+  .hide-#{$thisPrefix} {
+    display: none;
+  }
+} // Mixin to run inside of for loop - creates visibility classes * Not for developer use *
+
+@for $i from 1 through length($breakpoint-all-prefixes) {
+  $thisPrefix: nth($breakpoint-all-prefixes, $i);
+  @if $thisPrefix == "xs" {
+    @include vis-factory($thisPrefix);
+  } @else if $thisPrefix == "xs-only" {
+    @media #{$breakpoint-xs-only} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "sm-only" {
+    @media #{$breakpoint-sm-only} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "md" {
+    @media #{$breakpoint-md-up} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "md-only" {
+    @media #{$breakpoint-md-only} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "lg-only" {
+    @media #{$breakpoint-lg-only} {
+      @include vis-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include vis-factory($thisPrefix);
+    }
+  }
+}

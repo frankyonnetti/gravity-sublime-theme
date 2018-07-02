@@ -1,0 +1,20 @@
+{
+  "name": "Gravity",
+  "version": "0.1.0",
+  "description": "Static Page for Theme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:frankyonnetti/gravity-sublime-theme.git"
+  },
+  "author": "Frank Yonnetti",
+  "license": "GPL-2.0 AND MIT",
+  "homepage": "https://frankyonnetti.github.io/gravity-sublime-theme/",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

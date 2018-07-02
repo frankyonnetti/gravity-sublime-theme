@@ -1,0 +1,79 @@
+// Style placeholder text
+@mixin placeholder($color) {
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  & ::-webkit-input-placeholder {
+    color: $color;
+  }
+  & ::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+}
+
+// transitions
+@mixin transition($transitions) {
+  -webkit-transition: $transitions;
+  -moz-transition: $transitions;
+  transition: $transitions;
+}
+
+// transform
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+// transform rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+// transform scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+// transform scale
+@mixin scale3d($x, $y, $z) {
+  @include transform(scale3d($x, $y, $z));
+}
+// transform translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+// transform skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+// transform origin
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+// Horizontal gradient, from left to right
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+  background-color: $end-color;
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+// Vertical gradient, from top to bottom
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+  background-color: $end-color;
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+
+@mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
+  background-color: $end-color;
+  background-image: linear-gradient($deg, $start-color, $end-color);
+  background-repeat: repeat-x;
+}

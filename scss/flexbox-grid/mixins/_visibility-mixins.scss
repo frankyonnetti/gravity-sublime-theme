@@ -1,0 +1,80 @@
+// stylelint-disable at-rule-no-unknown, block-closing-brace-newline-after
+@mixin show($breakpoint) {
+  @if $breakpoint == "xs" {
+    display: block;
+  } @else if $breakpoint == "xs-only" {
+    @media #{$breakpoint-xs-only} {
+      display: block;
+    }
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      display: block;
+    }
+  } @else if $breakpoint == "sm-only" {
+    @media #{$breakpoint-sm-only} {
+      display: block;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      display: block;
+    }
+  } @else if $breakpoint == "md-only" {
+    @media #{$breakpoint-md-only} {
+      display: block;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      display: block;
+    }
+  } @else if $breakpoint == "lg-only" {
+    @media #{$breakpoint-lg-only} {
+      display: block;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      display: block;
+    }
+  } @else {
+    @warn "show mixin arg must be one of the existing breakpoints or ranges (#{$breakpoint-all-prefixes})";
+  }
+}
+
+@mixin hide($breakpoint) {
+  @if $breakpoint == "xs" {
+    display: none;
+  } @else if $breakpoint == "xs-only" {
+    @media #{$breakpoint-xs-only} {
+      display: none;
+    }
+  } @else if $breakpoint == "sm" {
+    @media #{$breakpoint-sm-up} {
+      display: none;
+    }
+  } @else if $breakpoint == "sm-only" {
+    @media #{$breakpoint-sm-only} {
+      display: none;
+    }
+  } @else if $breakpoint == "md" {
+    @media #{$breakpoint-md-up} {
+      display: none;
+    }
+  } @else if $breakpoint == "md-only" {
+    @media #{$breakpoint-md-only} {
+      display: none;
+    }
+  } @else if $breakpoint == "lg" {
+    @media #{$breakpoint-lg-up} {
+      display: none;
+    }
+  } @else if $breakpoint == "lg-only" {
+    @media #{$breakpoint-lg-only} {
+      display: none;
+    }
+  } @else if $breakpoint == "xl" {
+    @media #{$breakpoint-xl-up} {
+      display: none;
+    }
+  } @else {
+    @warn "hide mixin arg must be one of the existing breakpoints or ranges (#{$breakpoint-all-prefixes})";
+  }
+}
