@@ -265,17 +265,6 @@ footer {
     background-color: #212121;
     padding: 65px 25px;
 
-    div.col-md-4 {
-      padding: 25px 0;
-      @media #{$breakpoint-md-up} {
-        border-right: 1px solid rgba(#fff, 0.1);
-      }
-
-      &:last-child {
-        border-right: none;
-      }
-    }
-
     h3 {
       font-size: 21px;
       font-weight: normal;
@@ -285,131 +274,165 @@ footer {
       }
     }
 
-    a {
-      color: #fff;
+    .app-icons,
+    .packagecontrol {
+      color: #ccc;
       font-size: 15px;
-      text-decoration: none;
-      display: inline-block;
-      padding: 0 5px;
-      @include transition(color 0.3s ease-out);
-
-      &:hover {
-        color: #999;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(#fff, 0.1);
+      padding: 25px 0;
+      @media #{$breakpoint-md-up} {
+        border-right: 1px solid rgba(#fff, 0.1);
+        border-bottom: none;
       }
 
-      span.st-icon {
-        border-radius: 50%;
-        @include gradient-y(#505050, #414141, 0%, 100%);
-        box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 91px;
-        height: 91px;
+      a {
+        color: #ccc;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 20px;
+        @include transition(color 0.3s ease-out);
 
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          z-index: 1;
-          @include translate(-50%, -50%);
-          width: 45px;
-          height: 58px;
+        &:hover {
+          color: #999;
         }
 
-        span.action-icon {
+        // app icon
+        span.st-icon {
           border-radius: 50%;
-          background-color: #fff;
+          @include gradient-y(#505050, #414141, 0%, 100%);
+          box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+          position: relative;
           display: block;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          right: -16px;
-          z-index: 2;
-          @include translate(0, -50%);
-          width: 37px;
-          height: 37px;
-          @include transition(all 0.25s ease-out);
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 91px;
+          height: 91px;
 
           img {
-            width: 20px;
-            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            @include translate(-50%, -50%);
+            width: 45px;
+            height: 58px;
+          }
+
+          span.action-icon {
+            border-radius: 50%;
+            background-color: #fff;
+            display: block;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            z-index: 2;
+            @include translate(0, -50%);
+            width: 37px;
+            height: 37px;
+            @include transition(all 0.25s ease-out);
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        &:hover {
+
+          span.st-icon span.action-icon {
+            opacity: 1;
+            right: -20px;
+          }
+        }
+
+        // app icon with outline
+        span.st-icon.w-outline {
+          border: 3px solid #d4d4d4;
+          box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1), 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+          position: relative;
+
+          img {
+            width: 40px;
+            height: 52px;
           }
         }
       }
+    }
 
-      &:hover {
+    .packagecontrol {
+      font-weight: normal;
+      border: none;
 
-        span.st-icon span.action-icon {
-          opacity: 1;
-          right: -20px;
-        }
-      }
+      a {
 
-      span.pc-icon {
-        border-radius: 5px;
-        background-color: #ff9800;
-        box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        width: 91px;
-        height: 91px;
-
-        img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          z-index: 1;
-          @include translate(-50%, -50%);
-          width: 45px;
-          height: 58px;
-        }
-
-        span.action-icon {
-          border-radius: 50%;
+        // pack control icon
+        span.pc-icon {
+          border-radius: 5px;
           background-color: #ff9800;
+          box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+          position: relative;
           display: block;
-          position: absolute;
-          top: 50%;
-          right: -16px;
-          z-index: 2;
-          @include translate(0, -50%);
-          width: 37px;
-          height: 37px;
-          @include transition(all 0.25s ease-out);
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 91px;
+          height: 91px;
 
           img {
-            width: 20px;
-            height: 20px;
-            @include transition(opacity 0.25s ease-out);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            @include translate(-50%, -50%);
+            width: 45px;
+            height: 58px;
+          }
 
-            &:nth-child(1) {
-              opacity: 1;
+          span.action-icon {
+            border-radius: 50%;
+            background-color: #ff9800;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            z-index: 2;
+            @include translate(0, -50%);
+            width: 37px;
+            height: 37px;
+            @include transition(all 0.25s ease-out);
+
+            img {
+              width: 20px;
+              height: 20px;
+              @include transition(opacity 0.25s ease-out);
+
+              &:nth-child(1) {
+                opacity: 1;
+              }
+
+              &:nth-child(2) {
+                opacity: 0;
+              }
             }
+          }
+        }
 
-            &:nth-child(2) {
+        &:hover {
+
+          span.pc-icon span.action-icon {
+            background-color: #fff;
+            opacity: 1;
+            right: -20px;
+
+            img:nth-child(1) {
               opacity: 0;
             }
-          }
-        }
-      }
 
-      &:hover {
-
-        span.pc-icon span.action-icon {
-          background-color: #fff;
-          opacity: 1;
-          right: -20px;
-
-          img:nth-child(1) {
-            opacity: 0;
-          }
-
-          img:nth-child(2) {
-            opacity: 1;
+            img:nth-child(2) {
+              opacity: 1;
+            }
           }
         }
       }
@@ -420,7 +443,7 @@ footer {
   // ! footer - bottom
   // -----------------
   &.bottom {
-    color: rgba(#fff, 0.35);
+    color: rgba(#fff, 0.5);
     border-top: 1px solid rgba(#000, 0.15);
     padding: 20px 25px 30px;
 
@@ -451,7 +474,7 @@ footer {
       a {
 
         img {
-          opacity: 0.35;
+          opacity: 0.4;
           margin: 0 10px;
           width: 32px;
           height: 32px;

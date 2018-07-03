@@ -1172,13 +1172,6 @@ footer.top {
   text-align: center;
   background-color: #212121;
   padding: 65px 25px; }
-  footer.top div.col-md-4 {
-    padding: 25px 0; }
-    @media only screen and (min-width: 769px) {
-      footer.top div.col-md-4 {
-        border-right: 1px solid rgba(255, 255, 255, 0.1); } }
-    footer.top div.col-md-4:last-child {
-      border-right: none; }
   footer.top h3 {
     font-size: 21px;
     font-weight: normal; }
@@ -1186,61 +1179,92 @@ footer.top {
       footer.top h3 {
         font-size: 26px;
         padding-bottom: 55px; } }
-  footer.top a {
-    color: #fff;
+  footer.top .app-icons,
+  footer.top .packagecontrol {
+    color: #ccc;
     font-size: 15px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 5px;
-    -webkit-transition: color 0.3s ease-out;
-    transition: color 0.3s ease-out; }
-    footer.top a:hover {
-      color: #999; }
-    footer.top a span.st-icon {
-      border-radius: 50%;
-      background-color: #414141;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#505050), to(#414141));
-      background-image: linear-gradient(to bottom, #505050 0%, #414141 100%);
-      background-repeat: repeat-x;
-      -webkit-box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
-              box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      width: 91px;
-      height: 91px; }
-      footer.top a span.st-icon img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 45px;
-        height: 58px; }
-      footer.top a span.st-icon span.action-icon {
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0; }
+    @media only screen and (min-width: 769px) {
+      footer.top .app-icons,
+      footer.top .packagecontrol {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: none; } }
+    footer.top .app-icons a,
+    footer.top .packagecontrol a {
+      color: #ccc;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 20px;
+      -webkit-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out; }
+      footer.top .app-icons a:hover,
+      footer.top .packagecontrol a:hover {
+        color: #999; }
+      footer.top .app-icons a span.st-icon,
+      footer.top .packagecontrol a span.st-icon {
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #414141;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#505050), to(#414141));
+        background-image: linear-gradient(to bottom, #505050 0%, #414141 100%);
+        background-repeat: repeat-x;
+        -webkit-box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+                box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+        position: relative;
         display: block;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        right: -16px;
-        z-index: 2;
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        width: 37px;
-        height: 37px;
-        -webkit-transition: all 0.25s ease-out;
-        transition: all 0.25s ease-out; }
-        footer.top a span.st-icon span.action-icon img {
-          width: 20px;
-          height: 20px; }
-    footer.top a:hover span.st-icon span.action-icon {
-      opacity: 1;
-      right: -20px; }
-    footer.top a span.pc-icon {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 91px;
+        height: 91px; }
+        footer.top .app-icons a span.st-icon img,
+        footer.top .packagecontrol a span.st-icon img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 1;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 45px;
+          height: 58px; }
+        footer.top .app-icons a span.st-icon span.action-icon,
+        footer.top .packagecontrol a span.st-icon span.action-icon {
+          border-radius: 50%;
+          background-color: #fff;
+          display: block;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          right: -16px;
+          z-index: 2;
+          -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          width: 37px;
+          height: 37px;
+          -webkit-transition: all 0.25s ease-out;
+          transition: all 0.25s ease-out; }
+          footer.top .app-icons a span.st-icon span.action-icon img,
+          footer.top .packagecontrol a span.st-icon span.action-icon img {
+            width: 20px;
+            height: 20px; }
+      footer.top .app-icons a:hover span.st-icon span.action-icon,
+      footer.top .packagecontrol a:hover span.st-icon span.action-icon {
+        opacity: 1;
+        right: -20px; }
+      footer.top .app-icons a span.st-icon.w-outline,
+      footer.top .packagecontrol a span.st-icon.w-outline {
+        border: 3px solid #d4d4d4;
+        -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1), 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+                box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1), 0 1px 13px 0 rgba(0, 0, 0, 0.27);
+        position: relative; }
+        footer.top .app-icons a span.st-icon.w-outline img,
+        footer.top .packagecontrol a span.st-icon.w-outline img {
+          width: 40px;
+          height: 52px; }
+  footer.top .packagecontrol {
+    font-weight: normal;
+    border: none; }
+    footer.top .packagecontrol a span.pc-icon {
       border-radius: 5px;
       background-color: #ff9800;
       -webkit-box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
@@ -1251,7 +1275,7 @@ footer.top {
       margin-bottom: 20px;
       width: 91px;
       height: 91px; }
-      footer.top a span.pc-icon img {
+      footer.top .packagecontrol a span.pc-icon img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1260,7 +1284,7 @@ footer.top {
         transform: translate(-50%, -50%);
         width: 45px;
         height: 58px; }
-      footer.top a span.pc-icon span.action-icon {
+      footer.top .packagecontrol a span.pc-icon span.action-icon {
         border-radius: 50%;
         background-color: #ff9800;
         display: block;
@@ -1274,26 +1298,26 @@ footer.top {
         height: 37px;
         -webkit-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out; }
-        footer.top a span.pc-icon span.action-icon img {
+        footer.top .packagecontrol a span.pc-icon span.action-icon img {
           width: 20px;
           height: 20px;
           -webkit-transition: opacity 0.25s ease-out;
           transition: opacity 0.25s ease-out; }
-          footer.top a span.pc-icon span.action-icon img:nth-child(1) {
+          footer.top .packagecontrol a span.pc-icon span.action-icon img:nth-child(1) {
             opacity: 1; }
-          footer.top a span.pc-icon span.action-icon img:nth-child(2) {
+          footer.top .packagecontrol a span.pc-icon span.action-icon img:nth-child(2) {
             opacity: 0; }
-    footer.top a:hover span.pc-icon span.action-icon {
+    footer.top .packagecontrol a:hover span.pc-icon span.action-icon {
       background-color: #fff;
       opacity: 1;
       right: -20px; }
-      footer.top a:hover span.pc-icon span.action-icon img:nth-child(1) {
+      footer.top .packagecontrol a:hover span.pc-icon span.action-icon img:nth-child(1) {
         opacity: 0; }
-      footer.top a:hover span.pc-icon span.action-icon img:nth-child(2) {
+      footer.top .packagecontrol a:hover span.pc-icon span.action-icon img:nth-child(2) {
         opacity: 1; }
 
 footer.bottom {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding: 20px 25px 30px; }
   footer.bottom div:nth-child(1) {
@@ -1316,7 +1340,7 @@ footer.bottom {
         text-align: right;
         padding: 0; } }
     footer.bottom div:nth-child(2) a img {
-      opacity: 0.35;
+      opacity: 0.4;
       margin: 0 10px;
       width: 32px;
       height: 32px;
