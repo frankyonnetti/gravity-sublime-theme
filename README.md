@@ -1,4 +1,3 @@
-<center>
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/gravity-logo%402x.png" width="145" height="146">
 
 ## Gravity - a [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
@@ -29,7 +28,6 @@ The goal of this Sublime Text UI is to make a theme that feels right at home on 
 <img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse-gravity-3.5.jpg">
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
-</center>
 
 
 ## Install using Package Control
@@ -109,21 +107,28 @@ Shown in the **Reverse Gravity** screen-shot above, it is one of the **[One Half
 
 ## App icon
 
-Download the Sublime Text 3 [orange app icon](http://bit.ly/2MEfvu3) or [white app icon](http://bit.ly/2MCcwCy) replacement. Designed to fit perfectly in the macOS dock.
+Sublime Text 3 app icon replacements designed to fit perfectly in the macOS dock.
 
-To install the orange or white app icon:
-
-1. Select **Sublime Text** in your **Applications** folder.
-2. From the Finder menu, select `File > Get Info`
-3. Drag the .icns file on top of the default Sublime Text icon in the _Get Info_ window.
+Download the **[orange](http://bit.ly/2MEfvu3)** or **[white](http://bit.ly/2MCcwCy)** app icon.
 
 [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange.png" width="128" height="128">](http://bit.ly/2MEfvu3)
 [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white.png" width="128" height="128">](http://bit.ly/2MCcwCy)
 
-You can also download the [Sublime Text 2 versions](http://bit.ly/1s1CbKG).
+Download the **[orange](http://bit.ly/2lPe8gN)** or **[white](http://bit.ly/2tQ0aQp)** app icon with outset outlines.
 
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="64" height="64">](http://bit.ly/1s1CbKG)
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="64" height="64">](http://bit.ly/1s1CbKG)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange-outline.png" width="128" height="128">](http://bit.ly/2lPe8gN)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white-outline.png" width="128" height="128">](http://bit.ly/2tQ0aQp)
+
+You can also download the **[Sublime Text 2](http://bit.ly/1s1CbKG)** versions.
+
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="84" height="84">](http://bit.ly/1s1CbKG)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="84" height="84">](http://bit.ly/1s1CbKG)
+
+To install the app icon:
+
+1. Select **Sublime Text** in your **Applications** folder.
+2. From the Finder menu, select `File > Get Info`
+3. Drag the .icns file on top of the default Sublime Text icon in the _Get Info_ window.
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
