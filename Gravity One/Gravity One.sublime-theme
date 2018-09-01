@@ -666,17 +666,12 @@
 
     // ! Views - popup control
     {
-        // dropdown
+        // contextual menu and tooltips
         "class": "popup_control",
         "content_margin": 1,
-        "layer0.inner_margin": 5,
-        "layer0.tint": [31, 31, 31],
-        "layer0.texture": "Theme - Gravity/shared_assets/panels/popup_control_overlay_border.png",
-        "layer0.opacity": 0.3,
-        "layer1.inner_margin": 5,
-        "layer1.tint": [27, 29, 35],
-        "layer1.texture": "Theme - Gravity/shared_assets/panels/popup_control_overlay_bg.png",
-        "layer1.opacity": 1.0
+        "layer0.inner_margin": 0,
+        "layer0.tint": [27, 29, 35],
+        "layer0.opacity": 1.0
     },
 
     // ! Views - auto complete
@@ -702,9 +697,8 @@
     {
         // views - autocomplete table rows
         "class": "table_row",
-        "layer0.inner_margin": 6,
+        "layer0.inner_margin": 0,
         "layer0.tint": [27, 29, 35],
-        "layer0.texture": "Theme - Gravity/shared_assets/panels/control_overlay_selected.png",
         "layer0.opacity": 0
     },
     {
@@ -1224,8 +1218,7 @@
     {
         "class": "tool_tip_control",
         "content_margin": [14, 7],
-        "layer0.inner_margin": 4,
-        "layer0.texture": "Theme - Gravity/shared_assets/misc/tool_tip_bg.png",
+        "layer0.inner_margin": 0,
         "layer0.tint": [228, 233, 237],
         "layer0.opacity": 1.0
     },
