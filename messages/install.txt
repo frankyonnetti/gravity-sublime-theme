@@ -23,13 +23,13 @@ To activate the theme for ST3, add or replace your current theme settings with t
 For Gravity Theme:
 
     "theme": "Gravity.sublime-theme",
-    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme"
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
 
 
 For Reverse Gravity Theme:
 
     "theme": "Reverse Gravity.sublime-theme",
-    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme"
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
 
 
 For Gravity One Theme:
@@ -68,4 +68,12 @@ For blue highlight color option use:
 To enable the macOS title bar use (dev build 3127 or newer):
 
     "gravity_title_bar": true
+
+---
+
+macOS Mojave "Dark Mode" tip: how to enable in Sublime Text 3. https://forum.sublimetext.com/t/dark-mode-in-macos-mojave
+
+Load up terminal and run the following command:
+
+  defaults write com.sublimetext.3 NSRequiresAquaSystemAppearance 0
 
