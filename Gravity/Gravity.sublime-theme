@@ -101,12 +101,12 @@
         "settings": ["gravity_sidebar_header"],
         "attributes": ["selected"],
         "layer0.tint": [67, 67, 67],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.75
     },
     {
         // side bar - heading
         "class": "sidebar_heading",
-        "color": [175, 175, 175, 0.4],
+        "color": [175, 175, 175, 0.8],
         "font.bold": true
     },
     {
@@ -115,12 +115,12 @@
         "font.size": 12.0, // 11.0 is default
         "font.bold": false,
         "font.italic": false,
-        "color": [213, 213, 213, 0.65]
+        "color": [213, 213, 213, 0.75]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [213, 213, 213, 0.65]
+        "color": [213, 213, 213, 0.75]
     },
     {
         "class": "sidebar_label",
@@ -135,12 +135,12 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [213, 213, 213, 0.65]
+        "color": [213, 213, 213, 0.75]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [213, 213, 213, 0.65]
+        "color": [213, 213, 213, 0.75]
     },
     {
         "class": "sidebar_label",
@@ -210,7 +210,7 @@
         "content_margin": 8,
         "layer0.inner_margin": 0,
         "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_folder_right.png",
-        "layer0.opacity": 0.3,
+        "layer0.opacity": 0.45,
         "layer1.inner_margin": 0,
         "layer1.texture": "Theme - Gravity/shared_assets/arrows/arrow_folder_right.png",
         "layer1.opacity": 0
@@ -219,7 +219,7 @@
         "class": "disclosure_button_control",
         "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
         "layer0.opacity": 0,
-        "layer1.opacity": 0.3
+        "layer1.opacity": 0.45
     },
     {
         "class": "disclosure_button_control",
@@ -231,30 +231,30 @@
         // side bar - icon folders
         "class": "icon_folder",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/sidebar/folder_darkmode.png",
         "layer0.tint": [213, 213, 213],
-        "layer0.opacity": 0.45
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder hover
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
         "layer0.tint": [213, 213, 213],
-        "layer0.opacity": 0.45
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder expanded
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["expanded"]}],
         "layer0.tint": [213, 213, 213],
-        "layer0.opacity": 0.45
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder selected
         "class": "icon_folder",
         "parents": [{ "class": "tree_row", "attributes": ["selected"]}],
         "layer0.tint": [213, 213, 213],
-        "layer0.opacity": 0.45
+        "layer0.opacity": 0.6
     },
     {
         // side bar - folder loading
@@ -281,7 +281,7 @@
             "loop": true,
             "frame_time": 0.08,
         },
-        "layer0.opacity": 0.45
+        "layer0.opacity": 0.6
     },
     {
         // side bar - symlink icon
