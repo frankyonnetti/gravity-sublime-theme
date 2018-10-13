@@ -1,0 +1,18 @@
+{
+	"Monokai Gravity":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme",
+			"theme": "Gravity.sublime-theme"
+		}
+	},
+	"One Dark Gravity":
+	{
+		"Preferences":
+		{
+			"color_scheme": "Packages/Theme - Gravity/One Dark Gravity.tmTheme",
+			"theme": "Gravity One.sublime-theme"
+		}
+	}
+}
