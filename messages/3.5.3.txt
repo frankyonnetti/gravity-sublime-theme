@@ -1,0 +1,34 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.5.3
+
+Added a new/updated Monokai color scheme to work with the latest
+Sublime Text dev builds.
+
+The new color theme is called "Monokai Gravity v2".
+
+---
+
+DARK MODE TIP: how to enable in Sublime Text 3.
+https://forum.sublimetext.com/t/dark-mode-in-macos-mojave
+
+Load up terminal and run the following command:
+
+  defaults write com.sublimetext.3 NSRequiresAquaSystemAppearance 0
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank
