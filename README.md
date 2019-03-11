@@ -67,7 +67,7 @@ To use any of the following, open your settings from the menu `Preferences > Set
 "gravity_tab_height_short": true
 ```
 
-**Apply the blue hightlight color:**
+**Apply the blue highlight color:**
 
 ```
 "gravity_highlight_color_blue": true
