@@ -399,6 +399,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         "settings": ["gravity_sidebar_header"],
+        "layer2.inner_margin": [2, 2],
         "layer2.texture": "Theme - Gravity/Gravity/assets/tabs/tab_active_sidebar_head.png"
     },
     {
