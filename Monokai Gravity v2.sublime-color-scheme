@@ -33,7 +33,7 @@
         "selection": "var(grey)",
         "selection_border": "var(black2)",
         "misspelling": "var(red2)",
-        "active_guide": "color(var(orange2) alpha(0.69))",
+        "active_guide": "var(yellow5)",
         "find_highlight_foreground": "var(black)",
         "find_highlight": "var(orange3)",
         "brackets_options": "underline",

@@ -68,12 +68,3 @@ For blue highlight color option use:
 To enable the macOS title bar use (dev build 3127 or newer):
 
     "gravity_title_bar": true
-
----
-
-macOS Mojave "Dark Mode" tip: how to enable in Sublime Text 3. https://forum.sublimetext.com/t/dark-mode-in-macos-mojave
-
-Load up terminal and run the following command:
-
-  defaults write com.sublimetext.3 NSRequiresAquaSystemAppearance 0
-
