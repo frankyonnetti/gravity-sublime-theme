@@ -739,7 +739,7 @@
 
     {
         "class": "status_bar",
-        "content_margin": [14, 6, 4, 5],
+        "content_margin": [14, 0, 4, 0],
         "layer0.inner_margin": 0,
         "layer0.tint": [222, 222, 222],
         "layer0.opacity": 1.0,
