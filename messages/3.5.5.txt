@@ -1,0 +1,28 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.5.5
+
+- Fixed: scrollbar hidden when editing large files.
+- New: added option to bold 'tab_label' for selected tabs.
+    "gravity_selected_tab_bold": true
+  - Thanks @LinuxOnTheDesktop for pointing out the issue with the scrollbar - https://github.com/LinuxOnTheDesktop
+
+- Improvement: reduced the height of the status bar by a few pixels.
+  - Thanks @davidbonnet - https://github.com/davidbonnet
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank

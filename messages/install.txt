@@ -20,19 +20,19 @@ How to enable:
 
 To activate the theme for ST3, add or replace your current theme settings with the code below.
 
-For Gravity Theme:
+Gravity Theme:
 
     "theme": "Gravity.sublime-theme",
     "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
 
 
-For Reverse Gravity Theme:
+Reverse Gravity Theme:
 
     "theme": "Reverse Gravity.sublime-theme",
     "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
 
 
-For Gravity One Theme:
+Gravity One Theme:
 
     "theme": "Gravity One.sublime-theme"
 
@@ -41,30 +41,36 @@ Suggest using the "One Dark Sublime Text 3 Color Scheme" or "One Half Color Sche
   - https://github.com/sonph/onehalf
 
 
-To increase the file tab height use:
+Blue highlight color option:
+
+    "gravity_highlight_color_blue": true
+
+
+Tabs: increase tab height:
 
     "gravity_tab_height_tall": true
 
 
-To decrease the file tab height use:
+Tabs: decrease tab height:
 
     "gravity_tab_height_short": true
 
 
-To decrease the file tab font size use:
+Tabs: decrease tab font size:
 
     "gravity_tab_font_small": true
 
 
-For the sidebar header option use:
+Tabs: bold text label for select tab:
 
-    "gravity_sidebar_header": true
+    "gravity_selected_tab_bold": true
 
 
-For blue highlight color option use:
-
-    "gravity_highlight_color_blue": true
-
-To enable the macOS title bar use (dev build 3127 or newer):
+Blend macOS title bar with theme:
 
     "gravity_title_bar": true
+
+
+Blend title bar with sidebar header:
+
+    "gravity_sidebar_header": true

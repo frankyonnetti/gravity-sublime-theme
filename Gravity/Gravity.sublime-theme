@@ -433,6 +433,12 @@
         "fg": [213, 213, 213]
     },
     {
+        "class": "tab_label",
+        "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+        "settings": ["gravity_selected_tab_bold"],
+        "font.bold": true
+    },
+    {
         // tab labels - font small
         "class": "tab_label",
         "settings": ["gravity_tab_font_small"],
@@ -755,7 +761,7 @@
 
     {
         "class": "status_bar",
-        "content_margin": [14, 6, 4, 5],
+        "content_margin": [14, 3, 4, 2],
         "layer0.inner_margin": 0,
         "layer0.tint": [30, 30, 30],
         "layer0.opacity": 1.0,
@@ -930,7 +936,7 @@
     {
         // puck control - thumb vertical
         "class": "puck_control",
-        "content_margin": [8, 0],
+        "content_margin": [8, 12],
         "layer0.inner_margin": [0, 8],
         "layer0.tint": [59, 59, 59],
         "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_vertical.png",
@@ -940,7 +946,7 @@
         // puck control - thumb horizontal
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "content_margin": [0, 8],
+        "content_margin": [12, 8],
         "layer0.inner_margin": [8, 0],
         "layer0.texture": "Theme - Gravity/shared_assets/scroll_bar/scroll_thumb_horizontal.png"
     },
