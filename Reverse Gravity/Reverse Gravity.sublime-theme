@@ -601,7 +601,7 @@
         "fg": [112, 112, 112],
         "match_fg": [96, 96, 96],
         "selected_fg": [112, 112, 112],
-        "selected_match_fg": [255, 255, 255]
+        "selected_match_fg": [96, 96, 96]
     },
 
     // ! Quick Panel - mini quick panel
