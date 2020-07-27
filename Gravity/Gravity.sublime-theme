@@ -771,6 +771,12 @@
         "layer1.opacity": 1.0
     },
     {
+        "class": "sidebar_button_control",
+        "content_margin": [9, 6],
+        "layer0.tint": [213, 213, 213, 0.8],
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/sidebar.png"
+    },
+    {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
         "color": [213, 213, 213, 0.7],
@@ -779,14 +785,14 @@
     {
         // search panel - panel button control
         "class": "panel_button_control",
-        "content_margin": [12, 8],
+        "content_margin": [6, 5],
         "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png",
         "layer0.opacity": 0.7
     },
     {
         // status container
         "class": "status_container",
-        "content_margin": [0, 2, 0, 2]
+        "content_margin": [10, 2, 0, 2]
     },
     {
         // status button
@@ -1053,8 +1059,7 @@
         "layer1.inner_margin": 6,
         "layer1.tint": [66, 66, 66],
         "layer1.texture": "Theme - Gravity/shared_assets/buttons/button_full.png",
-        "layer1.opacity": 1.0,
-        // "layer1.opacity": { "target": 0.0, "speed": 1, "interpolation": "smoothstep" }
+        "layer1.opacity": 1.0
     },
     {
         "class": "button_control",
@@ -1184,7 +1189,7 @@
         // buttons - icon preserve case
         "class": "icon_preserve_case",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/replace_preserve_case.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_preserve_case.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1196,7 +1201,7 @@
         // buttons - icon context
         "class": "icon_context",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/context.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_context.png",
         "layer0.opacity": 0.6
     },
     {
@@ -1208,11 +1213,24 @@
         // buttons - icon use buffer
         "class": "icon_use_buffer",
         "content_margin": 8,
-        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/use_buffer.png",
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_usebuffer.png",
         "layer0.opacity": 0.6
     },
     {
         "class": "icon_use_buffer",
+        "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+        "layer0.opacity": 0.9
+    },
+    {
+        // buttons - icon gitignore
+        "class": "icon_use_gitignore",
+        "content_margin": 8,
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/find_gitignore.png",
+        "layer0.tint": [254, 254, 254],
+        "layer0.opacity": 0.6
+    },
+    {
+        "class": "icon_use_gitignore",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
         "layer0.opacity": 0.9
     },
