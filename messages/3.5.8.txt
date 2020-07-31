@@ -1,0 +1,26 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.5.8
+
+- Removed old Monokai Gravity color-scheme (version 1), and removed "v.2' text from new Monokai color-scheme name.
+  - If you're using this scheme and it doesn't load, be sure to select "Monokai Gravity" from "Prerences > Color Scheme..."
+
+- Merged pull-request for typo fix in the Dark One Gravity color-scheme.
+  - Thanks @sobaw98247 https://github.com/sobaw98247
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank
