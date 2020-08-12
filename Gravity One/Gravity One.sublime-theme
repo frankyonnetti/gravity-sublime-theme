@@ -154,6 +154,12 @@
         "color": [232, 235, 243, 0.9]
     },
     {
+        // GIT - Change opacity for ignored files
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["ignored"],}],
+        "opacity": 0.5,
+    }
+    {
         // When preview in enabled.
         "class": "sidebar_label",
         "attributes": ["transient"],
