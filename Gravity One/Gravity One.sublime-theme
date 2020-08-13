@@ -154,11 +154,10 @@
         "color": [232, 235, 243, 0.9]
     },
     {
-        // GIT - Change opacity for ignored files
         "class": "sidebar_label",
-        "parents": [{"class": "file_system_entry", "attributes": ["ignored"],}],
-        "opacity": 0.5,
-    }
+        "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
+        "color": [232, 235, 243, 0.4]
+    },
     {
         // When preview in enabled.
         "class": "sidebar_label",
@@ -263,6 +262,12 @@
         "layer0.opacity": 0.7
     },
     {
+        // side bar - folder ignored
+        "class": "icon_folder",
+        "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
+        "layer0.tint": [158, 161, 179, 0.65]
+    },
+    {
         // side bar - folder loading
         "class": "icon_folder_loading",
         "content_margin": 8,
@@ -314,6 +319,11 @@
         "class": "icon_file_type",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_file_type",
+        "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
+        "layer0.opacity": 0.45
     },
     {
         "class": "icon_file_type",
@@ -778,8 +788,16 @@
         "layer1.opacity": 1.0
     },
     {
+        // search panel - panel button control
+        "class": "panel_button_control",
+        "content_margin": [7, 6],
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png",
+        "layer0.opacity": 0.7
+    },
+    {
+        // search panel - sidebar button control
         "class": "sidebar_button_control",
-        "content_margin": [9, 6],
+        "content_margin": [8, 6],
         "layer0.tint": [214, 215, 223, 0.8],
         "layer0.texture": "Theme - Gravity/shared_assets/button_icons/sidebar.png"
     },
@@ -788,13 +806,6 @@
         "parents": [{"class": "status_bar"}],
         "color": [214, 215, 223, 0.7],
         "font.size": 11
-    },
-    {
-        // search panel - panel button control
-        "class": "panel_button_control",
-        "content_margin": [6, 5],
-        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png",
-        "layer0.opacity": 0.7
     },
     {
         // status container
