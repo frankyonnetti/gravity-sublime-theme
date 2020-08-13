@@ -778,7 +778,7 @@
 
     {
         "class": "status_bar",
-        "content_margin": [14, 3, 4, 2],
+        "content_margin": [14, 0, 4, 0],
         "layer0.inner_margin": 0,
         "layer0.tint": [27, 30, 34],
         "layer0.opacity": 1.0,
@@ -790,14 +790,14 @@
     {
         // search panel - panel button control
         "class": "panel_button_control",
-        "content_margin": [7, 6],
-        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png",
-        "layer0.opacity": 0.7
+        "content_margin": [8, 16],
+        "layer0.tint": [214, 215, 223, 0.8],
+        "layer0.texture": "Theme - Gravity/shared_assets/button_icons/panels.png"
     },
     {
         // search panel - sidebar button control
         "class": "sidebar_button_control",
-        "content_margin": [8, 6],
+        "content_margin": [8, 16],
         "layer0.tint": [214, 215, 223, 0.8],
         "layer0.texture": "Theme - Gravity/shared_assets/button_icons/sidebar.png"
     },
@@ -810,7 +810,7 @@
     {
         // status container
         "class": "status_container",
-        "content_margin": [10, 2, 0, 2]
+        "content_margin": [10, 0, 0, 0]
     },
     {
         // status button

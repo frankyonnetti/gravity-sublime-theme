@@ -1,0 +1,26 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 3.5.9
+
+- Added in `vcs_status` for attribute value "ignored" to sidebar files and folders. Similar to
+  VS Code, if a file or folder is in a projects gitignore, it will be visually muted (dimmed)
+  compared to the other files and folders in the sidebar.
+
+  - Thanks for your help on pointing out this ST feature @sobaw98247 https://github.com/sobaw98247
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank
