@@ -59,7 +59,7 @@
         "layer1.texture": "Theme - Gravity/shared_assets/sidebar/sidebar_head_short.png"
     },
     {
-        // sode bar - tall tabs w/ sidebar header tab
+        // side bar - tall tabs w/ sidebar header tab
         "class": "sidebar_container",
         "settings": ["gravity_sidebar_header", "gravity_tab_height_tall"],
         "content_margin": [0, 48, 1, 0],
@@ -157,6 +157,46 @@
         "class": "sidebar_label",
         "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
         "color": [213, 213, 213, 0.5]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
+        "color": [207, 182, 144]
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
+        "layer0.tint": [207, 182, 144, 0.7]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
+        "color": "color(var(--bluish) min-contrast(var(--background) 2.5))"
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
+        "layer0.tint": "color(var(--bluish) min-contrast(var(--background) 2.5))"
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
+        "color": "color(var(--greenish) min-contrast(var(--background) 2.5))"
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
+        "color": "color(var(--redish) min-contrast(var(--background) 2.5))"
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
+        "color": "color(var(--redish) min-contrast(var(--background) 2.5))"
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["unmerged"]}],
+        "color": "color(var(--orangish) min-contrast(var(--background) 2.5))"
     },
     {
         // When preview in enabled.
@@ -265,7 +305,8 @@
         // side bar - folder ignored
         "class": "icon_folder",
         "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-        "layer0.tint": [213, 213, 213, 0.5]
+        "layer0.tint": [213, 213, 213],
+        "layer0.opacity": 0.4
     },
     {
         // side bar - folder loading
@@ -634,6 +675,10 @@
         "match_fg": [96, 96, 96],
         "selected_fg": [150, 150, 150],
         "selected_match_fg": [255, 255, 255]
+    },
+    {
+        "class": "quick_panel_detail_label",
+        "link_color": [104, 104, 104]
     },
 
     // ! Quick Panel - mini quick panel
