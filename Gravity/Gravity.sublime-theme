@@ -161,12 +161,12 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
-        "color": [207, 182, 144]
+        "color": [207, 182, 144] // tan
     },
     {
         "class": "vcs_status_badge",
         "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
-        "layer0.tint": [207, 182, 144, 0.7]
+        "layer0.tint": [207, 182, 144, 0.7] // tan
     },
     {
         "class": "sidebar_label",
@@ -181,17 +181,42 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
-        "color": "color(var(--greenish) min-contrast(var(--background) 2.5))"
+        "color": [115, 201, 145] // green
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
+        "layer0.tint": [115, 201, 145, 0.7] // green
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
+        "color": [115, 201, 145] // green
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
+        "layer0.tint": [115, 201, 145, 0.7] // green
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
-        "color": "color(var(--redish) min-contrast(var(--background) 2.5))"
+        "color": [248, 128, 112] // red
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
+        "layer0.tint": [248, 128, 112, 0.6] // red
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
-        "color": "color(var(--redish) min-contrast(var(--background) 2.5))"
+        "color": [248, 128, 112] // red
+    },
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
+        "layer0.tint": [248, 128, 112, 0.6] // red
     },
     {
         "class": "sidebar_label",
