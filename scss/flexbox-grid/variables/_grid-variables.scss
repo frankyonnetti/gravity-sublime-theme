@@ -1,15 +1,12 @@
 // Grid
 $grid-columns: 12; // Set number of columns in the grid
 
-// $xs-max: 640px; // Set xs breakpoint's max width
-// $sm-max: 1024px; // Set sm breakpoint's max width
-// $md-max: 1440px; // Set md breakpoint's max width
-// $lg-max: 1920px; // Set lg breakpoint's max width
+$xs-max: 480px !default; // 30rem / 480px  : Set xs breakpoint's max width
+$sm-max: 768px !default; // 48rem / 768px  : Set sm breakpoint's max width
+$md-max: 992px !default; // 62rem / 992px  : Set md breakpoint's max width
+$lg-max: 1200px !default; // 75rem / 1200px : Set lg breakpoint's max width
 
-$xs-max: 480px; // Set xs breakpoint's max width
-$sm-max: 768px; // Set sm breakpoint's max width
-$md-max: 992px; // Set md breakpoint's max width
-$lg-max: 1200px; // Set lg breakpoint's max width
+$gutter: 1rem !default;
 
 $xs-start: ($xs-max + 1);
 $sm-start: ($xs-max + 1); // Set sm breakpoint's min width
@@ -17,7 +14,7 @@ $md-start: ($sm-max + 1); // Set md breakpoint's min width
 $lg-start: ($md-max + 1); // Set lg breakpoint's min width
 $xl-start: ($lg-max + 1); // Set xl breakpoint's min width
 
-$content-well-max-width: 100%; // Set the max-width of the content well
+$content-well-max-width: 100% !default; // Set the max-width of the content well
 
 // Breakpoints
 // Create breakpoint range statements to be used in media queries

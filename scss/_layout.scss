@@ -47,206 +47,226 @@ main {
     overflow: hidden;
     padding: 0 25px;
   }
+}
 
-  .row {
-    max-width: 1200px;
+.row {
+  max-width: 1200px;
+}
+
+.theme-txt {
+  padding: 0 20px;
+  @media #{$breakpoint-lg-up} {
+    padding: 0;
   }
 
-  .theme-txt {
-    padding: 0 20px;
-    @media #{$breakpoint-lg-up} {
-      padding: 0;
+  img {
+    margin: 60px 0 20px;
+  }
+
+  .code {
+    color: #616161;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: monospace;
+    white-space: nowrap;
+    border-radius: 10px;
+    border: 1px solid rgba(#000, 0.05);
+    background-color: rgba(#fff, 0.5);
+    overflow: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 10px 15px;
+    @media #{$breakpoint-md-up} {
+      font-size: 14px;
     }
 
-    img {
-      margin: 60px 0 20px;
+    strong {
+      display: inline-block;
+      margin-bottom: 8px;
     }
+  }
+}
+
+.theme-img {
+  padding: 0 20px;
+  @media #{$breakpoint-lg-up} {
+    position: relative;
+    padding: 0;
+    height: (768px + 140px);
+  }
+
+  img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 33.7px 56.4px 3.6px rgba(0, 0, 0, 0.12), 0 13px 79.4px 1.6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 100%;
+    @media #{$breakpoint-lg-up} {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      margin-top: 0;
+      max-width: 1024px;
+    }
+  }
+}
+
+.gravity {
+
+  .theme-txt {
 
     .code {
-      color: #616161;
-      font-size: 12px;
-      line-height: 1.5;
-      font-family: monospace;
-      white-space: nowrap;
-      border-radius: 5px;
-      border: 1px solid rgba(#000, 0.05);
-      background-color: rgba(#fff, 0.5);
-      overflow: auto;
-      margin-right: 20px;
-      padding: 10px 10px 15px;
-      @media #{$breakpoint-md-up} {
-        font-size: 14px;
+      color: #757575;
+    }
+
+    a {
+      color: #999;
+      font-size: 15px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 60px 0;
+      padding: 0 5px;
+      @include transition(color 0.3s ease-out);
+
+      &:hover {
+        color: #757575;
       }
 
-      strong {
+      span.pc-icon {
+        border-radius: 3px;
+        background-color: #ff9800;
+        position: relative;
         display: inline-block;
-        margin-bottom: 8px;
+        flex-basis: 48px;
+        margin-right: 20px;
+        width: 48px;
+        height: 48px;
+        @include transition(margin 0.25s ease-out 0.07s);
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 1;
+          margin: 0;
+          @include translate(-50%, -50%);
+          width: 25px;
+          height: auto;
+        }
+
+        span.action-icon {
+          border-radius: 50%;
+          background-color: #ff9800;
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: -9px;
+          z-index: 2;
+          @include translate(0, -50%);
+          width: 21px;
+          height: 21px;
+          @include transition(all 0.25s ease-out);
+
+          img {
+            width: 10px;
+            height: 10px;
+            @include transition(opacity 0.25s ease-out);
+
+            &:nth-child(1) {
+              opacity: 1;
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      &:hover {
+
+        span.pc-icon {
+          margin-right: 24px;
+
+          span.action-icon {
+            background-color: #fff;
+            box-shadow: 1px 1px 2px 0 rgba(#000, 0.15);
+            opacity: 1;
+            right: -13px;
+
+            img:nth-child(1) {
+              opacity: 0;
+            }
+
+            img:nth-child(2) {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.gravity-one {
+
+  .theme-txt {
+
+    .code {
+      color: #555e69;
+    }
+
+    .code,
+    img {
+      @media #{$breakpoint-lg-up} {
+        margin-right: 0;
+        margin-left: 5%;
       }
     }
   }
 
   .theme-img {
-    padding: 0 20px;
-    @media #{$breakpoint-lg-up} {
-      position: relative;
-      padding: 0;
-      height: (768px + 140px);
-    }
 
     img {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      box-shadow: 0 33.7px 56.4px 3.6px rgba(0, 0, 0, 0.12), 0 13px 79.4px 1.6px rgba(0, 0, 0, 0.1);
-      margin-top: 30px;
-      max-width: 100%;
-      @media #{$breakpoint-lg-up} {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        margin-top: 0;
-        max-width: 1024px;
-      }
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.reverse-gravity {
+
+  .theme-txt {
+
+    .code {
+      color: #78909c;
     }
   }
 
-  .gravity {
-
-    .theme-txt {
-
-      .code {
-        color: #757575;
-      }
-
-      a {
-        color: #999;
-        font-size: 15px;
-        text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 60px 0;
-        padding: 0 5px;
-        @include transition(color 0.3s ease-out);
-
-        &:hover {
-          color: #757575;
-        }
-
-        span.pc-icon {
-          border-radius: 3px;
-          background-color: #ff9800;
-          position: relative;
-          display: inline-block;
-          flex-basis: 48px;
-          margin-right: 20px;
-          width: 48px;
-          height: 48px;
-          @include transition(margin 0.25s ease-out 0.07s);
-
-          img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 1;
-            margin: 0;
-            @include translate(-50%, -50%);
-            width: 25px;
-            height: auto;
-          }
-
-          span.action-icon {
-            border-radius: 50%;
-            background-color: #ff9800;
-            display: block;
-            position: absolute;
-            top: 50%;
-            right: -9px;
-            z-index: 2;
-            @include translate(0, -50%);
-            width: 21px;
-            height: 21px;
-            @include transition(all 0.25s ease-out);
-
-            img {
-              width: 10px;
-              height: 10px;
-              @include transition(opacity 0.25s ease-out);
-
-              &:nth-child(1) {
-                opacity: 1;
-              }
-
-              &:nth-child(2) {
-                opacity: 0;
-              }
-            }
-          }
-        }
-
-        &:hover {
-
-          span.pc-icon {
-            margin-right: 24px;
-
-            span.action-icon {
-              background-color: #fff;
-              box-shadow: 1px 1px 2px 0 rgba(#000, 0.15);
-              opacity: 1;
-              right: -13px;
-
-              img:nth-child(1) {
-                opacity: 0;
-              }
-
-              img:nth-child(2) {
-                opacity: 1;
-              }
-            }
-          }
-        }
-      }
-    }
+  .theme-img {
+    margin-bottom: 100px;
   }
+}
 
-  .gravity-one {
+.all-settings {
+  background-color: #eee;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 7px 21px 0 rgba(0, 0, 0, 0.05);
 
-    .theme-txt {
+  .col-xs-12 {
+    padding: 65px 0;
 
-      .code {
-        color: #555e69;
-      }
-
-      .code,
-      img {
-        @media #{$breakpoint-lg-up} {
-          margin-right: 0;
-          margin-left: 5%;
-        }
-      }
+    h3 {
+      color: #555;
+      margin-top: 0;
     }
 
-    .theme-img {
-
-      img {
-        right: 0;
-        left: auto;
-      }
-    }
-  }
-
-  .reverse-gravity {
-
-    .theme-txt {
-
-      .code {
-        color: #78909c;
-      }
-    }
-
-    .theme-img {
-      margin-bottom: 100px;
+    .code {
+      border-style: none;
+      background-color: #fff;
     }
   }
 }
@@ -299,7 +319,7 @@ footer {
 
         // app icon
         span.st-icon {
-          border-radius: 50%;
+          border-radius: 24px;
           @include gradient-y(#505050, #414141, 0%, 100%);
           box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.27);
           position: relative;
@@ -350,7 +370,7 @@ footer {
 
         // app icon with outline
         span.st-icon.w-outline {
-          border: 3px solid #d4d4d4;
+          border: 5px solid #eee;
           box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1), 0 1px 13px 0 rgba(0, 0, 0, 0.27);
           position: relative;
 

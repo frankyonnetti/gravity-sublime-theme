@@ -8,4 +8,4 @@
 
 ## 2) Install node modules:
 
-`yarn add browser-sync gulp gulp-autoprefixer gulp-notify gulp-sass gulp-sourcemaps gulp-uglify --dev`
+`yarn add browser-sync fibers gulp gulp-autoprefixer gulp-notify gulp-dart-sass gulp-sourcemaps --dev`
