@@ -188,7 +188,7 @@
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "color": [28, 28, 28, 0.65]
+            "color": [28, 28, 28, 0.5]
         },
         {
             // When preview in enabled.
@@ -475,7 +475,7 @@
         // ! Tabs - tab control
         {
             "class": "tab_control",
-            "content_margin": [20, 0],
+            "content_margin": [20, 0, 18, 0],
             "max_margin_trim": 0,
             "hit_test_level": 0,
             "layer0.inner_margin": 0,
@@ -491,6 +491,12 @@
             "class": "tab_control",
             "settings": ["gravity_sidebar_header"],
             "layer1.texture": "Theme - Gravity/shared_assets/tabs/tab_inactive_sidebar_head.png"
+        },
+        {
+            "class": "tab_control",
+            "settings": ["show_tab_close_buttons_on_left"],
+            "close_button_side": "left",
+            "content_margin": [18, 0, 20, 0]
         },
         {
             // tab active label margin
@@ -585,7 +591,7 @@
         {
             // tabs - tab close button
             "class": "tab_close_button",
-            "content_margin": 8,
+            "content_margin": [8, 8, 10, 8],
             "layer0.inner_margin": 0,
             "layer0.tint": [138, 138, 138],
             "layer0.texture": "Theme - Gravity/shared_assets/tabs/tab_close_icon_bg.png",

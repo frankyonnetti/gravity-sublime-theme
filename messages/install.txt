@@ -18,32 +18,33 @@ or Twitter
 
 How to enable:
 
-To activate the theme for ST3, add or replace your current theme settings with the code below.
+To activate the theme for Sublime Text, add or replace your current theme settings with the code below.
 
 Gravity Theme:
 
     "theme": "Gravity.sublime-theme",
-    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.sublime-color-scheme"
 
+Gravity Theme:
+
+    "theme": "Gravity.sublime-theme",
+    "color_scheme": "Packages/Theme - Gravity/One Dark Gravity.sublime-color-scheme"
 
 Reverse Gravity Theme:
 
     "theme": "Reverse Gravity.sublime-theme",
-    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.tmTheme"
 
 
-Gravity One Theme:
-
-    "theme": "Gravity One.sublime-theme"
-
-Suggest using the "One Dark Sublime Text 3 Color Scheme" or "One Half Color Schemes" with Gravity One.
-  - https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme
-  - https://github.com/sonph/onehalf
-
-
-Blue highlight color option:
+macOS accent colors (use only one). Gray is default:
 
     "gravity_highlight_color_blue": true
+    "gravity_highlight_color_purple": true
+    "gravity_highlight_color_pink": true
+    "gravity_highlight_color_red": true
+    "gravity_highlight_color_orange": true
+    "gravity_highlight_color_yellow": true
+    "gravity_highlight_color_green": true
+    "gravity_selected_tab_bold": true
 
 
 Tabs: increase tab height:
