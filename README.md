@@ -1,31 +1,29 @@
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/icons/gravity-logo%402x.png" width="145" height="146">
 
-## Gravity - a [Sublime Text 3](http://www.sublimetext.com/3) UI theme.
+## Gravity - a [Sublime Text](http://www.sublimetext.com/) UI theme.
 
-The goal of this Sublime Text UI is to make a theme that feels right at home on macOS.
-
-`Version 3.5 - Theme code and assets clean up and a little polish`
+The goal is to create a theme for Sublime Text that feels right at home on macOS.
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 
 ### Gravity
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-3.5.jpg">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-4.jpg">
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 
 ### Gravity One
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-one-3.5.jpg">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/gravity-one-4.jpg">
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 
 ### Reverse Gravity
 
-<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse-gravity-3.5.jpg">
+<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/screen-shots/reverse-gravity-4.jpg">
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
@@ -41,7 +39,7 @@ You can easily install the Gravity theme by using **Package Control** from the *
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
-## Appling Gravity theme
+## Applying Gravity theme
 
 
 **Activating the theme**
@@ -54,7 +52,7 @@ Using the Command Palette, search for **UI: Select Theme** and select one of the
 
 To use any of the following, open your settings from the menu `Preferences > Settings - User`
 
-**Apply the macOS title bar** _(new featured added to Sublime Text 3)_:
+**Apply the macOS title bar:**
 
 ```
 "gravity_title_bar": true
@@ -67,16 +65,29 @@ To use any of the following, open your settings from the menu `Preferences > Set
 "gravity_tab_height_short": true
 ```
 
-**Apply the blue highlight color:**
+**Apply the macOS accent color** (use only one). Gray is default:
 
 ```
 "gravity_highlight_color_blue": true
+"gravity_highlight_color_purple": true
+"gravity_highlight_color_pink": true
+"gravity_highlight_color_red": true
+"gravity_highlight_color_orange": true
+"gravity_highlight_color_yellow": true
+"gravity_highlight_color_green": true
+"gravity_selected_tab_bold": true
 ```
 
 **Apply the sidebar header (padding):**
 
 ```
 "gravity_sidebar_header": true
+```
+
+**Apply previous version sidebar and tab label size.**
+
+```
+"gravity_org_label_size": false,
 ```
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
@@ -93,36 +104,44 @@ Shown in the **Gravity** screen-shot above.
 
 ### One Dark Gravity
 
-This scheme was forked from [Timothy de Jongh's Github](https://github.com/IceTimux/one-dark-sublime-text-3-color-scheme) and is shown in the **Gravity One** screen-shot above.
-
 1. To apply, search for `UI: Select Color Scheme` using the **Command Palette**
 2. Select `One Dark Gravity`
 
 
-### OneHalfLight
+### Reverse Gravity
 
-Shown in the **Reverse Gravity** screen-shot above, it is one of the **[One Half Color Schemes](https://packagecontrol.io/packages/One%20Half%20Color%20Schemes)** created by [Son A. Pham](https://github.com/sonph)
+Sorry, no syntax color scheme supplied. But I'm sure there are plenty to choose from in Package Control.
+
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
 
 ## App icon
 
-Sublime Text 3 app icon replacements designed to fit perfectly in the macOS dock.
+**Sublime Text 4 app icon replacements designed to fit perfectly in the macOS dock.**
 
-Download the **[orange](http://bit.ly/2MEfvu3)** or **[white](http://bit.ly/2MCcwCy)** app icon.
+Download the **[orange](https://bit.ly/39UYn22)** or **[white](https://bit.ly/2JxvwGE)** app icon.
 
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange.png" width="128" height="128">](http://bit.ly/2MEfvu3)
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white.png" width="128" height="128">](http://bit.ly/2MCcwCy)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-4-orange.png" width="128" height="128">](https://bit.ly/39UYn22) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-4-white.png" width="128" height="128">](https://bit.ly/2JxvwGE)
+
+Download the **[orange](https://bit.ly/3oGEFeX)** or **[white](https://bit.ly/39MRsId)** app icon with outset outlines.
+
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-4-orange-outline.png" width="128" height="128">](https://bit.ly/3oGEFeX) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-4-white-outline.png" width="128" height="128">](https://bit.ly/39MRsId)
+
+**Sublime Text 3 app icon replacements**.
+
+Download the **[orange](https://bit.ly/2MEfvu3)** or **[white](https://bit.ly/2MCcwCy)** app icon.
+
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange.png" width="128" height="128">](https://bit.ly/2MEfvu3) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white.png" width="128" height="128">](https://bit.ly/2MCcwCy)
 
 Download the **[orange](http://bit.ly/2lPe8gN)** or **[white](http://bit.ly/2tQ0aQp)** app icon with outset outlines.
 
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange-outline.png" width="128" height="128">](http://bit.ly/2lPe8gN)
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white-outline.png" width="128" height="128">](http://bit.ly/2tQ0aQp)
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-orange-outline.png" width="128" height="128">](https://bit.ly/2lPe8gN) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/sublimetext-3-white-outline.png" width="128" height="128">](https://bit.ly/2tQ0aQp)
 
-You can also download the **[Sublime Text 2](http://bit.ly/1s1CbKG)** versions.
+**Sublime Text 2 app icon replacements**.
 
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="84" height="84">](http://bit.ly/1s1CbKG)
-[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="84" height="84">](http://bit.ly/1s1CbKG)
+You can also download the **[Sublime Text 2](https://bits.ly/1s1CbKG)** versions.
+
+[<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="84" height="84">](https://bit.ly/1s1CbKG) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="84" height="84">](https://bit.ly/1s1CbKG)
 
 To install the app icon:
 
