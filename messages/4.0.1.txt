@@ -1,0 +1,46 @@
+
+Thanks for using the Gravity theme!
+
+*************************************************************************
+
+Changes in 4.0.1
+
+- Fix for Dark One Gravity color scheme error
+  - Thanks for posted the error @krishantaylor https://github.com/krishantaylor
+
+
+Changes in 4.0.0
+
+- Updated theme to feel more at home in macOS Big Sur.
+- New sidebar icons.
+- New app icons. Download links located in [README](https://github.com/frankyonnetti/gravity-sublime-theme).
+- Added all the macOS accent colors (use only one). Gray is default:
+
+  "gravity_highlight_color_blue": true
+  "gravity_highlight_color_purple": true
+  "gravity_highlight_color_pink": true
+  "gravity_highlight_color_red": true
+  "gravity_highlight_color_orange": true
+  "gravity_highlight_color_yellow": true
+  "gravity_highlight_color_green": true
+  "gravity_selected_tab_bold": true
+
+- Added the option to show close button on left of each tab in theme (finally, right?).
+
+  "show_tab_close_buttons_on_left": true,
+
+- Recreated "One Dark Gravity" color scheme to use new scheme format. Please let me know if any issues pop up.
+
+
+*************************************************************************
+
+You may need to restart Sublime Text for it to display correctly. Also, if the
+sidebar icons are missing, disabling installed/inactive themes will typically fix it.
+
+Feel free to contact me if you have any questions, or need to report an issues:
+
+GitHub Issues
+https://github.com/frankyonnetti/gravity-sublime-theme/issues
+
+Twitter
+@dh_Frank

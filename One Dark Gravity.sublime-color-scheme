@@ -177,7 +177,7 @@
         {
             "name": "JSON String",
             "scope": "meta.structure.dictionary.json string.quoted.double.json",
-            "foreground": "var(yellow3)"
+            "foreground": "var(white1)"
         },
         {
             "name": "YAML String",
@@ -276,7 +276,7 @@
         },
         {
             "scope": "constant.numeric.line-number.find-in-files - match",
-            "foreground": "color(var(purple) alpha(0.63))"
+            "foreground": "color(var(purple1) alpha(0.63))"
         },
         {
             "scope": "entity.name.filename",
