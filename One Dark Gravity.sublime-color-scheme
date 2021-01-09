@@ -79,8 +79,15 @@
         },
         {
             "name": "Keyword",
-            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word",
+            "scope": "keyword.operator",
             "foreground": "var(purple1)"
+        },
+        {
+            // Control keywords examples include if, try, end and while. Some
+            // syntaxes prefer to mark if and else with the conditional variant.
+            // The import variant is often used in appropriate situations.
+            "scope": "keyword.control",
+            "foreground": "var(yellow1)"
         },
         {
             "name": "Annotation Punctuation",
