@@ -72,9 +72,29 @@
             "foreground": "var(pink1)"
         },
         {
-            "name": "Keyword",
             "scope": "keyword.operator",
             "foreground": "var(purple1)"
+        },
+        {
+            // Sections of code delineated by curly braces
+            // or sections of code delineated by parentheses.
+            "scope": "punctuation.section | punctuation.group",
+            "foreground": "color(var(white1) alpha(0.9))"
+        },
+        {
+            // Separators such as commas and colons
+            "scope": "punctuation.separator",
+            "foreground": "var(yellow1)"
+        },
+        {
+            // Semicolons or other statement terminators
+            "scope": "punctuation.terminator",
+            "foreground": "color(var(bluegray5) alpha(0.8))"
+        },
+        {
+            // Member access, scope resolution, or similar constructs
+            "scope": "punctuation.accessor",
+            "foreground": "var(gray4)"
         },
         {
             // Control keywords examples include if, try, end and while. Some
@@ -84,8 +104,7 @@
             "foreground": "var(yellow1)"
         },
         {
-            "name": "Annotation Punctuation",
-            "scope": "punctuation.definition.annotation",
+            "scope": "punctuation.definition.annotation | punctuation.definition.variable",
             "foreground": "var(pink1)"
         },
         {
