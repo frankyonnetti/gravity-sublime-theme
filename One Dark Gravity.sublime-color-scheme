@@ -48,38 +48,31 @@
     "rules":
     [
         {
-            "name": "Comment",
             "scope": "comment",
             "foreground": "var(bluegray4)"
         },
         {
-            "name": "String",
             "scope": "string",
             "foreground": "var(green2)"
         },
         {
-            "name": "Number",
             "scope": "constant.numeric",
             "foreground": "var(yellow1)"
         },
         {
-            "name": "Built-in constant",
             "scope": "constant.language",
             "foreground": "var(purple1)"
         },
         {
-            "name": "User-defined constant",
             "scope": "constant.character, constant.other",
             "foreground": "var(purple1)"
         },
         {
-            "name": "Variable",
             "scope": "variable",
             "foreground": "var(pink1)"
         },
         {
-            "name": "Keyword",
-            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word",
+            "scope": "keyword.operator",
             "foreground": "var(purple1)"
         },
         {
@@ -104,194 +97,164 @@
             "foreground": "var(gray4)"
         },
         {
-            "name": "Annotation Punctuation",
+            // Control keywords examples include if, try, end and while. Some
+            // syntaxes prefer to mark if and else with the conditional variant.
+            // The import variant is often used in appropriate situations.
+            "scope": "keyword.control",
+            "foreground": "var(yellow1)"
+        },
+        {
             "scope": "punctuation.definition.annotation | punctuation.definition.variable",
             "foreground": "var(pink1)"
         },
         {
-            "name": "JavaScript Dollar",
             "scope": "variable.other.dollar.only.js",
             "foreground": "var(blue2)"
         },
         {
-            "name": "Storage",
             "scope": "storage",
             "foreground": "var(pink1)"
         },
         {
-            "name": "Storage type",
             "scope": "storage.type",
             "foreground": "var(purple1)",
             "font_style": "italic"
         },
         {
-            "name": "Entity name",
             "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
             "foreground": "var(blue2)"
         },
         {
-            "name": "Inherited class",
             "scope": "entity.other.inherited-class",
             "foreground": "var(yellow2)",
             "font_style": "italic underline"
         },
         {
-            "name": "Function argument",
             "scope": "variable.parameter - (source.c | source.c++ | source.objc | source.objc++)",
             "foreground": "var(pink1)",
             "font_style": "italic"
         },
         {
-            "name": "Language variable",
             "scope": "variable.language",
             "foreground": "var(orange1)",
             "font_style": "italic"
         },
         {
-            "name": "Tag name",
             "scope": "entity.name.tag",
             "foreground": "var(pink1)"
         },
         {
-            "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
             "foreground": "var(yellow1)"
         },
         {
-            "name": "Function call",
             "scope": "variable.function, variable.annotation",
             "foreground": "var(blue2)"
         },
         {
-            "name": "Library function",
             "scope": "support.function, support.macro",
             "foreground": "var(blue2)"
         },
         {
-            "name": "Library constant",
             "scope": "support.constant",
             "foreground": "var(yellow1)"
         },
         {
-            "name": "Library class/type",
             "scope": "support.type, support.class",
             "foreground": "var(bluegray5)",
             "font_style": "italic"
         },
         {
-            "name": "Library variable",
             "scope": "support.other.variable",
             "foreground": "var(red1)"
         },
         {
-            "name": "Invalid",
             "scope": "invalid",
             "foreground": "var(white1)",
             "background": "var(pink1)"
         },
         {
-            "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "foreground": "var(white1)",
             "background": "var(purple1)"
         },
         {
-            "name": "JSON String",
             "scope": "meta.structure.dictionary.json string.quoted.double.json",
             "foreground": "var(white1)"
         },
         {
-            "name": "YAML String",
             "scope": "string.unquoted.yaml",
             "foreground": "var(white1)"
         },
         {
-            "name": "diff.header",
             "scope": "meta.diff, meta.diff.header",
             "foreground": "var(gray2)"
         },
         {
-            "name": "markup headings",
             "scope": "markup.heading",
             "font_style": "bold"
         },
         {
-            "name": "markup headings",
             "scope": "markup.heading punctuation.definition.heading",
             "foreground": "var(orange1)"
         },
         {
-            "name": "markup h1",
             "scope": "markup.heading.1 punctuation.definition.heading",
             "foreground": "var(pink1)"
         },
         {
-            "name": "markup links",
             "scope": "markup.underline.link",
             "foreground": "var(blue1)"
         },
         {
-            "name": "markup bold",
             "scope": "markup.bold",
             "font_style": "bold"
         },
         {
-            "name": "markup italic",
             "scope": "markup.italic",
             "font_style": "italic"
         },
         {
-            "name": "markup bold/italic",
             "scope": "markup.italic markup.bold | markup.bold markup.italic",
             "font_style": "bold italic"
         },
         {
-            "name": "markup hr",
             "scope": "punctuation.definition.thematic-break",
             "foreground": "var(gray2)"
         },
         {
-            "name": "markup blockquote",
             "scope": "markup.quote punctuation.definition.blockquote",
             "foreground": "var(gray2)"
         },
         {
-            "name": "markup bullets",
             "scope": "markup.list.numbered.bullet",
             "foreground": "var(purple1)"
         },
         {
-            "name": "markup bullets",
             "scope": "markup.list.unnumbered.bullet | (markup.list.numbered punctuation.definition)",
             "foreground": "color(var(white1) alpha(0.67))"
         },
         {
-            "name": "markup code",
             "scope": "markup.raw",
             "background": "color(var(white1) alpha(0.094))"
         },
         {
-            "name": "markup punctuation",
             "scope": "markup.raw punctuation.definition.raw",
             "foreground": "color(var(white1) alpha(0.67))"
         },
         {
-            "name": "markup punctuation",
             "scope": "text & (punctuation.definition.italic | punctuation.definition.bold | punctuation.definition.raw | punctuation.definition.link | punctuation.definition.metadata | punctuation.definition.image | punctuation.separator.table-cell | punctuation.section.table-header | punctuation.definition.constant)",
             "foreground": "color(var(white1) alpha(0.67))"
         },
         {
-            "name": "diff.deleted",
             "scope": "markup.deleted",
             "foreground": "var(pink1)"
         },
         {
-            "name": "diff.inserted",
             "scope": "markup.inserted",
             "foreground": "var(yellow2)"
         },
         {
-            "name": "diff.changed",
             "scope": "markup.changed",
             "foreground": "var(yellow1)"
         },
