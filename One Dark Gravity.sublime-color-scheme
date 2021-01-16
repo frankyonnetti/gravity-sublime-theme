@@ -97,6 +97,10 @@
             "foreground": "var(gray4)"
         },
         {
+            "scope": "keyword",
+            "foreground": "var(yellow1)"
+        },
+        {
             // Control keywords examples include if, try, end and while. Some
             // syntaxes prefer to mark if and else with the conditional variant.
             // The import variant is often used in appropriate situations.

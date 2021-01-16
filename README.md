@@ -87,7 +87,7 @@ To use any of the following, open your settings from the menu `Preferences > Set
 **Apply previous version sidebar and tab label size.**
 
 ```
-"gravity_org_label_size": false,
+"gravity_org_label_size": true,
 ```
 
 <img src="https://yonnetti-sublime.s3.amazonaws.com/gravity/spacer.png" width="1" height="1">
