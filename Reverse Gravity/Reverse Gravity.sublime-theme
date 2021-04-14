@@ -721,6 +721,25 @@
             "layer0.opacity": 1.0, "layer0.tint": "var(green)"
         },
         {
+            // new tab button
+            "class": "new_tab_button",
+            "layer0.texture": "Theme - Gravity/shared_assets/tabs/new_tab.png",
+            "layer0.tint": [138, 138, 138],
+            "layer0.opacity": 0.9,
+            "layer0.inner_margin": 0,
+            "content_margin": [18, 16]
+        },
+        {
+            "class": "new_tab_button",
+            "settings": ["!enable_tab_scrolling"],
+            "content_margin": [18, 16]
+        },
+        {
+            "class": "new_tab_button",
+            "settings": ["hide_new_tab_button"],
+            "content_margin": 0
+        },
+        {
             // tabs - set scroll left / scroll right
             "class": "scroll_tabs_left_button",
             "content_margin": [14, 16],
