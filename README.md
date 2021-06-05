@@ -139,7 +139,7 @@ Download the **[orange](http://bit.ly/2lPe8gN)** or **[white](http://bit.ly/2tQ0
 
 **Sublime Text 2 app icon replacements**.
 
-You can also download the **[Sublime Text 2](https://bits.ly/1s1CbKG)** versions.
+You can also download the **[Sublime Text 2](https://bit.ly/1s1CbKG)** versions.
 
 [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-orange-101.png" width="84" height="84">](https://bit.ly/1s1CbKG) [<img src="https://s3.amazonaws.com/yonnetti-sublime/gravity/icons/app-icon-white-101.png" width="84" height="84">](https://bit.ly/1s1CbKG)
 
