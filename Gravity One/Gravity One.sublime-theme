@@ -514,7 +514,7 @@
         {
             "class": "tabset_control",
             "settings": ["enable_tab_scrolling"],
-            "content_margin": [5, 1, 2, 0]
+            "content_margin": [0, 1, 2, 0]
         },
         {
             // tabs - height short
@@ -806,12 +806,17 @@
         {
             // tabs - set scroll left / scroll right
             "class": "scroll_tabs_left_button",
-            "content_margin": [14, 16],
+            "content_margin": [16, 16],
             "layer0.inner_margin": 0,
             "layer0.tint": [200, 215, 223],
             "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_left.png",
             "layer0.opacity": 0.5
         },
+        {
+			"class": "scroll_tabs_left_button",
+			"settings": ["hide_tab_scrolling_buttons"],
+			"content_margin": [-1, 0, 0, 0]
+		},
         {
             "class": "scroll_tabs_right_button",
             "content_margin": [16, 16],
@@ -820,6 +825,11 @@
             "layer0.texture": "Theme - Gravity/shared_assets/arrows/arrow_right.png",
             "layer0.opacity": 0.5
         },
+        {
+			"class": "scroll_tabs_right_button",
+			"settings": ["hide_tab_scrolling_buttons"],
+			"content_margin": 0
+		},
         {
             "class": "show_tabs_dropdown_button",
             "content_margin": [16, 16],
